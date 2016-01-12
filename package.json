@@ -47,6 +47,7 @@
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
     "react": "^0.14.6",
+    "superagent": "^1.6.1",
     "vision": "^4.0.1"
   }
 }

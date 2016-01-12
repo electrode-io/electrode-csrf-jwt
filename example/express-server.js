@@ -3,7 +3,6 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const exphbs = require("express-handlebars");
-const path = require("path");
 const csrfMiddleware = require("../").expressMiddleware;
 
 const app = express();

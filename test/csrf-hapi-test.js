@@ -71,7 +71,7 @@ describe("test csrf-jwt hapi plugin", () => {
     });
   });
 
-  it("return success", (done) => {
+  it("should return success", (done) => {
     return server.inject({method: "get", url: "/1"})
       .then((res) => {
         const token = res.request.plugins.jwt;
@@ -91,7 +91,7 @@ describe("test csrf-jwt hapi plugin", () => {
       });
   });
 
-  it("return 500 for missing jwt", (done) => {
+  it("should return 500 for missing jwt", (done) => {
     server.inject({method: "post", url: "/2", payload: {message: "hello"}})
       .then((err) => {
         expect(err.statusCode).to.equal(500);
@@ -99,7 +99,7 @@ describe("test csrf-jwt hapi plugin", () => {
       });
   });
 
-  it("return 500 for wrong ip", (done) => {
+  it("should return 500 for wrong ip", (done) => {
     const token = jwt.sign({ip: "123.123.123.123"}, secret, {});
 
     server.inject({method: "post", url: "/2", payload: {message: "hello", jwt: token}})
@@ -109,8 +109,10 @@ describe("test csrf-jwt hapi plugin", () => {
       });
   });
 
-  it("return 500 for invalid jwt", (done) => {
-    server.inject({method: "post", url: "/2", payload: {message: "hello", jwt: "123"}})
+  it("should return 500 for invalid jwt", (done) => {
+    const token = jwt.sign({ip: "127.0.0.1"}, "ssh");
+
+    server.inject({method: "post", url: "/2", payload: {message: "hello", jwt: token}})
       .then((err) => {
         expect(err.statusCode).to.equal(500);
         done();
