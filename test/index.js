@@ -8,7 +8,7 @@ const expect = chai.expect;
 
 const jwt = require("jsonwebtoken");
 
-describe("test csrf-jwt", () => {
+describe("test csrf-jwt hapi plugin", () => {
   it("return view with jwt", (done) => {
     const server = new Hapi.Server();
     server.connection();
