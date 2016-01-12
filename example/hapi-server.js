@@ -1,6 +1,7 @@
 "use strict";
 
 const Hapi = require("hapi");
+const csrfPlugin = require("../").hapiPlugin;
 
 const server = new Hapi.Server();
 server.connection({host: "localhost", port: 3000});
@@ -10,7 +11,7 @@ const options = {
   expiresIn: 60
 };
 
-server.register({register: require("../"), options}, (err) => {
+server.register({register: csrfPlugin, options}, (err) => {
   if (err) {
     throw err;
   }
@@ -33,7 +34,7 @@ server.register(require("vision"), (err) => {
     method: "get",
     path: "/",
     handler: (request, reply) => {
-      return reply.view("index.html", {message: "hi", jwt: request.plugins.jwt});
+      return reply.view("index", {message: "hi", jwt: request.plugins.jwt});
     }
   });
 
@@ -41,7 +42,7 @@ server.register(require("vision"), (err) => {
     method: "post",
     path: "/",
     handler: (request, reply) => {
-      return reply.view("message.html", {message: request.payload.message});
+      return reply.view("message", {message: request.payload.message});
     }
   });
 
