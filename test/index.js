@@ -5,7 +5,9 @@ const Hapi = require("hapi");
 const chai = require("chai");
 const expect = chai.expect;
 
-describe("jwt", () => {
+const jwt = require("jsonwebtoken");
+
+describe("test csrf-jwt", () => {
   it("return view with jwt", (done) => {
     const server = new Hapi.Server();
     server.connection();
@@ -13,8 +15,9 @@ describe("jwt", () => {
     const options = {
       secret: "test",
       expiresIn: "2d",
-      shouldIgnore: "ignore"
+      ignoreThisParam: "ignore"
     };
+
     server.register({register: require("../"), options}, (err) => {
       expect(err).to.not.exist;
 
@@ -51,19 +54,25 @@ describe("jwt", () => {
         ]);
 
         server.inject({method: "get", url: "/1"}, (res) => {
-          const jwt = res.request.plugins.jwt;
-          expect(res.payload).to.contain(jwt);
+          const token = res.request.plugins.jwt;
+          expect(res.payload).to.contain(token);
           expect(res.payload).to.contain("hi");
 
-          server.inject({method: "post", url: "/2", payload: {message: "hello", jwt: jwt}}, (res) => {
+          server.inject({method: "post", url: "/2", payload: {message: "hello", jwt: token}}, (res) => {
             expect(res.statusCode).to.equal(200);
             expect(res.result).to.equal("valid");
 
             server.inject({method: "post", url: "/2", payload: {message: "hello"}}, (res) => {
               expect(res.statusCode).to.equal(403);
 
-              server.inject({method: "post", url: "/2", payload: {message: "hello", jwt: "123"}}, (res) => {
+              const token = jwt.sign({ip: "123.123.123.123"}, options.secret, {});
+
+              server.inject({method: "post", url: "/2", payload: {message: "hello", jwt: token}}, (res) => {
                 expect(res.statusCode).to.equal(403);
+
+                server.inject({method: "post", url: "/2", payload: {message: "hello", jwt: "123"}}, (res) => {
+                  expect(res.statusCode).to.equal(403);
+                });
               });
             });
 
