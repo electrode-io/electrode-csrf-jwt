@@ -10,6 +10,18 @@ const jwt = require("jsonwebtoken");
 let server;
 const secret = "test";
 
+describe("test register", () => {
+  it("should fail with bad options", (done) => {
+    server = new Hapi.Server();
+    server.connection();
+
+    server.register({register: csrfPlugin}, (err) => {
+      expect(err.message).to.equal("MISSING_SECRET");
+      done();
+    });
+  });
+});
+
 describe("test csrf-jwt hapi plugin", () => {
   before(() => {
     server = new Hapi.Server();
