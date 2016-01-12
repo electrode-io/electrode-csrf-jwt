@@ -1,6 +1,5 @@
 "use strict";
 
-const Boom = require("boom");
 const bodyParser = require("body-parser");
 const express = require("express");
 const exphbs = require("express-handlebars");
