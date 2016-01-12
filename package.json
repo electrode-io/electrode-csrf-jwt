@@ -1,5 +1,5 @@
 {
-  "name": "@walmart/electrode-csrf-jwt",
+  "name": "@walmart/csrf-jwt",
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gecgithub01.walmart.com/cshi1/jwt.git"
+    "url": "https://gecgithub01.walmart.com/electrode/csrf-jwt.git"
   },
   "keywords": [
     "hapi",
