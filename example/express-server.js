@@ -22,7 +22,7 @@ const options = {
 
 app.use(csrfMiddleware(options));
 
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   res.render("index", {message: "hi", jwt: req.jwt});
 });
 
