@@ -27,7 +27,6 @@
     "node": ">= 4.2.2"
   },
   "dependencies": {
-    "boom": "^3.1.1",
     "jsonwebtoken": "^5"
   },
   "devDependencies": {
