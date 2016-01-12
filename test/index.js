@@ -1,6 +1,7 @@
 "use strict";
 
 const Hapi = require("hapi");
+const csrfPlugin = require("../").hapiPlugin;
 
 const chai = require("chai");
 const expect = chai.expect;
@@ -18,7 +19,7 @@ describe("test csrf-jwt", () => {
       ignoreThisParam: "ignore"
     };
 
-    server.register({register: require("../"), options}, (err) => {
+    server.register({register: csrfPlugin, options}, (err) => {
       expect(err).to.not.exist;
 
       server.register(require("vision"), (err) => {
