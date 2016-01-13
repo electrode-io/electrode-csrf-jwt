@@ -47,6 +47,8 @@ Others are optional, same usage as [jsonwebtoken](https://github.com/auth0/node-
 
 ```js
 const csrfMiddleware = require("../").expressMiddleware;
+const express = require("express");
+
 const app = express();
 
 const options = {
@@ -67,6 +69,8 @@ app.use(csrfMiddleware(options));
 
 ```js
 const csrfPlugin = require("../").hapiPlugin;
+const Hapi = require("hapi");
+
 const server = new Hapi.Server();
 const options = {
   secret: "shhhhh",
