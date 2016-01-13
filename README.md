@@ -15,7 +15,7 @@ This way there's no session needed at all.
 ## Install
 
 ```bash
-$ npm install csrf-jwt
+$ npm install @walmart/csrf-jwt
 ```
 
 ## Usage
