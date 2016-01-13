@@ -1,6 +1,6 @@
 {
-  "name": "@walmart/csrf-jwt",
-  "version": "0.0.1",
+  "name": "csrf-jwt",
+  "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
