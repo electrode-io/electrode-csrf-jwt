@@ -46,7 +46,7 @@ Others are optional, same usage as [jsonwebtoken](https://github.com/auth0/node-
 #### Example
 
 ```js
-const csrfMiddleware = require("../").expressMiddleware;
+const csrfMiddleware = require("@walmart/csrf-jwt").expressMiddleware;
 const express = require("express");
 
 const app = express();
@@ -68,7 +68,7 @@ app.use(csrfMiddleware(options));
 #### Example
 
 ```js
-const csrfPlugin = require("../").hapiPlugin;
+const csrfPlugin = require("@walmart/csrf-jwt").hapiPlugin;
 const Hapi = require("hapi");
 
 const server = new Hapi.Server();
