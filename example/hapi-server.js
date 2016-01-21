@@ -34,7 +34,7 @@ server.register(require("vision"), (err) => {
     method: "get",
     path: "/",
     handler: (request, reply) => {
-      return reply.view("index", {message: "hi", jwt: request.plugins.jwt});
+      return reply.view("index", {message: "hi", jwt: request.jwt});
     }
   });
 
