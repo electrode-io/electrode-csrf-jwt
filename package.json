@@ -27,7 +27,9 @@
     "node": ">= 4.2.2"
   },
   "dependencies": {
-    "jsonwebtoken": "^5"
+    "bluebird": "^3.1.5",
+    "jsonwebtoken": "^5",
+    "node-uuid": "^1.4.7"
   },
   "devDependencies": {
     "babel-cli": "^6.1.1",

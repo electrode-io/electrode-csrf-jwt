@@ -52,9 +52,9 @@ describe("test csrf-jwt hapi plugin", () => {
             method: "get",
             path: "/1",
             handler: (request, reply) => {
-              expect(request.jwt).to.exist;
+              expect(request.headers.jwt).to.exist;
 
-              return reply.view("index", {message: "hi", jwt: request.jwt});
+              return reply.view("index", {message: "hi", jwt: request.headers.jwt});
             }
           },
           {
@@ -62,7 +62,7 @@ describe("test csrf-jwt hapi plugin", () => {
             path: "/2",
             handler: (request, reply) => {
               expect(request.payload.message).to.equal("hello");
-              expect(request.payload.jwt).to.equal(request.jwt);
+              expect(request.payload.headers.jwt).to.equal(request.headers.jwt);
               return reply("valid");
             }
           }
@@ -74,7 +74,7 @@ describe("test csrf-jwt hapi plugin", () => {
   it("should return success", (done) => {
     return server.inject({method: "get", url: "/1"})
       .then((res) => {
-        const token = res.request.jwt;
+        const token = res.request.headers.jwt;
         expect(res.statusCode).to.equal(200);
         expect(res.payload).to.contain(token);
         expect(res.payload).to.contain("hi");
