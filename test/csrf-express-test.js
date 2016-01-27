@@ -1,6 +1,7 @@
 "use strict";
 
 const bodyParser = require("body-parser");
+const cookieParser = require('cookie-parser');
 const express = require("express");
 const exphbs = require("express-handlebars");
 const csrfMiddleware = require("../").expressMiddleware;
@@ -32,6 +33,7 @@ describe("test csrf-jwt express middleware", () => {
 
     app.use(bodyParser.urlencoded({extended: false}));
     app.use(bodyParser.json());
+    app.use(cookieParser());
 
     app.engine(".html", exphbs({extname: ".html"}));
     app.set("view engine", "html");
@@ -45,8 +47,7 @@ describe("test csrf-jwt express middleware", () => {
     app.use(csrfMiddleware(options));
 
     app.get("/1", (req, res) => {
-      expect(req.jwt).to.exist;
-      res.json({message: "hi", jwt: req.jwt});
+      res.json({message: "hi"});
     });
 
     app.post("/2", (req, res) => {
@@ -68,12 +69,17 @@ describe("test csrf-jwt express middleware", () => {
         expect(err).to.not.exist;
         expect(res.statusCode).to.equal(200);
         expect(res.body.message).to.equal("hi");
-        expect(res.body.jwt).to.exist;
+        expect(res.headers["x-csrf-token"]).to.exist;
+        expect(res.headers["set-cookie"][0]).to.contain("jwt=");
 
         return request.post(`${url}/2`)
-          .send({message: "hello", jwt: res.body.jwt})
+          .send({message: "hello"})
+          .set("x-csrf-token", res.headers["x-csrf-token"])
+          .set("Cookie", res.headers["set-cookie"][0])
           .end((err, res) => {
             expect(res.statusCode).to.equal(200);
+            expect(res.headers["x-csrf-token"]).to.exist;
+            expect(res.headers["set-cookie"][0]).to.contain("jwt=");
             expect(res.text).to.equal("valid");
             done();
           });
@@ -89,25 +95,19 @@ describe("test csrf-jwt express middleware", () => {
       });
   });
 
-  it("should return 500 for wrong ip", (done) => {
-    const token = jwt.sign({ip: "123.123.123.123"}, secret, {});
-
-    return request.post(`${url}/2`)
-      .send({message: "hello", jwt: token})
-      .end((err) => {
-        expect(err.status).to.equal(500);
-        done();
-      });
-  });
-
   it("should return 500 for invalid jwt", (done) => {
     const token = jwt.sign({ip: "127.0.0.1"}, "ssh");
 
-    return request.post(`${url}/2`)
-      .send({message: "hello", jwt: token})
-      .end((err) => {
-        expect(err.status).to.equal(500);
-        done();
+    return request.get(`${url}/1`)
+      .end((err, res) => {
+        return request.post(`${url}/2`)
+          .send({message: "hello"})
+          .set("x-csrf-token", res.headers["set-cookie"][0])
+          .set("Cookie", res.headers["set-cookie"][0])
+          .end((err, res) => {
+            expect(res.statusCode).to.equal(500);
+            done();
+          });
       });
   });
 });

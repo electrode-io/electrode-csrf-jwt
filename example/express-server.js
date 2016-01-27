@@ -1,6 +1,7 @@
 "use strict";
 
 const bodyParser = require("body-parser");
+const cookieParser = require('cookie-parser');
 const express = require("express");
 const exphbs = require("express-handlebars");
 const csrfMiddleware = require("../").expressMiddleware;
@@ -9,6 +10,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 app.engine(".html", exphbs({extname: ".html"}));
 app.set("view engine", "html");
