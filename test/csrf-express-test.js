@@ -96,17 +96,22 @@ describe("test csrf-jwt express middleware", () => {
   });
 
   it("should return 500 for invalid jwt", (done) => {
-    const token = jwt.sign({ip: "127.0.0.1"}, "ssh");
-
     return request.get(`${url}/1`)
       .end((err, res) => {
+        const token = jwt.sign({uuid: "1"}, secret, {});
         return request.post(`${url}/2`)
           .send({message: "hello"})
-          .set("x-csrf-token", res.headers["set-cookie"][0])
-          .set("Cookie", res.headers["set-cookie"][0])
+          .set("x-csrf-token", token)
+          .set("Cookie", `jwt=${token}`)
           .end((err, res) => {
             expect(res.statusCode).to.equal(500);
-            done();
+            return request.post(`${url}/2`)
+              .send({message: "hello"})
+              .set("x-csrf-token", "invalid")
+              .end((err, res) => {
+                expect(res.statusCode).to.equal(500);
+                done();
+              });
           });
       });
   });
