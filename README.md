@@ -4,13 +4,32 @@ Express middleware / Hapi plugin that allows you to authenticate HTTP requests u
 
 This is built on top of [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken).
 
-## Why do we need this
+## Why do we need this module
 
-If your application has a completely stateless server side, without session or storage, there's no way to prevent CSRF using traditional methods.
+CSRF protection is an important security feature we need.
 
-With this module, we encode the user's IP address into a JWT, return it to the client. And to validate, we decode the JWT and verify the IP address.
+Due to the fact that walmart.com webapps don't have a backend session storage, doing CSRF token validation is tricky.
 
-This way there's no session needed at all.
+We need stateless CSRF validation.
+
+## How do we validate CSRF
+
+***Double JWT CSRF tokens***
+
+We rely on the fact that cross site requests can't set headers.
+
+Server side generates two JWT CSRF tokens with the same payload but different types (below), one for header, one for cookie.
+
+```js
+headerPayload = { type: "header", UUID: "12345" };
+cookiePayload = { type: "cookie", UUID: "12345" };
+```
+
+When client makes a request, it has to send the JWT token in headers.
+
+On server side, we should receive both tokens. After decoding and validating them, we make sure payload from both matches.
+
+Disadvantage: relies on client making all request through AJAX.
 
 ## Install
 
@@ -83,4 +102,3 @@ server.register({register: csrfPlugin, options}, (err) => {
   }
 });
 ```
-
