@@ -18,7 +18,7 @@ We need stateless CSRF validation.
 
 We rely on the fact that cross site requests can't set headers.
 
-Server side generates two JWT CSRF tokens with the same payload but different types (below), one for header, one for cookie.
+Server side generates two JWT CSRF tokens with the same payload but different types (see below), one for header, one for cookie.
 
 ```js
 headerPayload = { type: "header", UUID: "12345" };
