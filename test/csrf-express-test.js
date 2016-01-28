@@ -69,17 +69,17 @@ describe("test csrf-jwt express middleware", () => {
         expect(err).to.not.exist;
         expect(res.statusCode).to.equal(200);
         expect(res.body.message).to.equal("hi");
-        expect(res.headers["x-csrf-token"]).to.exist;
-        expect(res.headers["set-cookie"][0]).to.contain("jwt=");
+        expect(res.headers["x-csrf-jwt"]).to.exist;
+        expect(res.headers["set-cookie"][0]).to.contain("x-csrf-jwt=");
 
         return request.post(`${url}/2`)
           .send({message: "hello"})
-          .set("x-csrf-token", res.headers["x-csrf-token"])
+          .set("x-csrf-jwt", res.headers["x-csrf-jwt"])
           .set("Cookie", res.headers["set-cookie"][0])
           .end((err, res) => {
             expect(res.statusCode).to.equal(200);
-            expect(res.headers["x-csrf-token"]).to.exist;
-            expect(res.headers["set-cookie"][0]).to.contain("jwt=");
+            expect(res.headers["x-csrf-jwt"]).to.exist;
+            expect(res.headers["set-cookie"][0]).to.contain("x-csrf-jwt=");
             expect(res.text).to.equal("valid");
             done();
           });
@@ -101,13 +101,13 @@ describe("test csrf-jwt express middleware", () => {
         const token = jwt.sign({uuid: "1"}, secret, {});
         return request.post(`${url}/2`)
           .send({message: "hello"})
-          .set("x-csrf-token", token)
-          .set("Cookie", `jwt=${token}`)
+          .set("x-csrf-jwt", token)
+          .set("Cookie", `x-csrf-jwt=${token}`)
           .end((err, res) => {
             expect(res.statusCode).to.equal(500);
             return request.post(`${url}/2`)
               .send({message: "hello"})
-              .set("x-csrf-token", "invalid")
+              .set("x-csrf-jwt", "invalid")
               .end((err, res) => {
                 expect(res.statusCode).to.equal(500);
                 done();

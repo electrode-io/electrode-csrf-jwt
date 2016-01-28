@@ -75,17 +75,17 @@ describe("test csrf-jwt hapi plugin", () => {
         const token = res.request.jwt;
         expect(res.statusCode).to.equal(200);
         expect(res.payload).to.contain("hi");
-        expect(res.headers["x-csrf-token"]).to.equal(token);
+        expect(res.headers["x-csrf-jwt"]).to.equal(token);
         expect(res.headers["set-cookie"][0]).to.contain("jwt=");
         return server.inject({
           method: "post",
           url: "/2",
           payload: {message: "hello"},
-          headers: {"x-csrf-token": token, Cookie: res.headers["set-cookie"][0]}
+          headers: {"x-csrf-jwt": token, Cookie: res.headers["set-cookie"][0]}
         }).then((res) => {
           expect(res.statusCode).to.equal(200);
-          expect(res.headers["x-csrf-token"]).to.exist;
-          expect(res.headers["set-cookie"][0]).to.contain("jwt=");
+          expect(res.headers["x-csrf-jwt"]).to.exist;
+          expect(res.headers["set-cookie"][0]).to.contain("x-csrf-jwt=");
           expect(res.result).to.equal("valid");
           done();
         });
@@ -112,7 +112,7 @@ describe("test csrf-jwt hapi plugin", () => {
           method: "post",
           url: "/2",
           payload: {message: "hello"},
-          headers: {"x-csrf-token": token, Cookie: `jwt=${token}`}
+          headers: {"x-csrf-jwt": token, Cookie: `x-csrf-jwt=${token}`}
         }).then((res) => {
           expect(res.statusCode).to.equal(500);
           done();
