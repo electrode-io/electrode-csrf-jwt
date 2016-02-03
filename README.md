@@ -87,7 +87,7 @@ app.use(csrfMiddleware(options));
 #### Example
 
 ```js
-const csrfPlugin = require("@walmart/csrf-jwt").hapiPlugin;
+const csrfPlugin = require("@walmart/csrf-jwt").register;
 const Hapi = require("hapi");
 
 const server = new Hapi.Server();
