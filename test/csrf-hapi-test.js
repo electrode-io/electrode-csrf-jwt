@@ -63,6 +63,14 @@ describe("test csrf-jwt hapi plugin", () => {
               expect(request.payload.message).to.equal("hello");
               return reply("valid");
             }
+          },
+          {
+            method: "get",
+            path: "/js/bundle",
+            handler: (request, reply) => {
+              expect(request.app.jwt).to.not.exist;
+              return reply("");
+            }
           }
         ]);
       });
@@ -89,6 +97,19 @@ describe("test csrf-jwt hapi plugin", () => {
           expect(res.result).to.equal("valid");
           done();
         });
+      })
+      .catch((err) => {
+        expect(err).to.not.exist;
+        done();
+      });
+  });
+
+  it("should not create token for /js/ route", (done) => {
+    return server.inject({method: "get", url: "/js/bundle"})
+      .then((res) => {
+        expect(res.headers["x-csrf-jwt"]).to.not.exist;
+        expect(res.request.app.jwt).to.not.exist;
+        done();
       })
       .catch((err) => {
         expect(err).to.not.exist;
