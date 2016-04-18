@@ -114,7 +114,7 @@ describe("test csrf-jwt hapi plugin", () => {
       });
   });
 
-  it("should return 500 for missing jwt", () => {
+  it("should return 400 for missing jwt", () => {
     server.inject({method: "post", url: "/2", payload: {message: "hello"}})
       .then((err) => {
         expect(err.statusCode).to.equal(400);
@@ -122,7 +122,7 @@ describe("test csrf-jwt hapi plugin", () => {
       });
   });
 
-  it("should return 500 for invalid jwt", () => {
+  it("should return 400 for invalid jwt", () => {
     return server.inject({method: "get", url: "/1"})
       .then((res) => {
         const token = res.request.app.jwt;
