@@ -11,13 +11,12 @@ let server;
 const secret = "test";
 
 describe("test register", () => {
-  it("should fail with bad options", (done) => {
+  it("should fail with bad options", () => {
     server = new Hapi.Server();
     server.connection();
 
     server.register({register: csrfPlugin}, (err) => {
       expect(err.message).to.equal("MISSING_SECRET");
-      done();
     });
   });
 });
@@ -77,7 +76,7 @@ describe("test csrf-jwt hapi plugin", () => {
     });
   });
 
-  it("should return success", (done) => {
+  it("should return success", () => {
     return server.inject({method: "get", url: "/1"})
       .then((res) => {
         const token = res.request.app.jwt;
@@ -95,37 +94,35 @@ describe("test csrf-jwt hapi plugin", () => {
           expect(res.headers["x-csrf-jwt"]).to.exist;
           expect(res.headers["set-cookie"][0]).to.contain("x-csrf-jwt=");
           expect(res.result).to.equal("valid");
-          done();
+          
         });
       })
       .catch((err) => {
         expect(err).to.not.exist;
-        done();
       });
   });
 
-  it("should not create token for /js/ route", (done) => {
+  it("should not create token for /js/ route", () => {
     return server.inject({method: "get", url: "/js/bundle"})
       .then((res) => {
         expect(res.headers["x-csrf-jwt"]).to.not.exist;
         expect(res.request.app.jwt).to.not.exist;
-        done();
+        
       })
       .catch((err) => {
         expect(err).to.not.exist;
-        done();
       });
   });
 
-  it("should return 500 for missing jwt", (done) => {
+  it("should return 500 for missing jwt", () => {
     server.inject({method: "post", url: "/2", payload: {message: "hello"}})
       .then((err) => {
-        expect(err.statusCode).to.equal(500);
-        done();
+        expect(err.statusCode).to.equal(400);
+        expect(res.result.message).to.equal("INVALID_JWT");
       });
   });
 
-  it("should return 500 for invalid jwt", (done) => {
+  it("should return 500 for invalid jwt", () => {
     return server.inject({method: "get", url: "/1"})
       .then((res) => {
         const token = res.request.app.jwt;
@@ -135,13 +132,12 @@ describe("test csrf-jwt hapi plugin", () => {
           payload: {message: "hello"},
           headers: {"x-csrf-jwt": token, Cookie: `x-csrf-jwt=${token}`}
         }).then((res) => {
-          expect(res.statusCode).to.equal(500);
-          done();
+          expect(res.statusCode).to.equal(400);
+          expect(res.result.message).to.equal("INVALID_JWT");
         });
       })
       .catch((err) => {
         expect(err).to.not.exist;
-        done();
       });
   });
 });
