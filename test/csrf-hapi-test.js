@@ -69,13 +69,6 @@ describe("test csrf-jwt hapi plugin", () => {
             handler: (request, reply) => {
               expect(request.app.jwt).to.not.exist;
               return reply("");
-            }
-          },
-          {
-            method: "post",
-            path: "/skip",
-            handler: (request, reply) => {
-              return reply("valid");
             },
             config: {
               plugins: {
@@ -116,7 +109,7 @@ describe("test csrf-jwt hapi plugin", () => {
       });
   });
 
-  it("should not create token for /js/ route", () => {
+  it("should skip csrf for /js/ route", () => {
     return server.inject({method: "get", url: "/js/bundle"})
       .then((res) => {
         expect(res.headers["x-csrf-jwt"]).to.not.exist;
@@ -151,39 +144,6 @@ describe("test csrf-jwt hapi plugin", () => {
         });
       })
       .catch((err) => {
-        expect(err).to.not.exist;
-      });
-  });
-
-  it("should skip csrf check", () => {
-    return server.inject({method: "get", url: "/1"})
-      .then((res) => {
-        const token = res.request.app.jwt;
-        expect(res.statusCode).to.equal(200);
-        expect(res.payload).to.contain("hi");
-        expect(res.headers["x-csrf-jwt"]).to.equal(token);
-        expect(res.headers["set-cookie"][0]).to.contain("jwt=");
-        return server.inject({
-          method: "post",
-          url: "/skip",
-          payload: {message: "hello"}
-        }).then((res) => {
-          expect(res.statusCode).to.equal(200);
-          expect(res.result).to.equal("valid");
-        }).then(() => {
-          return server.inject({
-            method: "post",
-            url: "/2",
-            payload: {message: "hello"},
-            headers: {"x-csrf-jwt": token, Cookie: res.headers["set-cookie"][0]}
-          }).then((res) => {
-            expect(res.statusCode).to.equal(200);
-            expect(res.headers["x-csrf-jwt"]).to.exist;
-            expect(res.headers["set-cookie"][0]).to.contain("x-csrf-jwt=");
-            expect(res.result).to.equal("valid");
-          });
-        });
-      }).catch((err) => {
         expect(err).to.not.exist;
       });
   });
