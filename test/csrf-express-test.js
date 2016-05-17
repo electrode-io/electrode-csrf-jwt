@@ -34,10 +34,6 @@ describe.skip("test csrf-jwt express middleware", () => {
     app.use(bodyParser.json());
     app.use(cookieParser());
 
-    app.engine(".html", exphbs({extname: ".html"}));
-    app.set("view engine", "html");
-    app.set("views", __dirname + "/templates");
-
     const options = {
       secret,
       expiresIn: "2d",

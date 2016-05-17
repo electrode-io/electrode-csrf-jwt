@@ -38,21 +38,13 @@ describe("test csrf-jwt hapi plugin", () => {
       server.register(require("vision"), (err) => {
         expect(err).to.not.exist;
 
-        server.views({
-          engines: {
-            html: require("handlebars")
-          },
-          relativeTo: __dirname,
-          path: "templates"
-        });
-
         server.route([
           {
             method: "get",
             path: "/1",
             handler: (request, reply) => {
               expect(request.app.jwt).to.exist;
-              return reply.view("index", {message: "hi", jwt: request.app.jwt});
+              return reply({message: "hi", jwt: request.app.jwt});
             }
           },
           {
