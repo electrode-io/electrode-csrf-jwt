@@ -22,7 +22,7 @@
     "csrf"
   ],
   "author": "Caoyang Shi <cshi@walmartlabs.com>",
-  "license": "private",
+  "license": "UNLICENSED",
   "engines": {
     "node": ">= 4.2.2"
   },
@@ -40,7 +40,7 @@
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "hapi": "^12",
-    "superagent": "^1.6.1",
+    "superagent": "^1.8.3",
     "vision": "^4.0.1"
   }
 }
