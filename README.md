@@ -1,4 +1,4 @@
-# csrf-jwt
+# electrode-csrf-jwt
 
 Express middleware / Hapi plugin that allows you to authenticate HTTP requests using JWT in your Express or Hapi applications.
 
