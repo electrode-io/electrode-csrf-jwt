@@ -8,7 +8,6 @@ const jwt = require("jsonwebtoken");
 
 const chai = require("chai");
 const expect = chai.expect;
-const request = require("superagent");
 const fetch = require("isomorphic-fetch");
 
 const secret = "test";
