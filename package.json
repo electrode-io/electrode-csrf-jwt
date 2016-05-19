@@ -1,5 +1,5 @@
 {
-  "name": "@walmart/csrf-jwt",
+  "name": "@walmart/electrode-csrf-jwt",
   "version": "3.0.0",
   "description": "",
   "main": "lib/index.js",
