@@ -64,7 +64,7 @@ describe("test csrf-jwt hapi plugin", () => {
             },
             config: {
               plugins: {
-                "csrf-jwt": {
+                "electrode-csrf-jwt": {
                   enabled: false
                 }
               }
