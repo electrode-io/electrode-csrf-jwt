@@ -22,7 +22,7 @@
     "csrf"
   ],
   "author": "Caoyang Shi <cshi@walmartlabs.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "engines": {
     "node": ">= 4.2.2"
   },
