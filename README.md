@@ -34,7 +34,7 @@ Disadvantage: relies on client making all request through AJAX.
 ## Install
 
 ```bash
-$ npm install @walmart/electrode-csrf-jwt
+$ npm install electrode-csrf-jwt
 ```
 
 ## Usage
@@ -65,7 +65,7 @@ Others are optional, same usage as [jsonwebtoken](https://github.com/auth0/node-
 #### Example
 
 ```js
-const csrfMiddleware = require("@walmart/electrode-csrf-jwt").expressMiddleware;
+const csrfMiddleware = require("electrode-csrf-jwt").expressMiddleware;
 const express = require("express");
 
 const app = express();
@@ -87,7 +87,7 @@ app.use(csrfMiddleware(options));
 #### Example
 
 ```js
-const csrfPlugin = require("@walmart/electrode-csrf-jwt").register;
+const csrfPlugin = require("electrode-csrf-jwt").register;
 const Hapi = require("hapi");
 
 const server = new Hapi.Server();

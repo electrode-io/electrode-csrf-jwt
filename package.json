@@ -1,5 +1,5 @@
 {
-  "name": "@walmart/electrode-csrf-jwt",
+  "name": "electrode-csrf-jwt",
   "version": "3.0.1",
   "description": "",
   "main": "lib/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gecgithub01.walmart.com/electrode/electrode-csrf-jwt.git"
+    "url": "https://github.com/electrode-io/electrode-csrf-jwt.git"
   },
   "keywords": [
     "hapi",
@@ -33,12 +33,12 @@
     "uuid": "^2.0.1"
   },
   "devDependencies": {
-    "@walmart/electrode-archetype-hapi-plugin-dev": "^2.0.3",
+    "electrode-archetype-njs-module-dev": "^1.0.0",
     "body-parser": "^1.14.2",
     "builder": "^2.10.1",
     "cookie-parser": "^1.4.1",
     "express": "^4.13.3",
-    "hapi": "^11.1.4",
+    "hapi": "^14.2.0",
     "isomorphic-fetch": "^2.2.1",
     "vision": "^4.0.1"
   }

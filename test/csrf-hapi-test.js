@@ -64,7 +64,7 @@ describe("test csrf-jwt hapi plugin", () => {
             },
             config: {
               plugins: {
-                "@walmart/csrf-jwt": {
+                "csrf-jwt": {
                   enabled: false
                 }
               }
