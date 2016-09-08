@@ -53,7 +53,7 @@ Others are optional and follow the [same usage as jsonwebtoken](https://github.c
 * `noTimestamp`
 * `headers`
 
-This module can be used with either Electrode, Express, or Hapi.
+This module can be used with either [Electrode](#electrode), [Express](#express), or [Hapi](#hapi).
 
 ### Electrode
 
