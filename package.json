@@ -35,7 +35,6 @@
   "devDependencies": {
     "electrode-archetype-njs-module-dev": "^1.0.0",
     "body-parser": "^1.14.2",
-    "builder": "^2.10.1",
     "cookie-parser": "^1.4.1",
     "express": "^4.13.3",
     "hapi": "^14.2.0",
