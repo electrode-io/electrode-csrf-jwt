@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - '4.2.6'
+
+brances:
+  only:
+    - master
+
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'electrode-csrf-jwt' ]; then cd .. && eval "mv $currentfolder electrode-csrf-jwt" && cd electrode-csrf-jwt; fi
+
+script:
+  - npm run test
