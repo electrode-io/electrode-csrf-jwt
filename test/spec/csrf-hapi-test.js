@@ -1,7 +1,7 @@
 "use strict";
 
 const Hapi = require("hapi");
-const csrfPlugin = require("../").register;
+const csrfPlugin = require("../../lib/index").register;
 
 const chai = require("chai");
 const expect = chai.expect;
