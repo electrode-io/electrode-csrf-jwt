@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "gulp lint",
     "test": "npm run lint && mocha",
     "coverage": "istanbul cover -x lib/csrf-express.js node_modules/.bin/_mocha",
     "prepublish": "npm test"
