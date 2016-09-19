@@ -40,6 +40,8 @@
     "gulp": "^3.9.1",
     "hapi": "^14.2.0",
     "isomorphic-fetch": "^2.2.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2",
     "vision": "^4.0.1"
   }
 }
