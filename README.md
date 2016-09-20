@@ -1,33 +1,27 @@
 # electrode-csrf-jwt
 
-Express middleware / Hapi plugin that allows you to authenticate HTTP requests using JWT in your Express or Hapi applications.
+An electrode plugin that enables stateless CSRF protection using [JWT](https://github.com/auth0/node-jsonwebtoken) in Electrode, Express, or Hapi applications.
 
-This is built on top of [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken).
+## Why do we need this module?
 
-## Why do we need this module
+CSRF protection is an important security feature, but in systems which don't have backend session persistence, doing CSRF token validation is tricky. Stateless CSRF support addresses this need.
 
-CSRF protection is an important security feature we need.
-
-Due to the fact that walmart.com webapps don't have a backend session storage, doing CSRF token validation is tricky.
-
-We need stateless CSRF validation.
-
-## How do we validate CSRF
+## How do we validate requests?
 
 ***Double JWT CSRF tokens***
 
 We rely on the fact that cross site requests can't set headers.
 
-Server side generates two JWT CSRF tokens with the same payload but different types (see below), one for header, one for cookie.
+Two JWT CSRF tokens are generated on the server side with the same payload but different types (see below), one for the HTTP header, one for the cookie.
 
 ```js
 headerPayload = { type: "header", UUID: "12345" };
 cookiePayload = { type: "cookie", UUID: "12345" };
 ```
 
-When client makes a request, it has to send the JWT token in headers.
+When a client makes a request, the JWT token must be sent in the headers.
 
-On server side, we should receive both tokens. After decoding and validating them, we make sure payload from both matches.
+On server side, both tokens are received, decoded, and validated to make sure the payloads match.
 
 Disadvantage: relies on client making all request through AJAX.
 
@@ -36,20 +30,17 @@ Disadvantage: relies on client making all request through AJAX.
 ```bash
 $ npm install electrode-csrf-jwt
 ```
+> You can use the `--save` option to update `package.json`
 
 ## Usage
 
-This module can be used with either Express or Hapi.
-
-### Express Middleware
-
-#### app.use(csrfMiddleware(options));
+### Options
 
 `options`:
 
 * `secret`: **Required**. A string or buffer containing either the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
 
-Others are optional, same usage as [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/blob/master/README.md#usage)
+Others are optional and follow the [same usage as jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/blob/master/README.md#usage)
 
 * `algorithm`
 * `expiresIn`
@@ -62,7 +53,40 @@ Others are optional, same usage as [jsonwebtoken](https://github.com/auth0/node-
 * `noTimestamp`
 * `headers`
 
-#### Example
+This module can be used with either [Electrode](#electrode), [Express](#express), or [Hapi](#hapi).
+
+### Electrode
+
+#### Example `config/default.json` configuration
+
+```json
+{
+  "plugins": {
+    "electrode-csrf-jwt": {
+      "options": {
+        "secret": "shhhhh",
+        "expiresIn": 60
+      }
+    },
+    "webapp": {
+      "module": "./server/plugins/webapp",
+      "options": {
+        "paths": {
+          "/{args*}": {
+            "content": {
+              "module": "./server/views/index-view"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### Express
+
+#### Example `app.js` configuration
 
 ```js
 const csrfMiddleware = require("electrode-csrf-jwt").expressMiddleware;
@@ -78,13 +102,9 @@ const options = {
 app.use(csrfMiddleware(options));
 ```
 
-### Hapi plugin
+### Hapi
 
-#### server.register({register: csrfPlugin, options}, [callback])
-
-`options`: same as above.
-
-#### Example
+#### Example `server/index.js` configuration
 
 ```js
 const csrfPlugin = require("electrode-csrf-jwt").register;
