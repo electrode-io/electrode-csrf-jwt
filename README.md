@@ -67,18 +67,6 @@ This module can be used with either [Electrode](#electrode), [Express](#express)
         "secret": "shhhhh",
         "expiresIn": 60
       }
-    },
-    "webapp": {
-      "module": "./server/plugins/webapp",
-      "options": {
-        "paths": {
-          "/{args*}": {
-            "content": {
-              "module": "./server/views/index-view"
-            }
-          }
-        }
-      }
     }
   }
 }
