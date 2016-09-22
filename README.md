@@ -1,4 +1,6 @@
-# electrode-csrf-jwt
+# Electrode CSRF JWT
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 An electrode plugin that enables stateless CSRF protection using [JWT](https://github.com/auth0/node-jsonwebtoken) in Electrode, Express, or Hapi applications.
 
@@ -110,3 +112,10 @@ server.register({register: csrfPlugin, options}, (err) => {
   }
 });
 ```
+
+[npm-image]: https://badge.fury.io/js/electrode-csrf-jwt.svg
+[npm-url]: https://npmjs.org/package/electrode-csrf-jwt
+[travis-image]: https://travis-ci.org/electrode-io/electrode-csrf-jwt.svg?branch=master
+[travis-url]: https://travis-ci.org/electrode-io/electrode-csrf-jwt
+[daviddm-image]: https://david-dm.org/electrode-io/electrode-csrf-jwt.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/electrode-io/electrode-csrf-jwt
