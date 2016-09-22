@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "gulp lint",
-    "test": "npm run lint && mocha",
+    "test": "npm run lint && gulp test",
     "coverage": "istanbul cover -x lib/csrf-express.js node_modules/.bin/_mocha",
     "prepublish": "npm test"
   },
@@ -28,8 +28,8 @@
   },
   "dependencies": {
     "bluebird": "^3.4.6",
-    "boom": "^3.1.2",
-    "jsonwebtoken": "^6.2.0",
+    "boom": "^4.0.0",
+    "jsonwebtoken": "^7.1.9",
     "uuid": "^2.0.1"
   },
   "devDependencies": {
