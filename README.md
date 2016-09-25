@@ -113,6 +113,8 @@ server.register({register: csrfPlugin, options}, (err) => {
 });
 ```
 
+Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/people) @WalmartLabs.
+
 [npm-image]: https://badge.fury.io/js/electrode-csrf-jwt.svg
 [npm-url]: https://npmjs.org/package/electrode-csrf-jwt
 [travis-image]: https://travis-ci.org/electrode-io/electrode-csrf-jwt.svg?branch=master
