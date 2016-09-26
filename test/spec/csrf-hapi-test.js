@@ -3,8 +3,6 @@
 const Hapi = require("hapi");
 const csrfPlugin = require("../../lib/index").register;
 
-const chai = require("chai");
-const expect = chai.expect;
 const jwt = require("jsonwebtoken");
 
 let server;

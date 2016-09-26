@@ -6,8 +6,6 @@ const express = require("express");
 const csrfMiddleware = require("../../lib/index").expressMiddleware;
 const jwt = require("jsonwebtoken");
 
-const chai = require("chai");
-const expect = chai.expect;
 const fetch = require("isomorphic-fetch");
 
 const secret = "test";
