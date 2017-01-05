@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
-An electrode plugin that enables stateless CSRF protection using [JWT](https://github.com/auth0/node-jsonwebtoken) in Electrode, Express, or Hapi applications.
+An electrode plugin that enables stateless CSRF protection using [JWT](https://github.com/auth0/node-jsonwebtoken) in Electrode, Express, Hapi, or Koa 2 applications.
 
 ## Why do we need this module?
 
@@ -55,7 +55,7 @@ Others are optional and follow the [same usage as jsonwebtoken](https://github.c
 * `noTimestamp`
 * `headers`
 
-This module can be used with either [Electrode](#electrode), [Express](#express), or [Hapi](#hapi).
+This module can be used with either [Electrode](#electrode), [Express](#express), [Hapi](#hapi), or [Koa 2](#koa-2).
 
 ### Electrode
 
@@ -111,6 +111,24 @@ server.register({register: csrfPlugin, options}, (err) => {
     throw err;
   }
 });
+```
+
+### Koa 2
+
+#### Example `app.js` configuration
+
+```js
+const csrfMiddleware = require("electrode-csrf-jwt").koaMiddleware;
+const Koa = require("koa");
+
+const app = new Koa();
+
+const options = {
+  secret: "shhhhh",
+  expiresIn: 60
+};
+
+app.use(csrfMiddleware(options));
 ```
 
 Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/people) @WalmartLabs.

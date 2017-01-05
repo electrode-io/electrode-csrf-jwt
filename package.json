@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "gulp lint",
     "test": "npm run lint && gulp test",
-    "coverage": "istanbul cover -x lib/csrf-express.js node_modules/.bin/_mocha",
+    "coverage": "istanbul cover -x lib/csrf-express.js lib/csrf-koa.js node_modules/.bin/_mocha",
     "prepublish": "npm test"
   },
   "repository": {
@@ -41,6 +41,9 @@
     "hapi": "^14.2.0",
     "isomorphic-fetch": "^2.2.1",
     "istanbul": "^0.4.5",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.0.1",
     "mocha": "^3.0.2",
     "vision": "^4.0.1"
   }
