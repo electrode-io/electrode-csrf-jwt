@@ -64,6 +64,7 @@ describe("test csrf-jwt koa middleware", () => {
         const csrfCookie = res.headers.get("set-cookie");
         expect(csrfHeader).to.exist;
         expect(csrfCookie).to.contain("x-csrf-jwt=");
+        expect(csrfCookie).to.contain("httponly");
 
         return fetch(`${url}/2`, {
           method: "POST",
