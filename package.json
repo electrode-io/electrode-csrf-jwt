@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "gulp lint",
     "test": "npm run lint && gulp test",
-    "coverage": "istanbul cover -x lib/csrf-express.js lib/csrf-koa.js node_modules/.bin/_mocha",
+    "coverage": "gulp check",
     "prepublish": "npm test"
   },
   "repository": {
