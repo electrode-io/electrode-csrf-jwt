@@ -63,6 +63,7 @@ describe("test csrf-jwt express middleware", () => {
         const csrfCookie = res.headers.get("set-cookie");
         expect(csrfHeader).to.exist;
         expect(csrfCookie).to.contain("x-csrf-jwt=");
+        expect(csrfCookie).to.contain("HttpOnly");
 
         return fetch(`${url}/2`, {
           method: "POST",
