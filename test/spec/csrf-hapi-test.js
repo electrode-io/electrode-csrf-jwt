@@ -41,8 +41,8 @@ describe("test csrf-jwt hapi plugin", () => {
             method: "get",
             path: "/1",
             handler: (request, reply) => {
-              expect(request.app.jwt).to.exist;
-              return reply({message: "hi", jwt: request.app.jwt});
+              expect(request.plugins["csrf-jwt"]).to.exist;
+              return reply({message: "hi", jwt: request.plugins["csrf-jwt"].headerToken});
             }
           },
           {
@@ -55,9 +55,17 @@ describe("test csrf-jwt hapi plugin", () => {
           },
           {
             method: "get",
+            path: "/error",
+            handler: (request, reply) => {
+              expect(request.plugins["csrf-jwt"]).to.exist;
+              return reply(new Error("fail"));
+            }
+          },
+          {
+            method: "get",
             path: "/js/bundle",
             handler: (request, reply) => {
-              expect(request.app.jwt).to.not.exist;
+              expect(request.plugins["csrf-jwt"]).to.not.exist;
               return reply("");
             },
             config: {
@@ -75,7 +83,7 @@ describe("test csrf-jwt hapi plugin", () => {
 
   it("should return success", () => {
     return server.inject({method: "get", url: "/1"}, (res) => {
-      const token = res.request.app.jwt;
+      const token = res.request.plugins["csrf-jwt"].headerToken;
       expect(res.statusCode).to.equal(200);
       expect(res.payload).to.contain("hi");
       expect(res.headers["x-csrf-jwt"]).to.equal(token);
@@ -110,7 +118,7 @@ describe("test csrf-jwt hapi plugin", () => {
 
   it("should return 400 for invalid jwt", () => {
     return server.inject({method: "get", url: "/1"}, (res) => {
-      const token = res.request.app.jwt;
+      const token = res.request.plugins["csrf-jwt"].headerToken;
       return server.inject({
         method: "post",
         url: "/2",
@@ -120,6 +128,13 @@ describe("test csrf-jwt hapi plugin", () => {
         expect(res.statusCode).to.equal(400);
         expect(res.result.message).to.equal("INVALID_JWT");
       });
+    });
+  });
+
+  it("should not set cookie or header for error response", () => {
+    return server.inject({method: "get", url: "/error"}, (res) => {
+      expect(res.headers).to.not.have.property("set-cookie");
+      expect(res.headers).to.not.have.property("x-csrf-jwt");
     });
   });
 });
