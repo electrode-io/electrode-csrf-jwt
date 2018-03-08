@@ -37,11 +37,11 @@ describe("test csrf-jwt koa middleware", () => {
     };
     app.use(csrfMiddleware(options));
 
-    router.get("/1", (ctx) => {
+    router.get("/1", ctx => {
       ctx.body = "valid";
     });
 
-    router.post("/2", (ctx) => {
+    router.post("/2", ctx => {
       expect(ctx.request.body.message).to.equal("hello");
       ctx.body = "valid";
     });
@@ -57,41 +57,40 @@ describe("test csrf-jwt koa middleware", () => {
   });
 
   it("should return success", () => {
-    return fetch(`${url}/1`)
-      .then((res) => {
-        expect(res.status).to.equal(200);
-        const csrfHeader = res.headers.get("x-csrf-jwt");
-        const csrfCookie = res.headers.get("set-cookie");
-        expect(csrfHeader).to.exist;
-        expect(csrfCookie).to.contain("x-csrf-jwt=");
-        expect(csrfCookie).to.contain("httponly");
+    return fetch(`${url}/1`).then(res => {
+      expect(res.status).to.equal(200);
+      const csrfHeader = res.headers.get("x-csrf-jwt");
+      const csrfCookie = res.headers.get("set-cookie");
+      expect(csrfHeader).to.exist;
+      expect(csrfCookie).to.contain("x-csrf-jwt=");
+      expect(csrfCookie).to.contain("httponly");
 
-        return fetch(`${url}/2`, {
-          method: "POST",
-          headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json",
-            "x-csrf-jwt": csrfHeader,
-            "Cookie": csrfCookie
-          },
-          body: JSON.stringify({message: "hello"})
-        }).then((res) => {
-          expect(res.status).to.equal(200);
-          expect(res.headers.get("x-csrf-jwt")).to.exist;
-          expect(res.headers.get("set-cookie")).to.contain("x-csrf-jwt=");
-        });
+      return fetch(`${url}/2`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "x-csrf-jwt": csrfHeader,
+          Cookie: csrfCookie
+        },
+        body: JSON.stringify({ message: "hello" })
+      }).then(res => {
+        expect(res.status).to.equal(200);
+        expect(res.headers.get("x-csrf-jwt")).to.exist;
+        expect(res.headers.get("set-cookie")).to.contain("x-csrf-jwt=");
       });
+    });
   });
 
   it("should return 500 for missing jwt", () => {
     return fetch(`${url}/2`, {
       method: "POST",
       headers: {
-        "Accept": "application/json",
+        Accept: "application/json",
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({message: "hello"})
-    }).then((res) => {
+      body: JSON.stringify({ message: "hello" })
+    }).then(res => {
       expect(res.status).to.equal(500);
       expect(res.headers.get("x-csrf-jwt")).to.not.exist;
       expect(res.headers.get("set-cookie")).to.not.exist;
@@ -99,33 +98,32 @@ describe("test csrf-jwt koa middleware", () => {
   });
 
   it("should return 500 for invalid jwt", () => {
-    return fetch(`${url}/1`)
-      .then(() => {
-        const token = jwt.sign({uuid: "1"}, secret, {});
+    return fetch(`${url}/1`).then(() => {
+      const token = jwt.sign({ uuid: "1" }, secret, {});
+      return fetch(`${url}/2`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "x-csrf-jwt": token,
+          Cookie: `x-csrf-jwt=${token}`
+        },
+        body: JSON.stringify({ message: "hello" })
+      }).then(res => {
+        expect(res.status).to.equal(500);
         return fetch(`${url}/2`, {
           method: "POST",
           headers: {
-            "Accept": "application/json",
+            Accept: "application/json",
             "Content-Type": "application/json",
-            "x-csrf-jwt": token,
-            "Cookie": `x-csrf-jwt=${token}`
+            "x-csrf-jwt": "invalid",
+            Cookie: `x-csrf-jwt=${token}`
           },
-          body: JSON.stringify({message: "hello"})
-        }).then((res) => {
+          body: JSON.stringify({ message: "hello" })
+        }).then(res => {
           expect(res.status).to.equal(500);
-          return fetch(`${url}/2`, {
-            method: "POST",
-            headers: {
-              "Accept": "application/json",
-              "Content-Type": "application/json",
-              "x-csrf-jwt": "invalid",
-              "Cookie": `x-csrf-jwt=${token}`
-            },
-            body: JSON.stringify({message: "hello"})
-          }).then((res) => {
-            expect(res.status).to.equal(500);
-          });
         });
       });
+    });
   });
 });
