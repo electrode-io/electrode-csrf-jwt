@@ -1,3 +1,11 @@
 example
 .idea
 coverage
+fyn-lock.yaml
+.eslintignore
+.eslintrc
+.travis.yml
+xclap.js
+.nyc_output
+test
+
