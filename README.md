@@ -10,7 +10,7 @@ CSRF protection is an important security feature, but in systems which don't hav
 
 ## How do we validate requests?
 
-***Double JWT CSRF tokens***
+**_Double JWT CSRF tokens_**
 
 We rely on the fact that cross site requests can't set headers.
 
@@ -32,6 +32,7 @@ Disadvantage: relies on client making all request through AJAX.
 ```bash
 $ npm install electrode-csrf-jwt
 ```
+
 > You can use the `--save` option to update `package.json`
 
 ## Usage
@@ -106,7 +107,7 @@ const options = {
   expiresIn: 60
 };
 
-server.register({register: csrfPlugin, options}, (err) => {
+server.register({ register: csrfPlugin, options }, err => {
   if (err) {
     throw err;
   }
