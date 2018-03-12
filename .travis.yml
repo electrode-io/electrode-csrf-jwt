@@ -13,4 +13,4 @@ before_install:
   - if [ "$currentfolder" != 'electrode-csrf-jwt' ]; then cd .. && eval "mv $currentfolder electrode-csrf-jwt" && cd electrode-csrf-jwt; fi
 
 script:
-  - npm run test
+  - npm run coverage
