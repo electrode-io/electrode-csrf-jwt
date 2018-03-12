@@ -42,6 +42,10 @@ $ npm install electrode-csrf-jwt
 `options`:
 
 * `secret`: **Required**. A string or buffer containing either the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
+* `shouldSkip`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip for the given `request`
+* `skipCreate`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip creating the token for the given `request`
+* `skipVerify`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip verifying for the given `request`
+* `cookieConfig`: **Optional** An object with extra configs for setting the JWT cookie token. Values set to `undefined` or `null` will delete the field from the default cookie config.
 
 Others are optional and follow the [same usage as jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/blob/master/README.md#usage)
 
@@ -62,13 +66,25 @@ This module can be used with either [Electrode](#electrode), [Express](#express)
 
 #### Example `config/default.json` configuration
 
-```json
+```js
 {
   "plugins": {
     "electrode-csrf-jwt": {
       "options": {
         "secret": "shhhhh",
-        "expiresIn": 60
+        "expiresIn": 60,
+        shouldSkip: request => {
+          // return true to skip CSRF JWT for given request
+          return false;
+        },
+        skipCreate: request => {
+          // return true to skip creating CSRF JWT Token for given request
+          return false;
+        },
+        skipVerify: request => {
+          // return true to skip verifying CSRF JWT Token for given request
+          return false;
+        }
       }
     }
   }
@@ -87,7 +103,19 @@ const app = express();
 
 const options = {
   secret: "shhhhh",
-  expiresIn: 60
+  expiresIn: 60,
+  shouldSkip: request => {
+    // return true to skip CSRF JWT for given request
+    return false;
+  },
+  skipCreate: request => {
+    // return true to skip creating CSRF JWT Token for given request
+    return false;
+  },
+  skipVerify: request => {
+    // return true to skip verifying CSRF JWT Token for given request
+    return false;
+  }
 };
 
 app.use(csrfMiddleware(options));
@@ -104,7 +132,19 @@ const Hapi = require("hapi");
 const server = new Hapi.Server();
 const options = {
   secret: "shhhhh",
-  expiresIn: 60
+  expiresIn: 60,
+  shouldSkip: request => {
+    // return true to skip CSRF JWT for given request
+    return false;
+  },
+  skipCreate: request => {
+    // return true to skip creating CSRF JWT Token for given request
+    return false;
+  },
+  skipVerify: request => {
+    // return true to skip verifying CSRF JWT Token for given request
+    return false;
+  }
 };
 
 server.register({ register: csrfPlugin, options }, err => {
@@ -126,7 +166,19 @@ const app = new Koa();
 
 const options = {
   secret: "shhhhh",
-  expiresIn: 60
+  expiresIn: 60,
+  shouldSkip: context => {
+    // return true to skip CSRF JWT for given context
+    return false;
+  },
+  skipCreate: context => {
+    // return true to skip creating CSRF JWT Token for given context
+    return false;
+  },
+  skipVerify: context => {
+    // return true to skip verifying CSRF JWT Token for given context
+    return false;
+  }
 };
 
 app.use(csrfMiddleware(options));
