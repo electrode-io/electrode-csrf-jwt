@@ -43,7 +43,9 @@ describe("jwt-token-engine", () => {
     const tokens = engine.create({});
     const verify = engine.verify(tokens.header, tokens.cookie);
     expect(verify.error, "should get error from verify").to.exist;
-    expect(verify.error.message, "error should be BAD_TOKEN from verify").to.equal("BAD_TOKEN");
+    expect(verify.error.message, "error should be INVALID_TOKEN from verify").to.equal(
+      "INVALID_TOKEN"
+    );
   });
 
   it("should fail verify for missing tokens", () => {
