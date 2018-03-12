@@ -2,13 +2,14 @@
 
 const Hapi = require("hapi");
 const csrfPlugin = require("../../lib/index").register;
+const Cookie = require("set-cookie-parser");
 
 const jwt = require("jsonwebtoken");
 
 let server;
 const secret = "test";
 
-describe("test register", () => {
+describe("hapi plugin register", () => {
   it("should fail with bad options", () => {
     server = new Hapi.Server();
     server.connection();
@@ -19,7 +20,7 @@ describe("test register", () => {
   });
 });
 
-describe("test csrf-jwt hapi plugin", () => {
+describe("hapi plugin", () => {
   before(() => {
     server = new Hapi.Server();
     server.connection();
@@ -81,64 +82,72 @@ describe("test csrf-jwt hapi plugin", () => {
     });
   });
 
-  it("should return success", () => {
-    return server.inject({ method: "get", url: "/1" }, res => {
+  it("should return success for GET and then POST", () => {
+    return server.inject({ method: "get", url: "/1" }).then(res => {
       const token = res.request.plugins["csrf-jwt"].headerToken;
-      expect(res.statusCode).to.equal(200);
+      expect(token).to.be.ok;
+      expect(res.statusCode, "GET should return 200").to.equal(200);
       expect(res.payload).to.contain("hi");
       expect(res.headers["x-csrf-jwt"]).to.equal(token);
       expect(res.headers["set-cookie"][0]).to.contain("jwt=");
-      return server.inject(
-        {
+      const pcookies = Cookie.parse(res.headers["set-cookie"][0], { decodeValues: false });
+      expect(pcookies[0].name).to.equal("x-csrf-jwt");
+      expect(pcookies[0].httpOnly).to.equal(true);
+      const cookie = `${pcookies[0].name}=${pcookies[0].value}`;
+      return server
+        .inject({
           method: "post",
           url: "/2",
           payload: { message: "hello" },
-          headers: { "x-csrf-jwt": token, Cookie: res.headers["set-cookie"][0] }
-        },
-        res => {
-          expect(res.statusCode).to.equal(200);
-          expect(res.headers["x-csrf-jwt"]).to.exist;
-          expect(res.headers["set-cookie"][0]).to.contain("x-csrf-jwt=");
-          expect(res.result).to.equal("valid");
-        }
-      );
+          headers: { "x-csrf-jwt": token, cookie }
+        })
+        .then(res2 => {
+          expect(
+            res2.statusCode,
+            `POST JWT should be valid but got ${res2.result.message}`
+          ).to.equal(200);
+
+          expect(res2.headers["x-csrf-jwt"]).to.exist;
+          expect(res2.headers["set-cookie"][0]).to.contain("x-csrf-jwt=");
+          expect(res2.result).to.equal("valid");
+        });
     });
   });
 
   it("should skip csrf for /js/ route", () => {
-    return server.inject({ method: "get", url: "/js/bundle" }, res => {
+    return server.inject({ method: "get", url: "/js/bundle" }).then(res => {
       expect(res.headers["x-csrf-jwt"]).to.not.exist;
       expect(res.request.app.jwt).to.not.exist;
     });
   });
 
   it("should return 400 for missing jwt", () => {
-    return server.inject({ method: "post", url: "/2", payload: { message: "hello" } }, err => {
+    return server.inject({ method: "post", url: "/2", payload: { message: "hello" } }).then(err => {
       expect(err.statusCode).to.equal(400);
       expect(err.result.message).to.equal("INVALID_JWT");
     });
   });
 
   it("should return 400 for invalid jwt", () => {
-    return server.inject({ method: "get", url: "/1" }, res => {
+    return server.inject({ method: "get", url: "/1" }).then(res => {
       const token = res.request.plugins["csrf-jwt"].headerToken;
-      return server.inject(
-        {
+      expect(token, "Must have JWT header token").to.exist;
+      return server
+        .inject({
           method: "post",
           url: "/2",
           payload: { message: "hello" },
           headers: { "x-csrf-jwt": token, Cookie: `x-csrf-jwt=${token}` }
-        },
-        res => {
+        })
+        .then(res => {
           expect(res.statusCode).to.equal(400);
           expect(res.result.message).to.equal("INVALID_JWT");
-        }
-      );
+        });
     });
   });
 
   it("should not set cookie or header for error response", () => {
-    return server.inject({ method: "get", url: "/error" }, res => {
+    return server.inject({ method: "get", url: "/error" }).then(res => {
       expect(res.headers).to.not.have.property("set-cookie");
       expect(res.headers).to.not.have.property("x-csrf-jwt");
     });
