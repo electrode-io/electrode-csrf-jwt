@@ -42,10 +42,11 @@ $ npm install electrode-csrf-jwt
 `options`:
 
 * `secret`: **Required**. A string or buffer containing either the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
-* `shouldSkip`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip for the given `request`
+* `shouldSkip`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants completely skip the CSRF JWT middleware/plugin for the given `request`
 * `skipCreate`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip creating the token for the given `request`
 * `skipVerify`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip verifying for the given `request`
 * `cookieConfig`: **Optional** An object with extra configs for setting the JWT cookie token. Values set to `undefined` or `null` will delete the field from the default cookie config.
+* `uuidGen`: **Optional** A string of `uuid` or `simple` to select the unique ID generator, or a callback to generate the ID. See [uuidGen Option](#uuidgen-option) for details.
 
 Others are optional and follow the [same usage as jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/blob/master/README.md#usage)
 
@@ -61,6 +62,18 @@ Others are optional and follow the [same usage as jsonwebtoken](https://github.c
 * `headers`
 
 This module can be used with either [Electrode](#electrode), [Express](#express), [Hapi](#hapi), or [Koa 2](#koa-2).
+
+#### uuidGen Option
+
+This module by default use the [uuid] module to generate the uuid used in the JWT token.
+
+However, [uuid] uses [crypto.randomBytes](https://nodejs.org/docs/latest-v8.x/api/crypto.html#crypto_crypto_randombytes_size_callback), which "uses libuv's threadpool, which can have surprising and negative performance implications for some applications".
+
+You can set `options.uuidGen` as follows to select another UUID generator:
+
+* `"simple"` - select a [simple](./lib/simple-id-generator.js) one from this module
+* `"uuid"` - the default: uses [uuid]
+* callback - your own function that returns the ID
 
 ### Electrode
 
@@ -192,3 +205,4 @@ Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/peop
 [travis-url]: https://travis-ci.org/electrode-io/electrode-csrf-jwt
 [daviddm-image]: https://david-dm.org/electrode-io/electrode-csrf-jwt.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/electrode-io/electrode-csrf-jwt
+[uuid]: https://www.npmjs.com/package/uuid

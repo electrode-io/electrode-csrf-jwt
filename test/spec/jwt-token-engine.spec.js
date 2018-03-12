@@ -50,4 +50,32 @@ describe("jwt-token-engine", () => {
     expect(verify.error, "should get error from verify").to.exist;
     expect(verify.error.message, "error should be MISSING_JWT from verify").to.equal("MISSING_JWT");
   });
+
+  it("should use custom uuid generator function", () => {
+    const id = "test_0123";
+    const engine = new JwtTokenEngine({ secret: "test 123", uuidGen: () => id });
+    const tokens = engine.create({}, {});
+    const verify = engine.verify(tokens.header, tokens.cookie);
+    expect(verify.error).to.not.exist;
+    expect(verify.header.uuid).to.equal(id);
+    expect(verify.cookie.uuid).to.equal(id);
+  });
+
+  it("should use simple id generator if selected", () => {
+    const engine = new JwtTokenEngine({ secret: "test 123", uuidGen: "simple" });
+    const tokens = engine.create({}, {});
+    const verify = engine.verify(tokens.header, tokens.cookie);
+    expect(verify.error).to.not.exist;
+    expect(verify.header.uuid).to.contain("_");
+    expect(verify.cookie.uuid).to.contain("_");
+  });
+
+  it("should use uuid id generator if selected", () => {
+    const engine = new JwtTokenEngine({ secret: "test 123", uuidGen: "uuid" });
+    const tokens = engine.create({}, {});
+    const verify = engine.verify(tokens.header, tokens.cookie);
+    expect(verify.error).to.not.exist;
+    expect(verify.header.uuid).to.contain("-");
+    expect(verify.cookie.uuid).to.contain("-");
+  });
 });
