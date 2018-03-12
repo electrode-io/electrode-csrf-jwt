@@ -2,26 +2,37 @@
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
-An electrode plugin that enables stateless CSRF protection using [JWT](https://github.com/auth0/node-jsonwebtoken) in Electrode, Express, Hapi, or Koa 2 applications.
+An electrode plugin that enables stateless [CSRF] protection using [JWT](https://github.com/auth0/node-jsonwebtoken) in Electrode, Express, Hapi, or Koa 2 applications.
 
 ## Why do we need this module?
 
-CSRF protection is an important security feature, but in systems which don't have backend session persistence, doing CSRF token validation is tricky. Stateless CSRF support addresses this need.
+[CSRF] protection is an important security feature, but in systems which don't have backend session persistence, doing CSRF token validation is tricky. Stateless CSRF support addresses this need.
 
 ## How do we validate requests?
 
-**_Double JWT CSRF tokens_**
+The technique used by this module is similar to the CSRF [double submit cookie prevention technique].
 
-We rely on the fact that cross site requests can't set headers.
+These techniques rely on these two restrictions by the browsers:
 
-Two JWT CSRF tokens are generated on the server side with the same payload but different types (see below), one for the HTTP header, one for the cookie.
+1.  cross site scripts can't read/modify cookies.
+2.  cross site scripts can't set headers.
+
+The [double submit cookie prevention technique] rely on the fact that a unique token in cookie must match a token attached in a hidden form submit field. Since XSS cannot change cookies, the check prevents CSRF attacks.
+
+> Note that the first restriction has some loopholes and thus the double submit cookie technique is not completely secured. See https://www.owasp.org/images/3/32/David_Johansson-Double_Defeat_of_Double-Submit_Cookie.pdf
+
+### Double JWT CSRF tokens
+
+For use with [XMLHttpRequest], we extend the technique by using two JWT tokens for validation. One token in the cookies and the other in the HTTP headers. Since XSS cannot set HTTP headers also, it strengthens the security further.
+
+So two JWT CSRF tokens are generated on the server side with the same payload but different types (see below), one for the HTTP header, one for the cookie.
 
 ```js
 headerPayload = { type: "header", UUID: "12345" };
 cookiePayload = { type: "cookie", UUID: "12345" };
 ```
 
-When a client makes a request, the JWT token must be sent in the headers.
+When a client makes a request, the JWT tokens must be sent in the cookie and headers.
 
 On server side, both tokens are received, decoded, and validated to make sure the payloads match.
 
@@ -77,7 +88,7 @@ You can set `options.uuidGen` as follows to select another UUID generator:
 
 ### Electrode
 
-#### Example `config/default.json` configuration
+#### Example `config/default.js` configuration
 
 ```js
 {
@@ -206,3 +217,6 @@ Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/peop
 [daviddm-image]: https://david-dm.org/electrode-io/electrode-csrf-jwt.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/electrode-io/electrode-csrf-jwt
 [uuid]: https://www.npmjs.com/package/uuid
+[double submit cookie prevention technique]: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet#Double_Submit_Cookie
+[xmlhttprequest]: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+[csrf]: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet
