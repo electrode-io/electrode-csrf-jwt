@@ -264,7 +264,7 @@ describe("hapi plugin", function() {
         .inject({ method: "post", url: "/2", payload: { message: "hello" } })
         .then(err => {
           expect(err.statusCode).to.equal(400);
-          expect(err.result.message).to.equal("MISSING_JWT");
+          expect(err.result.message).to.equal("MISSING_TOKEN");
         });
     });
 
@@ -281,7 +281,7 @@ describe("hapi plugin", function() {
           })
           .then(res2 => {
             expect(res2.statusCode).to.equal(400);
-            expect(res2.result.message).to.equal("INVALID_JWT");
+            expect(res2.result.message).to.equal("INVALID_TOKEN");
             const token = res2.request.plugins[pkg.name].header;
             expect(token).to.be.ok;
             expect(res2.headers["x-csrf-jwt"]).to.equal(token);

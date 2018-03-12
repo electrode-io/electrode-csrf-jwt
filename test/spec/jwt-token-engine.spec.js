@@ -23,7 +23,7 @@ describe("jwt-token-engine", () => {
     const engine = new JwtTokenEngine({ secret: "test 123" });
     const verify = engine.verify("foo", "bar");
     expect(verify.error, "should get error from verify").to.exist;
-    expect(verify.error.message, "error should be BAD_JWT from verify").to.equal("BAD_JWT");
+    expect(verify.error.message, "error should be BAD_TOKEN from verify").to.equal("BAD_TOKEN");
   });
 
   it("should fail verify invalid tokens", () => {
@@ -33,28 +33,32 @@ describe("jwt-token-engine", () => {
     const tokens2 = engine.create();
     const verify = engine.verify(tokens1.header, tokens2.cookie);
     expect(verify.error, "should get error from verify").to.exist;
-    expect(verify.error.message, "error should be INVALID_JWT from verify").to.equal("INVALID_JWT");
+    expect(verify.error.message, "error should be INVALID_TOKEN from verify").to.equal(
+      "INVALID_TOKEN"
+    );
   });
 
   it("should fail verify for expired tokens", () => {
-    const engine = new JwtTokenEngine({ secret: "test 123" });
-    const tokens = engine.create({}, { expiresIn: "0s" });
+    const engine = new JwtTokenEngine({ secret: "test 123", expiresIn: "0s" });
+    const tokens = engine.create({});
     const verify = engine.verify(tokens.header, tokens.cookie);
     expect(verify.error, "should get error from verify").to.exist;
-    expect(verify.error.message, "error should be BAD_JWT from verify").to.equal("BAD_JWT");
+    expect(verify.error.message, "error should be BAD_TOKEN from verify").to.equal("BAD_TOKEN");
   });
 
   it("should fail verify for missing tokens", () => {
     const engine = new JwtTokenEngine({ secret: "test 123" });
     const verify = engine.verify("", "");
     expect(verify.error, "should get error from verify").to.exist;
-    expect(verify.error.message, "error should be MISSING_JWT from verify").to.equal("MISSING_JWT");
+    expect(verify.error.message, "error should be MISSING_TOKEN from verify").to.equal(
+      "MISSING_TOKEN"
+    );
   });
 
   it("should use custom uuid generator function", () => {
     const id = "test_0123";
     const engine = new JwtTokenEngine({ secret: "test 123", uuidGen: () => id });
-    const tokens = engine.create({}, {});
+    const tokens = engine.create({});
     const verify = engine.verify(tokens.header, tokens.cookie);
     expect(verify.error).to.not.exist;
     expect(verify.header.uuid).to.equal(id);
@@ -63,7 +67,7 @@ describe("jwt-token-engine", () => {
 
   it("should use simple id generator if selected", () => {
     const engine = new JwtTokenEngine({ secret: "test 123", uuidGen: "simple" });
-    const tokens = engine.create({}, {});
+    const tokens = engine.create({});
     const verify = engine.verify(tokens.header, tokens.cookie);
     expect(verify.error).to.not.exist;
     expect(verify.header.uuid).to.contain("_");
@@ -72,7 +76,7 @@ describe("jwt-token-engine", () => {
 
   it("should use uuid id generator if selected", () => {
     const engine = new JwtTokenEngine({ secret: "test 123", uuidGen: "uuid" });
-    const tokens = engine.create({}, {});
+    const tokens = engine.create({});
     const verify = engine.verify(tokens.header, tokens.cookie);
     expect(verify.error).to.not.exist;
     expect(verify.header.uuid).to.contain("-");
