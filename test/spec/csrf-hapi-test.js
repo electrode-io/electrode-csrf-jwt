@@ -53,11 +53,10 @@ describe("hapi plugin", function() {
 
     it("should remove path and override isHttpOnly from default", () => {
       return server.inject({ method: "get", url: "/1" }).then(res => {
-        const token = res.request.plugins[pkg.name].header;
+        const token = res.headers[headerName];
         expect(token).to.be.ok;
         expect(res.statusCode, "GET should return 200").to.equal(200);
         expect(res.payload).to.contain("hi");
-        expect(res.headers[headerName]).to.equal(token);
         expect(res.headers["set-cookie"][0]).to.contain(`${cookieName}=`);
         const pcookies = Cookie.parse(res.headers["set-cookie"][0], { decodeValues: false });
         expect(pcookies[0].name).to.equal(cookieName);
@@ -140,7 +139,7 @@ describe("hapi plugin", function() {
 
       return server.inject({ method: "get", url: "/1" }).then(res => {
         expect(res.statusCode, "GET should return 200").to.equal(200);
-        const token = res.request.plugins[pkg.name].header;
+        const token = res.headers[headerName];
         expect(token).to.be.ok;
 
         return server
@@ -224,11 +223,10 @@ describe("hapi plugin", function() {
 
     it("should return success for GET and then POST", () => {
       return server.inject({ method: "get", url: "/1" }).then(res => {
-        const token = res.request.plugins[pkg.name].header;
+        const token = res.headers[headerName];
         expect(token).to.be.ok;
         expect(res.statusCode, "GET should return 200").to.equal(200);
         expect(res.payload).to.contain("hi");
-        expect(res.headers[headerName]).to.equal(token);
         expect(res.headers["set-cookie"][0]).to.contain(`${cookieName}=`);
         const pcookies = Cookie.parse(res.headers["set-cookie"][0], { decodeValues: false });
         expect(pcookies[0].name).to.equal(cookieName);
@@ -272,7 +270,7 @@ describe("hapi plugin", function() {
 
     it("should return 400 for invalid jwt", () => {
       return server.inject({ method: "get", url: "/1" }).then(res => {
-        const token = res.request.plugins[pkg.name].header;
+        const token = res.headers[headerName];
         expect(token, "Must have JWT header token").to.exist;
         return server
           .inject({
@@ -284,9 +282,8 @@ describe("hapi plugin", function() {
           .then(res2 => {
             expect(res2.statusCode).to.equal(400);
             expect(res2.result.message).to.equal("INVALID_TOKEN");
-            const token = res2.request.plugins[pkg.name].header;
+            const token = res2.headers[headerName];
             expect(token).to.be.ok;
-            expect(res2.headers[headerName]).to.equal(token);
             expect(res2.headers["set-cookie"][0]).to.contain(`${cookieName}=`);
             const pcookies = Cookie.parse(res2.headers["set-cookie"][0], { decodeValues: false });
             expect(pcookies[0].name).to.equal(cookieName);
