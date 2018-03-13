@@ -53,6 +53,8 @@ $ npm install electrode-csrf-jwt
 `options`:
 
 * `secret`: **Required**. A string or buffer containing either the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
+* `cookieName`: **Optional** A string to use as name for setting the cookie token. Default: `x-csrf-jwt`
+* `headerName`: **OPtional** A string to use as name for setting the header token. Default: **cookieName**
 * `shouldSkip`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants completely skip the CSRF JWT middleware/plugin for the given `request`
 * `skipCreate`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip creating the token for the given `request`
 * `skipVerify`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip verifying for the given `request`

@@ -8,6 +8,8 @@ const pkg = require("../../package.json");
 describe("hapi plugin", function() {
   let server;
   const secret = "test";
+  const cookieName = "x-csrf-jwt";
+  const headerName = "x-csrf-jwt";
 
   describe("register", () => {
     it("should fail with bad options", () => {
@@ -51,14 +53,13 @@ describe("hapi plugin", function() {
 
     it("should remove path and override isHttpOnly from default", () => {
       return server.inject({ method: "get", url: "/1" }).then(res => {
-        const token = res.request.plugins[pkg.name].header;
+        const token = res.headers[headerName];
         expect(token).to.be.ok;
         expect(res.statusCode, "GET should return 200").to.equal(200);
         expect(res.payload).to.contain("hi");
-        expect(res.headers["x-csrf-jwt"]).to.equal(token);
-        expect(res.headers["set-cookie"][0]).to.contain("jwt=");
+        expect(res.headers["set-cookie"][0]).to.contain(`${cookieName}=`);
         const pcookies = Cookie.parse(res.headers["set-cookie"][0], { decodeValues: false });
-        expect(pcookies[0].name).to.equal("x-csrf-jwt");
+        expect(pcookies[0].name).to.equal(cookieName);
         expect(pcookies[0].httpOnly).to.equal(undefined);
         expect(pcookies[0].path).to.equal(undefined);
       });
@@ -116,7 +117,7 @@ describe("hapi plugin", function() {
         expect(res.request.plugins[pkg.name]).to.not.exist;
         expect(res.statusCode, "GET should return 200").to.equal(200);
         expect(res.payload).to.contain("hi");
-        expect(res.headers["x-csrf-jwt"]).to.not.exist;
+        expect(res.headers[headerName]).to.not.exist;
         expect(res.headers["set-cookie"]).to.not.exist;
       });
     });
@@ -128,7 +129,7 @@ describe("hapi plugin", function() {
         expect(res.request.plugins[pkg.name]).to.not.exist;
         expect(res.statusCode, "GET should return 200").to.equal(200);
         expect(res.payload).to.contain("hi");
-        expect(res.headers["x-csrf-jwt"]).to.not.exist;
+        expect(res.headers[headerName]).to.not.exist;
         expect(res.headers["set-cookie"]).to.not.exist;
       });
     });
@@ -138,7 +139,7 @@ describe("hapi plugin", function() {
 
       return server.inject({ method: "get", url: "/1" }).then(res => {
         expect(res.statusCode, "GET should return 200").to.equal(200);
-        const token = res.request.plugins[pkg.name].header;
+        const token = res.headers[headerName];
         expect(token).to.be.ok;
 
         return server
@@ -146,7 +147,7 @@ describe("hapi plugin", function() {
             method: "post",
             url: "/2",
             payload: { message: "hello" },
-            headers: { "x-csrf-jwt": token, cookie: `x-csrf-jwt=${token}` }
+            headers: { [headerName]: token, cookie: `${cookieName}=${token}` }
           })
           .then(res2 => {
             expect(
@@ -222,14 +223,13 @@ describe("hapi plugin", function() {
 
     it("should return success for GET and then POST", () => {
       return server.inject({ method: "get", url: "/1" }).then(res => {
-        const token = res.request.plugins[pkg.name].header;
+        const token = res.headers[headerName];
         expect(token).to.be.ok;
         expect(res.statusCode, "GET should return 200").to.equal(200);
         expect(res.payload).to.contain("hi");
-        expect(res.headers["x-csrf-jwt"]).to.equal(token);
-        expect(res.headers["set-cookie"][0]).to.contain("jwt=");
+        expect(res.headers["set-cookie"][0]).to.contain(`${cookieName}=`);
         const pcookies = Cookie.parse(res.headers["set-cookie"][0], { decodeValues: false });
-        expect(pcookies[0].name).to.equal("x-csrf-jwt");
+        expect(pcookies[0].name).to.equal(cookieName);
         expect(pcookies[0].httpOnly).to.equal(true);
         const cookie = `${pcookies[0].name}=${pcookies[0].value}`;
         return server
@@ -237,7 +237,7 @@ describe("hapi plugin", function() {
             method: "post",
             url: "/2",
             payload: { message: "hello" },
-            headers: { "x-csrf-jwt": token, cookie }
+            headers: { [headerName]: token, cookie }
           })
           .then(res2 => {
             expect(
@@ -245,8 +245,8 @@ describe("hapi plugin", function() {
               `POST JWT should be valid but got ${res2.result.message}`
             ).to.equal(200);
 
-            expect(res2.headers["x-csrf-jwt"]).to.exist;
-            expect(res2.headers["set-cookie"][0]).to.contain("x-csrf-jwt=");
+            expect(res2.headers[headerName]).to.exist;
+            expect(res2.headers["set-cookie"][0]).to.contain(`${cookieName}=`);
             expect(res2.result).to.equal("valid");
           });
       });
@@ -254,7 +254,7 @@ describe("hapi plugin", function() {
 
     it("should skip csrf for /js/ route", () => {
       return server.inject({ method: "get", url: "/js/bundle" }).then(res => {
-        expect(res.headers["x-csrf-jwt"]).to.not.exist;
+        expect(res.headers[headerName]).to.not.exist;
         expect(res.request.app.jwt).to.not.exist;
       });
     });
@@ -270,26 +270,41 @@ describe("hapi plugin", function() {
 
     it("should return 400 for invalid jwt", () => {
       return server.inject({ method: "get", url: "/1" }).then(res => {
-        const token = res.request.plugins[pkg.name].header;
+        const token = res.headers[headerName];
         expect(token, "Must have JWT header token").to.exist;
         return server
           .inject({
             method: "post",
             url: "/2",
             payload: { message: "hello" },
-            headers: { "x-csrf-jwt": token, Cookie: `x-csrf-jwt=${token}` }
+            headers: { [headerName]: token, Cookie: `${cookieName}=${token}` }
           })
           .then(res2 => {
             expect(res2.statusCode).to.equal(400);
             expect(res2.result.message).to.equal("INVALID_TOKEN");
-            const token = res2.request.plugins[pkg.name].header;
+            const token = res2.headers[headerName];
             expect(token).to.be.ok;
-            expect(res2.headers["x-csrf-jwt"]).to.equal(token);
-            expect(res2.headers["set-cookie"][0]).to.contain("jwt=");
+            expect(res2.headers["set-cookie"][0]).to.contain(`${cookieName}=`);
             const pcookies = Cookie.parse(res2.headers["set-cookie"][0], { decodeValues: false });
-            expect(pcookies[0].name).to.equal("x-csrf-jwt");
+            expect(pcookies[0].name).to.equal(cookieName);
             expect(pcookies[0].httpOnly).to.equal(true);
           });
+      });
+    });
+
+    it("should completely skip for http OPTIONS", () => {
+      return server.inject({ method: "options", url: "/1" }).then(res => {
+        const token = res.headers[headerName];
+        expect(token, "should not have header token").to.be.undefined;
+        expect(res.headers["set-cookie"], "should not have set-cookie header").to.be.undefined;
+      });
+    });
+
+    it("should completely skip for http TRACE", () => {
+      return server.inject({ method: "trace", url: "/1" }).then(res => {
+        const token = res.headers[headerName];
+        expect(token, "should not have header token").to.be.undefined;
+        expect(res.headers["set-cookie"], "should not have set-cookie header").to.be.undefined;
       });
     });
   });

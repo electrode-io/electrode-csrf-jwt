@@ -11,6 +11,8 @@ const fetch = require("isomorphic-fetch");
 describe("koa middleware", function() {
   const secret = "test";
   const url = "http://localhost:4000";
+  const cookieName = "x-csrf-jwt";
+  const headerName = "x-csrf-jwt";
 
   describe("register", () => {
     it("should fail with bad options", () => {
@@ -70,10 +72,10 @@ describe("koa middleware", function() {
     it("should return success", () => {
       return fetch(`${url}/1`).then(res => {
         expect(res.status).to.equal(200);
-        const csrfHeader = res.headers.get("x-csrf-jwt");
+        const csrfHeader = res.headers.get(headerName);
         const csrfCookie = res.headers.get("set-cookie");
         expect(csrfHeader).to.exist;
-        expect(csrfCookie).to.contain("x-csrf-jwt=");
+        expect(csrfCookie).to.contain(`${cookieName}=`);
         expect(csrfCookie).to.contain("httponly");
 
         return fetch(`${url}/2`, {
@@ -81,14 +83,14 @@ describe("koa middleware", function() {
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            "x-csrf-jwt": csrfHeader,
+            [headerName]: csrfHeader,
             Cookie: csrfCookie
           },
           body: JSON.stringify({ message: "hello" })
         }).then(res => {
           expect(res.status).to.equal(200);
-          expect(res.headers.get("x-csrf-jwt")).to.exist;
-          expect(res.headers.get("set-cookie")).to.contain("x-csrf-jwt=");
+          expect(res.headers.get(headerName)).to.exist;
+          expect(res.headers.get("set-cookie")).to.contain(`${cookieName}=`);
         });
       });
     });
@@ -103,7 +105,7 @@ describe("koa middleware", function() {
         body: JSON.stringify({ message: "hello" })
       }).then(res => {
         expect(res.status).to.equal(500);
-        expect(res.headers.get("x-csrf-jwt")).to.not.exist;
+        expect(res.headers.get(headerName)).to.not.exist;
         expect(res.headers.get("set-cookie")).to.not.exist;
       });
     });
@@ -116,8 +118,8 @@ describe("koa middleware", function() {
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            "x-csrf-jwt": token,
-            Cookie: `x-csrf-jwt=${token}`
+            [headerName]: token,
+            Cookie: `${cookieName}=${token}`
           },
           body: JSON.stringify({ message: "hello" })
         }).then(res => {
@@ -127,14 +129,32 @@ describe("koa middleware", function() {
             headers: {
               Accept: "application/json",
               "Content-Type": "application/json",
-              "x-csrf-jwt": "invalid",
-              Cookie: `x-csrf-jwt=${token}`
+              [headerName]: "invalid",
+              Cookie: `${cookieName}=${token}`
             },
             body: JSON.stringify({ message: "hello" })
           }).then(res => {
             expect(res.status).to.equal(500);
           });
         });
+      });
+    });
+
+    it("should skip completely for http OPTIONS", () => {
+      return fetch(`${url}/1`, { method: "options" }).then(res => {
+        const csrfHeader = res.headers.get(headerName);
+        const csrfCookie = res.headers.get("set-cookie");
+        expect(csrfHeader, "must not have header token").to.not.exist;
+        expect(csrfCookie, "must not have cookie token").to.not.exist;
+      });
+    });
+
+    it("should skip completely for http TRACE", () => {
+      return fetch(`${url}/1`, { method: "trace" }).then(res => {
+        const csrfHeader = res.headers.get(headerName);
+        const csrfCookie = res.headers.get("set-cookie");
+        expect(csrfHeader, "must not have header token").to.not.exist;
+        expect(csrfCookie, "must not have cookie token").to.not.exist;
       });
     });
   });
@@ -168,7 +188,7 @@ describe("koa middleware", function() {
 
       return fetch(`${url}/1`).then(res => {
         expect(res.status).to.equal(200);
-        const csrfHeader = res.headers.get("x-csrf-jwt");
+        const csrfHeader = res.headers.get(headerName);
         const csrfCookie = res.headers.get("set-cookie");
         expect(csrfHeader).to.not.exist;
         expect(csrfCookie).to.not.exist;
@@ -180,7 +200,7 @@ describe("koa middleware", function() {
 
       return fetch(`${url}/1`).then(res => {
         expect(res.status).to.equal(200);
-        const csrfHeader = res.headers.get("x-csrf-jwt");
+        const csrfHeader = res.headers.get(headerName);
         const csrfCookie = res.headers.get("set-cookie");
         expect(csrfHeader).to.not.exist;
         expect(csrfCookie).to.not.exist;
@@ -192,10 +212,10 @@ describe("koa middleware", function() {
 
       return fetch(`${url}/1`).then(res => {
         expect(res.status).to.equal(200);
-        const csrfHeader = res.headers.get("x-csrf-jwt");
+        const csrfHeader = res.headers.get(headerName);
         const csrfCookie = res.headers.get("set-cookie");
         expect(csrfHeader).to.exist;
-        expect(csrfCookie).to.contain("x-csrf-jwt=");
+        expect(csrfCookie).to.contain(`${cookieName}=`);
         expect(csrfCookie).to.contain("httponly");
 
         return fetch(`${url}/2`, {
@@ -203,14 +223,14 @@ describe("koa middleware", function() {
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            "x-csrf-jwt": csrfHeader,
-            Cookie: `x-csrf-jwt=${csrfHeader}`
+            [headerName]: csrfHeader,
+            Cookie: `${cookieName}=${csrfHeader}`
           },
           body: JSON.stringify({ message: "hello" })
         }).then(res => {
           expect(res.status).to.equal(200);
-          expect(res.headers.get("x-csrf-jwt")).to.exist;
-          expect(res.headers.get("set-cookie")).to.contain("x-csrf-jwt=");
+          expect(res.headers.get(headerName)).to.exist;
+          expect(res.headers.get("set-cookie")).to.contain(`${cookieName}=`);
         });
       });
     });
