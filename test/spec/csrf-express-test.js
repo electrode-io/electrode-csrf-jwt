@@ -137,6 +137,24 @@ describe("express middleware", function() {
         });
       });
     });
+
+    it("should skip completely for http OPTIONS", () => {
+      return fetch(`${url}/1`, { method: "options" }).then(res => {
+        const csrfHeader = res.headers.get(headerName);
+        const csrfCookie = res.headers.get("set-cookie");
+        expect(csrfHeader, "must not have header token").to.not.exist;
+        expect(csrfCookie, "must not have cookie token").to.not.exist;
+      });
+    });
+
+    it("should skip completely for http TRACE", () => {
+      return fetch(`${url}/1`, { method: "trace" }).then(res => {
+        const csrfHeader = res.headers.get(headerName);
+        const csrfCookie = res.headers.get("set-cookie");
+        expect(csrfHeader, "must not have header token").to.not.exist;
+        expect(csrfCookie, "must not have cookie token").to.not.exist;
+      });
+    });
   });
 
   describe("skip callbacks", function() {
