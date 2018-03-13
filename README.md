@@ -60,8 +60,9 @@ $ npm install electrode-csrf-jwt
 * `skipVerify`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip verifying for the given `request`
 * `cookieConfig`: **Optional** An object with extra configs for setting the JWT cookie token. Values set to `undefined` or `null` will delete the field from the default cookie config.
 * `uuidGen`: **Optional** A string of `uuid` or `simple` to select the unique ID generator, or a callback to generate the ID. See [uuidGen Option](#uuidgen-option) for details.
+* `tokenEngine`: **Optional**; **Experimental** A string that specifies the token engine. Either [`jwt`](./lib/jwt-token-engine.js) (default) or [`hash`](./lib/hash-token-engine.js).
 
-Others are optional and follow the [same usage as jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/blob/master/README.md#usage)
+Others are optional and follow the [same usage as jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/blob/master/README.md#usage) if the `tokenEngine` is `jwt`.
 
 * `algorithm`
 * `expiresIn`
