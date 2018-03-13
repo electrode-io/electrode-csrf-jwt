@@ -291,5 +291,21 @@ describe("hapi plugin", function() {
           });
       });
     });
+
+    it("should completely skip for http OPTIONS", () => {
+      return server.inject({ method: "options", url: "/1" }).then(res => {
+        const token = res.headers[headerName];
+        expect(token, "should not have header token").to.be.undefined;
+        expect(res.headers["set-cookie"], "should not have set-cookie header").to.be.undefined;
+      });
+    });
+
+    it("should completely skip for http TRACE", () => {
+      return server.inject({ method: "trace", url: "/1" }).then(res => {
+        const token = res.headers[headerName];
+        expect(token, "should not have header token").to.be.undefined;
+        expect(res.headers["set-cookie"], "should not have set-cookie header").to.be.undefined;
+      });
+    });
   });
 });
