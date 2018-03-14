@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <!--{{CSRF_HEADER_TOKEN}}-->
+  <script src="//cdn.mycdn.com:3000/js/csrf-demo.js"></script>
+  <script>
+    console.log("main doc cookie", document.cookie);
+  </script>
+</head>
+
+<body>
+  <h1>Electrode stateless CSRF demo</h1>
+  <button onclick="js:testGet()">GET</button>
+  <button onclick="js:testPost()">POST</button>
+  <button onclick="js:testPost(true)">POST Error Res</button>
+  <button onclick="js:toggleUseLocalStorage()">Toggle Use localStorage</button>
+  <span id="useLocalStorage"></span>
+  <script>
+    setUseLocalStorageStatus();
+  </script>
+  <p>Note: If use localStorage is on, then this works across tabs. See
+    <a href="https://github.com/electrode-io/electrode-csrf-jwt/tree/demo/demo#issues">here</a> for info</p>
+</body>
+
+</html>
