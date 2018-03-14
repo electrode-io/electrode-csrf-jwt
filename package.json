@@ -7,7 +7,7 @@
     "lint": "clap lint",
     "test": "npm run lint && clap test",
     "coverage": "clap check",
-    "prepublish": "npm test",
+    "prepublishOnly": "npm test",
     "demo": "node demo/server"
   },
   "repository": {
