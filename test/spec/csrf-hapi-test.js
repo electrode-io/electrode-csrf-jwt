@@ -1,7 +1,8 @@
 "use strict";
 
 const Hapi = require("hapi");
-const csrfPlugin = require("../../lib/index").register;
+const electrodeCsrf = require("../..");
+const csrfPlugin = require("../..").register;
 const Cookie = require("set-cookie-parser");
 const pkg = require("../../package.json");
 
@@ -195,6 +196,14 @@ describe("hapi plugin", function() {
             },
             {
               method: "get",
+              path: "/3",
+              handler: (request, reply) => {
+                const tokens = electrodeCsrf.hapiCreateToken(request);
+                reply(tokens);
+              }
+            },
+            {
+              method: "get",
               path: "/error",
               handler: (request, reply) => {
                 expect(request.plugins[pkg.name]).to.exist;
@@ -249,6 +258,14 @@ describe("hapi plugin", function() {
             expect(res2.headers["set-cookie"][0]).to.contain(`${cookieName}=`);
             expect(res2.result).to.equal("valid");
           });
+      });
+    });
+
+    it("should allow route handler to manually create the tokens", () => {
+      return server.inject({ method: "get", url: "/3" }).then(res => {
+        const result = res.result;
+        expect(result.header).to.exist;
+        expect(result.cookie).to.exist;
       });
     });
 
