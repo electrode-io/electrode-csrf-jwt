@@ -148,4 +148,60 @@ describe("csrf driver", function() {
     const verify = csrf.verify(tokens.header, tokens.cookie);
     expect(verify.error, "verify should pass").to.not.exist;
   });
+
+  it("should fail first post if a route doesn't allow it", done => {
+    const csrf = new CSRF({ secret });
+    const request = {};
+    csrf.process(
+      {
+        request,
+        method: "post",
+        firstPost: true,
+        create: () => {
+          request.create = true;
+        },
+        verify: () => {
+          request.verify = true;
+          return {};
+        },
+        continue: () => {
+          throw new Error("don't expect continue to be called");
+        },
+        error: verify => {
+          expect(request.create, "must have called create").to.equal(true);
+          expect(request.verify, "must have called verify").to.equal(true);
+          done();
+        }
+      },
+      {}
+    );
+  });
+
+  it("should accept first post if a route allows it", done => {
+    const csrf = new CSRF({ secret });
+    const request = {};
+    csrf.process(
+      {
+        request,
+        method: "post",
+        firstPost: true,
+        create: () => {
+          request.create = true;
+        },
+        verify: () => {
+          request.verify = true;
+          return {};
+        },
+        continue: () => {
+          expect(request.create, "must have called create").to.equal(true);
+          expect(request.verify, "must have called verify").to.equal(true);
+          done();
+        },
+        error: () => {
+          throw new Error("don't expect error to be called");
+        }
+      },
+      { allowFirstPost: true }
+    );
+  });
 });
