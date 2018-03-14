@@ -23,7 +23,7 @@ The [double submit cookie prevention technique] rely on the fact that a unique t
 
 ### Double JWT CSRF tokens
 
-For use with [XMLHttpRequest], we extend the technique by using two JWT tokens for validation. One token in the cookies and the other in the HTTP headers. Since XSS cannot set HTTP headers also, it strengthens the security further.
+For use with [XMLHttpRequest] and [fetch], we extend the technique by using two JWT tokens for validation. One token in the cookies and the other in the HTTP headers. Since XSS cannot set HTTP headers also, it strengthens the security further.
 
 So two JWT CSRF tokens are generated on the server side with the same payload but different types (see below), one for the HTTP header, one for the cookie.
 
@@ -50,17 +50,22 @@ $ npm install electrode-csrf-jwt
 
 ### Options
 
-`options`:
+#### Required Fields
 
-* `secret`: **Required**. A string or buffer containing either the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
-* `cookieName`: **Optional** A string to use as name for setting the cookie token. Default: `x-csrf-jwt`
-* `headerName`: **OPtional** A string to use as name for setting the header token. Default: **cookieName**
-* `shouldSkip`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants completely skip the CSRF JWT middleware/plugin for the given `request`
-* `skipCreate`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip creating the token for the given `request`
-* `skipVerify`: **Optional** A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip verifying for the given `request`
-* `cookieConfig`: **Optional** An object with extra configs for setting the JWT cookie token. Values set to `undefined` or `null` will delete the field from the default cookie config.
-* `uuidGen`: **Optional** A string of `uuid` or `simple` to select the unique ID generator, or a callback to generate the ID. See [uuidGen Option](#uuidgen-option) for details.
-* `tokenEngine`: **Optional**; **Experimental** A string that specifies the token engine. Either [`jwt`](./lib/jwt-token-engine.js) (default) or [`hash`](./lib/hash-token-engine.js).
+* `secret`: A string or buffer containing either the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
+
+#### Optional Fields
+
+* `cookieName`: A string to use as name for setting the cookie token. Default: `x-csrf-jwt`
+* `headerName`: A string to use as name for setting the header token. Default: **cookieName**
+* `shouldSkip`: A callback that takes the `request` (or context for Koa) object and returns `true` if it wants completely skip the CSRF JWT middleware/plugin for the given `request`
+* `skipCreate`: A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip creating the token for the given `request`
+* `skipVerify`: A callback that takes the `request` (or context for Koa) object and returns `true` if it wants the CSRF JWT to skip verifying for the given `request`
+* `cookieConfig`: An object with extra configs for setting the JWT cookie token. Values set to `undefined` or `null` will delete the field from the default cookie config.
+* `uuidGen`: A string of `uuid` or `simple` to select the unique ID generator, or a callback to generate the ID. See [uuidGen Option](#uuidgen-option) for details.
+* `tokenEngine`: **Experimental** A string that specifies the token engine. Either the default [`jwt`](./lib/jwt-token-engine.js) or [`hash`](./lib/hash-token-engine.js).
+
+#### JWT specific optional fields
 
 Others are optional and follow the [same usage as jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/blob/master/README.md#usage) if the `tokenEngine` is `jwt`.
 
@@ -222,4 +227,5 @@ Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/peop
 [uuid]: https://www.npmjs.com/package/uuid
 [double submit cookie prevention technique]: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet#Double_Submit_Cookie
 [xmlhttprequest]: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+[fetch]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 [csrf]: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet
