@@ -8,6 +8,8 @@ An electrode plugin that enables stateless [CSRF] protection using [JWT](https:/
 
 [CSRF] protection is an important security feature, but in systems which don't have backend session persistence, validation is tricky. Stateless CSRF support addresses this need.
 
+Please see the [demo](./demo) for a sample of using this in a web application with Hapi NodeJS server.
+
 ## How do we validate requests?
 
 CSRF attacks can be bad when a malicious script can make a request that can perform harmful operations through the user (victim)'s browser, attaching user specific and sensitive data in the cookies.
