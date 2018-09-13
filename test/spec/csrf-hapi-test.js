@@ -2,7 +2,7 @@
 
 const Hapi = require("hapi");
 const electrodeCsrf = require("../..");
-const csrfPlugin = require("../..").register;
+const csrfPlugin = require("../..");
 const Cookie = require("set-cookie-parser");
 const pkg = require("../../package.json");
 
@@ -15,9 +15,8 @@ describe("hapi plugin", function() {
   describe("register", () => {
     it("should fail with bad options", () => {
       server = new Hapi.Server();
-      server.connection();
 
-      server.register({ register: csrfPlugin }, err => {
+      server.register(csrfPlugin).catch(err => {
         expect(err.message).to.contains("hapi-plugin options missing secret");
       });
     });
@@ -26,7 +25,6 @@ describe("hapi plugin", function() {
   describe("cookie config", () => {
     before(() => {
       server = new Hapi.Server();
-      server.connection();
 
       const options = {
         secret,
@@ -38,14 +36,14 @@ describe("hapi plugin", function() {
         }
       };
 
-      server.register({ register: csrfPlugin, options }, err => {
+      server.register({ plugin: csrfPlugin, options }).then(() => {
         server.route([
           {
             method: "get",
             path: "/1",
-            handler: (request, reply) => {
+            handler: (request, h) => {
               expect(request.plugins[pkg.name]).to.exist;
-              return reply({ message: "hi", jwt: request.plugins[pkg.name].header });
+              return { message: "hi", jwt: request.plugins[pkg.name].header };
             }
           }
         ]);
@@ -74,7 +72,6 @@ describe("hapi plugin", function() {
 
     before(() => {
       server = new Hapi.Server();
-      server.connection();
 
       const options = {
         secret,
@@ -85,20 +82,20 @@ describe("hapi plugin", function() {
         skipCreate: () => flagSkipCreate
       };
 
-      server.register({ register: csrfPlugin, options }, err => {
+      server.register({ plugin: csrfPlugin, options }).then(() => {
         server.route([
           {
             method: "get",
             path: "/1",
-            handler: (request, reply) => {
-              return reply({ message: "hi" });
+            handler: request => {
+              return { message: "hi" };
             }
           },
           {
             method: "post",
             path: "/2",
-            handler: (request, reply) => {
-              return reply("valid");
+            handler: request => {
+              return "valid";
             }
           }
         ]);
@@ -163,7 +160,6 @@ describe("hapi plugin", function() {
   describe("csrf", () => {
     before(() => {
       server = new Hapi.Server();
-      server.connection();
 
       const options = {
         secret,
@@ -171,51 +167,47 @@ describe("hapi plugin", function() {
         ignoreThisParam: "ignore"
       };
 
-      server.register({ register: csrfPlugin, options }, err => {
-        expect(err).to.not.exist;
-
-        server.register(require("vision"), err => {
-          expect(err).to.not.exist;
-
+      server.register({ plugin: csrfPlugin, options }).then(() => {
+        server.register(require("vision")).then(() => {
           server.route([
             {
               method: "get",
               path: "/1",
-              handler: (request, reply) => {
+              handler: request => {
                 expect(request.plugins[pkg.name]).to.exist;
-                return reply({ message: "hi", jwt: request.plugins[pkg.name].header });
+                return { message: "hi", jwt: request.plugins[pkg.name].header };
               }
             },
             {
               method: "post",
               path: "/2",
-              handler: (request, reply) => {
+              handler: request => {
                 expect(request.payload.message).to.equal("hello");
-                return reply("valid");
+                return "valid";
               }
             },
             {
               method: "get",
               path: "/3",
-              handler: (request, reply) => {
+              handler: request => {
                 const tokens = electrodeCsrf.hapiCreateToken(request);
-                reply(tokens);
+                return tokens;
               }
             },
             {
               method: "get",
               path: "/error",
-              handler: (request, reply) => {
+              handler: request => {
                 expect(request.plugins[pkg.name]).to.exist;
-                return reply(new Error("fail"));
+                throw new Error("fail");
               }
             },
             {
               method: "get",
               path: "/js/bundle",
-              handler: (request, reply) => {
+              handler: request => {
                 expect(request.plugins[pkg.name]).to.not.exist;
-                return reply("");
+                return "";
               },
               config: {
                 plugins: {
