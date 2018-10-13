@@ -1,0 +1,296 @@
+accept:
+ _:
+  3.x.x: 3.0.2
+ 3.0.2:
+  $: sha512-bghLXFkCOsC1Y2TZ51etWfKDs6q249SAoHTZVfzWWdlZxoij+mgkj9AmUJWQpDY48TfnrTDIe43Xem4zdMe7mQ==
+  _: 'http://localhost:4873/accept/-/accept-3.0.2.tgz'
+  dependencies:
+   boom: 7.x.x
+   hoek: 5.x.x
+ammo:
+ _:
+  3.x.x: 3.0.1
+ 3.0.1:
+  $: sha512-4UqoM8xQjwkQ78oiU4NbBK0UgYqeKMAKmwE4ec7Rz3rGU8ZEBFxzgF2sUYKOAlqIXExBDYLN6y1ShF5yQ4hwLQ==
+  _: 'http://localhost:4873/ammo/-/ammo-3.0.1.tgz'
+  dependencies:
+   hoek: 5.x.x
+b64:
+ _:
+  4.x.x: 4.0.0
+ 4.0.0:
+  $: sha512-EhmUQodKB0sdzPPrbIWbGqA5cQeTWxYrAgNeeT1rLZWtD3tbNTnphz8J4vkXI3cPgBNlXBjzEbzDzq0Nwi4f9A==
+  _: 'http://localhost:4873/b64/-/b64-4.0.0.tgz'
+big-time:
+ _:
+  2.x.x: 2.0.1
+ 2.0.1:
+  $: sha1-aMffjcMPl+lT8lpnp2rJcTwWyd4=
+  _: 'http://localhost:4873/big-time/-/big-time-2.0.1.tgz'
+boom:
+ _:
+  7.x.x: 7.2.0
+ 7.2.0:
+  $: sha1-K/8kpVVldn/ehp7ICDF+sQxI6WY=
+  _: 'http://localhost:4873/boom/-/boom-7.2.0.tgz'
+  dependencies:
+   hoek: 5.x.x
+bounce:
+ _:
+  1.x.x: 1.2.0
+ 1.2.0:
+  $: sha512-8syCGe8B2/WC53118/F/tFy5aW00j+eaGPXmAUP7iBhxc+EBZZxS1vKelWyBCH6IqojgS2t1gF0glH30qAJKEw==
+  _: 'http://localhost:4873/bounce/-/bounce-1.2.0.tgz'
+  dependencies:
+   boom: 7.x.x
+   hoek: 5.x.x
+call:
+ _:
+  5.x.x: 5.0.1
+ 5.0.1:
+  $: sha512-ollfFPSshiuYLp7AsrmpkQJ/PxCi6AzV81rCjBwWhyF2QGyUY/vPDMzoh4aUcWyucheRglG2LaS5qkIEfLRh6A==
+  _: 'http://localhost:4873/call/-/call-5.0.1.tgz'
+  dependencies:
+   hoek: 5.x.x
+   boom: 7.x.x
+catbox:
+ _:
+  10.x.x: 10.0.3
+ 10.0.3:
+  $: sha512-qwus6RnVctHXYwfxvvDwvlMWHwCjQdIpQQbtyHnRF0JpwmxbQJ/UIZi9y8O6DpphKCdfO9gpxgb2ne9ZDx39BQ==
+  _: 'http://localhost:4873/catbox/-/catbox-10.0.3.tgz'
+  dependencies:
+   boom: 7.x.x
+   hoek: 5.x.x
+   joi: 13.x.x
+catbox-memory:
+ _:
+  3.x.x: 3.1.2
+ 3.1.2:
+  $: sha512-lhWtutLVhsq3Mucxk2McxBPPibJ34WcHuWFz3xqub9u9Ve/IQYpZv3ijLhQXfQped9DXozURiaq9O3aZpP91eg==
+  _: 'http://localhost:4873/catbox-memory/-/catbox-memory-3.1.2.tgz'
+  dependencies:
+   big-time: 2.x.x
+   boom: 7.x.x
+   hoek: 5.x.x
+content:
+ _:
+  4.x.x: 4.0.5
+ 4.0.5:
+  $: sha512-wDP6CTWDpwCf791fNxlCCkZGRkrNzSEU/8ju9Hnr3Uc5mF/gFR5W+fcoGm6zUSlVPdSXYn5pCbySADKj7YM4Cg==
+  _: 'http://localhost:4873/content/-/content-4.0.5.tgz'
+  dependencies:
+   boom: 7.x.x
+cryptiles:
+ _:
+  4.x.x: 4.1.2
+ 4.1.2:
+  $: sha512-U2ALcoAHvA1oO2xOreyHvtkQ+IELqDG2WVWRI1GH/XEmmfGIOalnM5MU5Dd2ITyWfr3m6kNqXiy8XuYyd4wKJw==
+  _: 'http://localhost:4873/cryptiles/-/cryptiles-4.1.2.tgz'
+  dependencies:
+   boom: 7.x.x
+hapi:
+ _:
+  ^17: 17.6.0
+ 17.6.0:
+  top: 1
+  $: sha512-GSHjE1hJExluAukrT/QuYSk96irmbYBDd3wOgywiHsPoR2QeKgDnIttD+dB6NbADEmSdb9MS5gTUIVq0uHTdkA==
+  _: 'http://localhost:4873/hapi/-/hapi-17.6.0.tgz'
+  dependencies:
+   accept: 3.x.x
+   ammo: 3.x.x
+   boom: 7.x.x
+   bounce: 1.x.x
+   call: 5.x.x
+   catbox: 10.x.x
+   catbox-memory: 3.x.x
+   heavy: 6.x.x
+   hoek: 5.x.x
+   joi: 13.x.x
+   mimos: 4.x.x
+   podium: 3.x.x
+   shot: 4.x.x
+   statehood: 6.x.x
+   subtext: 6.x.x
+   teamwork: 3.x.x
+   topo: 3.x.x
+heavy:
+ _:
+  6.x.x: 6.1.0
+ 6.1.0:
+  $: sha512-TKS9DC9NOTGulHQI31Lx+bmeWmNOstbJbGMiN3pX6bF+Zc2GKSpbbym4oasNnB6yPGkqJ9TQXXYDGohqNSJRxA==
+  _: 'http://localhost:4873/heavy/-/heavy-6.1.0.tgz'
+  dependencies:
+   boom: 7.x.x
+   hoek: 5.x.x
+   joi: 13.x.x
+hoek:
+ _:
+  5.x.x: 5.0.4
+ 5.0.4:
+  $: sha512-Alr4ZQgoMlnere5FZJsIyfIjORBqZll5POhDsF4q64dPuJR6rNxXdDxtHSQq8OXRurhmx+PWYEE8bXRROY8h0w==
+  _: 'http://localhost:4873/hoek/-/hoek-5.0.4.tgz'
+iron:
+ _:
+  5.x.x: 5.0.4
+ 5.0.4:
+  $: sha512-7iQ5/xFMIYaNt9g2oiNiWdhrOTdRUMFaWENUd0KghxwPUhrIH8DUY8FEyLNTTzf75jaII+jMexLdY/2HfV61RQ==
+  _: 'http://localhost:4873/iron/-/iron-5.0.4.tgz'
+  dependencies:
+   hoek: 5.x.x
+   boom: 7.x.x
+   cryptiles: 4.x.x
+isemail:
+ _:
+  3.x.x: 3.1.3
+ 3.1.3:
+  $: sha512-5xbsG5wYADIcB+mfLsd+nst1V/D+I7EU7LEZPo2GOIMu4JzfcRs5yQoypP4avA7QtUqgxYLKBYNv4IdzBmbhdw==
+  _: 'http://localhost:4873/isemail/-/isemail-3.1.3.tgz'
+  dependencies:
+   punycode: 2.x.x
+items:
+ _:
+  2.x.x: 2.1.1
+ 2.1.1:
+  $: sha1-i9FtnIOxlSneWuoyGsqtp4NkoZg=
+  _: 'http://localhost:4873/items/-/items-2.1.1.tgz'
+joi:
+ _:
+  13.x.x: 13.7.0
+ 13.7.0:
+  $: sha512-xuY5VkHfeOYK3Hdi91ulocfuFopwgbSORmIwzcwHKESQhC7w1kD5jaVSPnqDxS2I8t3RZ9omCKAxNwXN5zG1/Q==
+  _: 'http://localhost:4873/joi/-/joi-13.7.0.tgz'
+  dependencies:
+   hoek: 5.x.x
+   isemail: 3.x.x
+   topo: 3.x.x
+mime-db:
+ _:
+  1.x.x: 1.36.0
+ 1.36.0:
+  $: sha512-L+xvyD9MkoYMXb1jAmzI/lWYAxAMCPvIBSWur0PZ5nOf5euahRLVqH//FKW9mWp2lkqUgYiXPgkzfMUFi4zVDw==
+  _: 'http://localhost:4873/mime-db/-/mime-db-1.36.0.tgz'
+mimos:
+ _:
+  4.x.x: 4.0.0
+ 4.0.0:
+  $: sha512-JvlvRLqGIlk+AYypWrbrDmhsM+6JVx/xBM5S3AMwTBz1trPCEoPN/swO2L4Wu653fL7oJdgk8DMQyG/Gq3JkZg==
+  _: 'http://localhost:4873/mimos/-/mimos-4.0.0.tgz'
+  dependencies:
+   hoek: 5.x.x
+   mime-db: 1.x.x
+nigel:
+ _:
+  3.x.x: 3.0.1
+ 3.0.1:
+  $: sha512-kCVtUG9JyD//tsYrZY+/Y+2gUrANVSba8y23QkM5Znx0FOxlnl9Z4OVPBODmstKWTOvigfTO+Va1VPOu3eWSOQ==
+  _: 'http://localhost:4873/nigel/-/nigel-3.0.1.tgz'
+  dependencies:
+   hoek: 5.x.x
+   vise: 3.x.x
+pez:
+ _:
+  4.x.x: 4.0.2
+ 4.0.2:
+  $: sha512-HuPxmGxHsEFPWhdkwBs2gIrHhFqktIxMtudISTFN95RQ85ZZAOl8Ki6u3nnN/X8OUaGlIGldk/l8p2IR4/i76w==
+  _: 'http://localhost:4873/pez/-/pez-4.0.2.tgz'
+  dependencies:
+   b64: 4.x.x
+   boom: 7.x.x
+   content: 4.x.x
+   hoek: 5.x.x
+   nigel: 3.x.x
+podium:
+ _:
+  3.x.x: 3.1.2
+ 3.1.2:
+  $: sha512-18VrjJAduIdPv7d9zWsfmKxTj3cQTYC5Pv5gtKxcWujYBpGbV+mhNSPYhlHW5xeWoazYyKfB9FEsPT12r5rY1A==
+  _: 'http://localhost:4873/podium/-/podium-3.1.2.tgz'
+  dependencies:
+   hoek: 5.x.x
+   joi: 13.x.x
+punycode:
+ _:
+  2.x.x: 2.1.1
+ 2.1.1:
+  $: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+  _: 'http://localhost:4873/punycode/-/punycode-2.1.1.tgz'
+shot:
+ _:
+  4.x.x: 4.0.5
+ 4.0.5:
+  $: sha1-x+dFXRHWD2ts08Q+FaO0McF+VWY=
+  _: 'http://localhost:4873/shot/-/shot-4.0.5.tgz'
+  dependencies:
+   hoek: 5.x.x
+   joi: 13.x.x
+statehood:
+ _:
+  6.x.x: 6.0.6
+ 6.0.6:
+  $: sha512-jR45n5ZMAkasw0xoE9j9TuLmJv4Sa3AkXe+6yIFT6a07kXYHgSbuD2OVGECdZGFxTmvNqLwL1iRIgvq6O6rq+A==
+  _: 'http://localhost:4873/statehood/-/statehood-6.0.6.tgz'
+  dependencies:
+   boom: 7.x.x
+   bounce: 1.x.x
+   cryptiles: 4.x.x
+   hoek: 5.x.x
+   iron: 5.x.x
+   joi: 13.x.x
+subtext:
+ _:
+  6.x.x: 6.0.7
+ 6.0.7:
+  $: sha512-IcJUvRjeR+NB437Iq+LORFNJW4L6Knqkj3oQrBrkdhIaS2VKJvx/9aYEq7vi+PEx5/OuehOL/40SkSZotLi/MA==
+  _: 'http://localhost:4873/subtext/-/subtext-6.0.7.tgz'
+  dependencies:
+   boom: 7.x.x
+   content: 4.x.x
+   hoek: 5.x.x
+   pez: 4.x.x
+   wreck: 14.x.x
+teamwork:
+ _:
+  3.x.x: 3.0.1
+ 3.0.1:
+  $: sha512-hEkJIpDOfOYe9NYaLFk00zQbzZeKNCY8T2pRH3I13Y1mJwxaSQ6NEsjY5rCp+11ezCiZpWGoGFTbOuhg4qKevQ==
+  _: 'http://localhost:4873/teamwork/-/teamwork-3.0.1.tgz'
+topo:
+ _:
+  3.x.x: 3.0.0
+ 3.0.0:
+  $: sha512-Tlu1fGlR90iCdIPURqPiufqAlCZYzLjHYVVbcFWDMcX7+tK8hdZWAfsMrD/pBul9jqHHwFjNdf1WaxA9vTRRhw==
+  _: 'http://localhost:4873/topo/-/topo-3.0.0.tgz'
+  dependencies:
+   hoek: 5.x.x
+vise:
+ _:
+  3.x.x: 3.0.0
+ 3.0.0:
+  $: sha512-kBFZLmiL1Vm3rHXphkhvvAcsjgeQXRrOFCbJb0I50YZZP4HGRNH+xGzK3matIMcpbsfr3I02u9odj4oCD0TWgA==
+  _: 'http://localhost:4873/vise/-/vise-3.0.0.tgz'
+  dependencies:
+   hoek: 5.x.x
+vision:
+ _:
+  ^5: 5.4.0
+ 5.4.0:
+  top: 1
+  $: sha512-f8kbjvo/dUbR4ZDF0pHPuOjQFg/6zOMlP1Tb9gK2ukCa7Ksd24174DCzubtov6AxIDhZhO5RYQeeDlF8ujlKWQ==
+  _: 'http://localhost:4873/vision/-/vision-5.4.0.tgz'
+  dependencies:
+   boom: 7.x.x
+   hoek: 5.x.x
+   items: 2.x.x
+   joi: 13.x.x
+  peerDependencies:
+   hapi: 17.x.x
+wreck:
+ _:
+  14.x.x: 14.1.0
+ 14.1.0:
+  $: sha512-y/iwFhwdGoM8Hk1t1I4LbuLhM3curVD8STd5NcFI0c/4b4cQAMLcnCRxXX9sLQAggDC8dXYSaQNsT64hga6lvA==
+  _: 'http://localhost:4873/wreck/-/wreck-14.1.0.tgz'
+  dependencies:
+   boom: 7.x.x
+   hoek: 5.x.x
