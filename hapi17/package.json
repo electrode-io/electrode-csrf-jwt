@@ -1,0 +1,15 @@
+{
+  "name": "hapi17",
+  "version": "17.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17",
+	"vision": "^5"
+  }
+}
