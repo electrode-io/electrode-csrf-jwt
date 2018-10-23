@@ -266,6 +266,7 @@ describe("hapi plugin", function() {
         const result = res.result;
         expect(result.header).to.exist;
         expect(result.cookie).to.exist;
+        expect(res.request.app.jwt).to.exist;
       });
     });
 
