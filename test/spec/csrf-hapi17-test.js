@@ -55,6 +55,7 @@ describe("hapi 17 plugin", function() {
             path: "/1",
             handler: (request, h) => {
               expect(request.plugins[pkg.name]).to.exist;
+              expect(request.app.jwt).to.exist;
               return { message: "hi", jwt: request.plugins[pkg.name].header };
             }
           }
@@ -269,6 +270,7 @@ describe("hapi 17 plugin", function() {
       return server.inject({ method: "get", url: "/3" }).then(res => {
         const result = res.result;
         expect(result.header).to.exist;
+        expect(res.request.app.jwt).to.exist;
         expect(result.cookie).to.exist;
       });
     });
