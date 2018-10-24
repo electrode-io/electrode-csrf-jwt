@@ -45,6 +45,7 @@ describe("hapi plugin", function() {
             path: "/1",
             handler: (request, reply) => {
               expect(request.plugins[pkg.name]).to.exist;
+              expect(request.app.jwt).to.exist;
               return reply({ message: "hi", jwt: request.plugins[pkg.name].header });
             }
           }
