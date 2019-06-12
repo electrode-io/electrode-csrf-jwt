@@ -98,6 +98,9 @@ First the options. Regardless of which server framework you use, the options rem
 * `cookieName`: A string to use as name for setting the cookie token. Default: `x-csrf-jwt`
 * `headerName`: A string to use as name for setting the header token. Default: **cookieName**
 * `cookieConfig`: An object with extra configs for setting the JWT cookie token. Values set to `undefined` or `null` will delete the field from the default cookie config. See the respective server framework for info on what their cookie config should be.
+  * `path`: Cookie path
+  * `isSecure`: Whether cookie is pass secure of not
+  * `httpOnly`: HTTP only.
 * `tokenEngine`: **Experimental** A string that specifies the token engine. Either the default [`"jwt"`](./lib/jwt-token-engine.js) or [`"hash"`](./lib/hash-token-engine.js).
 
 #### Optional `uuidGen` Field
