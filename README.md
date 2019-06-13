@@ -136,6 +136,7 @@ Others are optional and follow the [same usage as jsonwebtoken](https://github.c
 * `noTimestamp`
 * `headers`
 
+
 ### Electrode Server
 
 [electrode-server] is a top level wrapper for [Hapi]. You can use the hapi-plugin in [electrode-server] by setting your configuration.
@@ -259,6 +260,18 @@ const options = {
 
 app.use(csrfMiddleware(options));
 ```
+
+### HTTPS and cookies
+
+When running in HTTPS, you will need to specify the cookie with `secure=true`.  Use the `cookieConfig` option
+```js
+{
+   "cookieConfig": {
+     "isSecure": true
+   }
+}
+```
+
 
 Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/people) @WalmartLabs.
 
