@@ -272,6 +272,14 @@ When running in HTTPS, you will need to specify the cookie with `secure=true`.  
 }
 ```
 
+### Client-side fetch
+
+When doing client-side fetch to the server, it is preferable to use [electrode-fetch](https://gecgithub01.walmart.com/electrode/electrode-fetch).  
+Electrode-fetch will look for the `x-csrf-jwt` header from responses and use it as the new JWT token on subsequent fetches.  
+If you use your own fetch function, you will have to handle this yourself.
+
+
+
 
 Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/people) @WalmartLabs.
 
