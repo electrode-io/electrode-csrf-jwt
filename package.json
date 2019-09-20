@@ -31,8 +31,8 @@
     "node": ">= 6.0.0"
   },
   "dependencies": {
-    "boom": "^7.2.0",
-    "electrode-hapi-compat": "^1.0.0",
+    "@hapi/boom": "^7.4.3",
+    "electrode-hapi-compat": "^1.2.0",
     "jsonwebtoken": "^8.0.0",
     "ms": "^2.1.1",
     "on-headers": "^1.0.1",

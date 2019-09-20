@@ -1,3 +1,20 @@
+'@hapi/boom':
+ _latest: 7.4.7
+ _:
+  ^7.4.3: 7.4.7
+ 7.4.7:
+  top: 1
+  $: sha512-MaZsoOZE4oFhYiohsDLxs5tubcFyqE2yIi9KEHWLTgCI6KKPoEf0EKHcaypUoxT4yIjULiTyd1tDkPtku7Ualg==
+  _: 'https://repository.cache.walmart.com/content/groups/npm/@hapi/boom/-/boom-7.4.7.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+'@hapi/hoek':
+ _latest: 8.2.4
+ _:
+  8.x.x: 8.2.4
+ 8.2.4:
+  $: sha512-Ze5SDNt325yZvNO7s5C4fXDscjJ6dcqLFXJQ/M7dZRQCewuDj2iDUuBi6jLQt+APbW9RjjVEvLr35FXuOEqjow==
+  _: 'https://repository.cache.walmart.com/content/groups/npm/@hapi/hoek/-/hoek-8.2.4.tgz'
 '@sinonjs/formatio':
  _:
   3.0.0: 3.0.0
@@ -330,9 +347,8 @@ boom:
  _:
   4.x.x: 4.3.1
   '5.x.x,^5.2.0': 5.2.0
-  '7.x.x,^7.2.0': 7.2.0
+  7.x.x: 7.2.0
  7.2.0:
-  top: 1
   $: sha1-K/8kpVVldn/ehp7ICDF+sQxI6WY=
   _: 'http://localhost:4873/boom/-/boom-7.2.0.tgz'
   dependencies:
@@ -821,12 +837,13 @@ electrode-confippet:
    js-yaml: ^3.5.3
    lodash: ^4.13.1
 electrode-hapi-compat:
+ _latest: 1.2.0
  _:
-  ^1.0.0: 1.0.0
- 1.0.0:
+  ^1.2.0: 1.2.0
+ 1.2.0:
   top: 1
-  $: sha512-Hiy5jKTVas8CHmX+M1Qh/bkUKuCBVFjDvrXE4ZKHa9lrsLdYc0oYqsTQ0BWYN3OZq8i7X1yXdqy+aPWEsgd0yA==
-  _: 'http://localhost:4873/electrode-hapi-compat/-/electrode-hapi-compat-1.0.0.tgz'
+  $: sha512-oalPOkP3+eLQGV/fQPKf3NRjIZkUXvjb6WflB6wRscCvy7G4JShs2I0fmYHWD/Bp/7ro+9qlno78K97HTDsteQ==
+  _: 'https://repository.cache.walmart.com/content/groups/npm/electrode-hapi-compat/-/electrode-hapi-compat-1.2.0.tgz'
 electrode-server:
  _:
   ^1.5.0: 1.5.1
@@ -1174,10 +1191,10 @@ get-func-name:
   _: 'http://localhost:4873/get-func-name/-/get-func-name-2.0.0.tgz'
 glob:
  _:
-  '7.1.1,^7.0.0,^7.0.3,^7.0.5': 7.1.1
+  '7.1.1,^7.0.0': 7.1.1
   7.1.2: 7.1.2
   ^5.0.15: 5.0.15
-  ^7.1.2: 7.1.3
+  '^7.0.3,^7.0.5,^7.1.2': 7.1.3
  7.1.3:
   $: sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
   _: 'http://localhost:4873/glob/-/glob-7.1.3.tgz'
@@ -1323,12 +1340,13 @@ hapi:
    subtext: ^5.0.0
    topo: ^2.0.2
 hapi17:
+ _latest: 17.0.0-fynlocal_h
  _:
   ./hapi17: 17.0.0-fynlocal_h
  17.0.0-fynlocal_h:
   top: 1
   $: local
-  _: hapi17
+  _: ./hapi17
   dependencies:
    hapi: ^17
    vision: ^5
