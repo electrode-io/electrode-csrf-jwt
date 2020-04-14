@@ -45,6 +45,8 @@
     "electrode-server": "^1.5.0",
     "electrode-static-paths": "^1.1.0",
     "express": "^4.13.3",
+    "fastify": "^2.13.1",
+    "fastify-cookie": "^3.6.0",
     "hapi": "^16.2.0",
     "hapi17": "./hapi17",
     "isomorphic-fetch": "^2.2.1",
@@ -69,7 +71,8 @@
       "*clap.js",
       "dist",
       "test",
-      "demo"
+      "demo",
+      "fastify-demo"
     ],
     "check-coverage": true,
     "statements": 100,

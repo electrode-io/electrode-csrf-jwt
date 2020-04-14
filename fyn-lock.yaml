@@ -1,493 +1,683 @@
-'@hapi/boom':
- _latest: 7.4.7
+'@babel/code-frame':
+ _latest: 7.8.3
  _:
-  ^7.4.3: 7.4.7
- 7.4.7:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-cuAuTTIQ9RqcFRJ/Y8PvTh+paepNcaGxwQwjIDRWPXmzzyAeCO4KqS9ikMvq0MCbRk6GlYKwfzStrcP3/jSL8g==
+  _: 'https://npme.walmart.com/@babel/code-frame/-/code-frame-7.0.0-beta.44.tgz'
+  dependencies:
+   '@babel/highlight': 7.0.0-beta.44
+'@babel/generator':
+ _latest: 7.9.5
+ _:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-5xVb7hlhjGcdkKpMXgicAVgx8syK5VJz193k0i/0sLP6DzE6lRrU1K3B/rFefgdo9LPGMAOOOAWW4jycj07ShQ==
+  _: 'https://npme.walmart.com/@babel/generator/-/generator-7.0.0-beta.44.tgz'
+  dependencies:
+   '@babel/types': 7.0.0-beta.44
+   jsesc: ^2.5.1
+   lodash: ^4.2.0
+   source-map: ^0.5.0
+   trim-right: ^1.0.1
+'@babel/helper-function-name':
+ _latest: 7.9.5
+ _:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-MHRG2qZMKMFaBavX0LWpfZ2e+hLloT++N7rfM3DYOMUOGCD8cVjqZpwiL8a0bOX3IYcQev1ruciT0gdFFRTxzg==
+  _: 'https://npme.walmart.com/@babel/helper-function-name/-/helper-function-name-7.0.0-beta.44.tgz'
+  dependencies:
+   '@babel/helper-get-function-arity': 7.0.0-beta.44
+   '@babel/template': 7.0.0-beta.44
+   '@babel/types': 7.0.0-beta.44
+'@babel/helper-get-function-arity':
+ _latest: 7.8.3
+ _:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-w0YjWVwrM2HwP6/H3sEgrSQdkCaxppqFeJtAnB23pRiJB5E/O9Yp7JAAeWBl+gGEgmBFinnTyOv2RN7rcSmMiw==
+  _: 'https://npme.walmart.com/@babel/helper-get-function-arity/-/helper-get-function-arity-7.0.0-beta.44.tgz'
+  dependencies:
+   '@babel/types': 7.0.0-beta.44
+'@babel/helper-split-export-declaration':
+ _latest: 7.8.3
+ _:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-aQ7QowtkgKKzPGf0j6u77kBMdUFVBKNHw2p/3HX/POt5/oz8ec5cs0GwlgM8Hz7ui5EwJnzyfRmkNF1Nx1N7aA==
+  _: 'https://npme.walmart.com/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.0.0-beta.44.tgz'
+  dependencies:
+   '@babel/types': 7.0.0-beta.44
+'@babel/highlight':
+ _latest: 7.9.0
+ _:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-Il19yJvy7vMFm8AVAh6OZzaFoAd0hbkeMZiX3P5HGD+z7dyI7RzndHB0dg6Urh/VAFfHtpOIzDUSxmY6coyZWQ==
+  _: 'https://npme.walmart.com/@babel/highlight/-/highlight-7.0.0-beta.44.tgz'
+  dependencies:
+   chalk: ^2.0.0
+   esutils: ^2.0.2
+   js-tokens: ^3.0.0
+'@babel/template':
+ _latest: 7.8.6
+ _:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-w750Sloq0UNifLx1rUqwfbnC6uSUk0mfwwgGRfdLiaUzfAOiH0tHJE6ILQIUi3KYkjiCDTskoIsnfqZvWLBDng==
+  _: 'https://npme.walmart.com/@babel/template/-/template-7.0.0-beta.44.tgz'
+  dependencies:
+   '@babel/code-frame': 7.0.0-beta.44
+   '@babel/types': 7.0.0-beta.44
+   babylon: 7.0.0-beta.44
+   lodash: ^4.2.0
+'@babel/traverse':
+ _latest: 7.9.5
+ _:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-UHuDz8ukQkJCDASKHf+oDt3FVUzFd+QYfuBIsiNu/4+/ix6pP/C+uQZJ6K1oEfbCMv/IKWbgDEh7fcsnIE5AtA==
+  _: 'https://npme.walmart.com/@babel/traverse/-/traverse-7.0.0-beta.44.tgz'
+  dependencies:
+   '@babel/code-frame': 7.0.0-beta.44
+   '@babel/generator': 7.0.0-beta.44
+   '@babel/helper-function-name': 7.0.0-beta.44
+   '@babel/helper-split-export-declaration': 7.0.0-beta.44
+   '@babel/types': 7.0.0-beta.44
+   babylon: 7.0.0-beta.44
+   debug: ^3.1.0
+   globals: ^11.1.0
+   invariant: ^2.2.0
+   lodash: ^4.2.0
+'@babel/types':
+ _latest: 7.9.5
+ _:
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-5eTV4WRmqbaFM3v9gHAIljEQJU4Ssc6fxL61JN+Oe2ga/BwyjzjamwkCVVAQjHGuAX8i0BWo42dshL8eO5KfLQ==
+  _: 'https://npme.walmart.com/@babel/types/-/types-7.0.0-beta.44.tgz'
+  dependencies:
+   esutils: ^2.0.2
+   lodash: ^4.2.0
+   to-fast-properties: ^2.0.0
+'@hapi/boom':
+ _latest: 9.1.0
+ _:
+  ^7.4.3: 7.4.11
+ 7.4.11:
   top: 1
-  $: sha512-MaZsoOZE4oFhYiohsDLxs5tubcFyqE2yIi9KEHWLTgCI6KKPoEf0EKHcaypUoxT4yIjULiTyd1tDkPtku7Ualg==
-  _: 'https://repository.cache.walmart.com/content/groups/npm/@hapi/boom/-/boom-7.4.7.tgz'
+  $: sha512-VSU/Cnj1DXouukYxxkes4nNJonCnlogHvIff1v1RVoN4xzkKhMXX+GRmb3NyH1iar10I9WFPDv2JPwfH3GaV0A==
+  _: 'https://npme.walmart.com/@hapi/boom/-/boom-7.4.11.tgz'
   dependencies:
    '@hapi/hoek': 8.x.x
 '@hapi/hoek':
- _latest: 8.2.4
+ _latest: 9.0.4
  _:
-  8.x.x: 8.2.4
- 8.2.4:
-  $: sha512-Ze5SDNt325yZvNO7s5C4fXDscjJ6dcqLFXJQ/M7dZRQCewuDj2iDUuBi6jLQt+APbW9RjjVEvLr35FXuOEqjow==
-  _: 'https://repository.cache.walmart.com/content/groups/npm/@hapi/hoek/-/hoek-8.2.4.tgz'
-'@sinonjs/formatio':
+  8.x.x: 8.5.1
+ 8.5.1:
+  $: sha512-yN7kbciD87WzLGc5539Tn0sApjyiGHAJgKvG9W8C7O+6c7qmoQMfVs0W4bX17eqz6C78QJqqFrtgdK5EWf6Qow==
+  _: 'https://npme.walmart.com/@hapi/hoek/-/hoek-8.5.1.tgz'
+'@sinonjs/commons':
+ _latest: 1.7.2
  _:
-  3.0.0: 3.0.0
-  ^2.0.0: 2.0.0
- 3.0.0:
-  $: sha512-vdjoYLDptCgvtJs57ULshak3iJe4NW3sJ3g36xVDGff5AE8P30S6A093EIEPjdi2noGhfuNOEkbxt3J3awFW1w==
-  _: 'http://localhost:4873/@sinonjs%2fformatio/-/formatio-3.0.0.tgz'
+  '^1,^1.3.0,^1.7.0': 1.7.2
+ 1.7.2:
+  $: sha512-+DUO6pnp3udV/v2VfUWgaY5BIE1IfT7lLfeDzPVeMT1XKkaAp9LgSI9x5RtrFQoZ9Oi0PgXQQHPaoKu7dCjVxw==
+  _: 'https://npme.walmart.com/@sinonjs/commons/-/commons-1.7.2.tgz'
   dependencies:
-   '@sinonjs/samsam': 2.1.0
+   type-detect: 4.0.8
+'@sinonjs/formatio':
+ _latest: 5.0.1
+ _:
+  ^2.0.0: 2.0.0
+  ^3.2.1: 3.2.2
+ 3.2.2:
+  $: sha512-B8SEsgd8gArBLMD6zpRw3juQ2FVSsmdd7qlevyDqzS9WTCtvF55/gAL+h6gue8ZvPYcdiPdvueM/qm//9XzyTQ==
+  _: 'https://npme.walmart.com/@sinonjs/formatio/-/formatio-3.2.2.tgz'
+  dependencies:
+   '@sinonjs/commons': ^1
+   '@sinonjs/samsam': ^3.1.0
  2.0.0:
   $: sha512-ls6CAMA6/5gG+O/IdsBcblvnd8qcO/l1TYoNeAzp3wcISOxlPXQEus0mLcdwazEkWjaBdaJ3TaxmNgCLWwvWzg==
-  _: 'http://localhost:4873/@sinonjs%2fformatio/-/formatio-2.0.0.tgz'
+  _: 'https://npme.walmart.com/@sinonjs/formatio/-/formatio-2.0.0.tgz'
   dependencies:
    samsam: 1.3.0
 '@sinonjs/samsam':
+ _latest: 5.0.3
  _:
-  2.1.0: 2.1.0
- 2.1.0:
-  $: sha512-5x2kFgJYupaF1ns/RmharQ90lQkd2ELS8A9X0ymkAAdemYHGtI2KiUHG8nX2WU0T1qgnOU5YMqnBM2V7NUanNw==
-  _: 'http://localhost:4873/@sinonjs%2fsamsam/-/samsam-2.1.0.tgz'
+  ^3.1.0: 3.3.3
+ 3.3.3:
+  $: sha512-bKCMKZvWIjYD0BLGnNrxVuw4dkWCYsLqFOUWw8VgKF/+5Y+mE7LfHWPIYoDXowH+3a9LsWDMo0uAP8YDosPvHQ==
+  _: 'https://npme.walmart.com/@sinonjs/samsam/-/samsam-3.3.3.tgz'
   dependencies:
+   '@sinonjs/commons': ^1.3.0
    array-from: ^2.1.1
+   lodash: ^4.17.15
+'@sinonjs/text-encoding':
+ _latest: 0.7.1
+ _:
+  ^0.7.1: 0.7.1
+ 0.7.1:
+  $: sha512-+iTbntw2IZPb/anVDbypzfQa+ay64MW0Zo8aJ8gZPWMMK6/OubMVb6lUPMagqjOPnmtauXnFCACVl3O7ogjeqQ==
+  _: 'https://npme.walmart.com/@sinonjs/text-encoding/-/text-encoding-0.7.1.tgz'
+'@types/color-name':
+ _latest: 1.1.1
+ _:
+  ^1.1.1: 1.1.1
+ 1.1.1:
+  $: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+  _: 'https://npme.walmart.com/@types/color-name/-/color-name-1.1.1.tgz'
 abbrev:
+ _latest: 1.1.1
  _:
   '1,1.0.x': 1.0.9
  1.0.9:
   $: sha1-kbR5JYinc4wl813W9jdSovh3YTU=
-  _: 'http://localhost:4873/abbrev/-/abbrev-1.0.9.tgz'
-accept:
+  _: 'https://npme.walmart.com/abbrev/-/abbrev-1.0.9.tgz'
+abstract-logging:
+ _latest: 2.0.0
  _:
-  3.x.x: 3.0.2
-  ^2.1.4: 2.1.4
- 3.0.2:
-  $: sha512-bghLXFkCOsC1Y2TZ51etWfKDs6q249SAoHTZVfzWWdlZxoij+mgkj9AmUJWQpDY48TfnrTDIe43Xem4zdMe7mQ==
-  _: 'http://localhost:4873/accept/-/accept-3.0.2.tgz'
+  ^2.0.0: 2.0.0
+ 2.0.0:
+  $: sha512-/oA9z7JszpIioo6J6dB79LVUgJ3eD3cxkAmdCkvWWS+Y9tPtALs1rLqOekLUXUbYqM2fB9TTK0ibAyZJJOP/CA==
+  _: 'https://npme.walmart.com/abstract-logging/-/abstract-logging-2.0.0.tgz'
+accept:
+ _latest: 3.1.3
+ _:
+  2.x.x: 2.1.4
+  3.x.x: 3.1.3
+ 3.1.3:
+  $: sha512-OgOEAidVEOKPup+Gv2+2wdH2AgVKI9LxsJ4hicdJ6cY0faUuZdZoi56kkXWlHp9qicN1nWQLmW5ZRGk+SBS5xg==
+  _: 'https://npme.walmart.com/accept/-/accept-3.1.3.tgz'
   dependencies:
    boom: 7.x.x
-   hoek: 5.x.x
+   hoek: 6.x.x
+  deprecated: 'This module has moved and is now available at @hapi/accept. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  2.1.4:
   $: sha1-iHr1TO7lx/RDBGGXHsQAxh0JrLs=
-  _: 'http://localhost:4873/accept/-/accept-2.1.4.tgz'
+  _: 'https://npme.walmart.com/accept/-/accept-2.1.4.tgz'
   dependencies:
    boom: 5.x.x
    hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 accepts:
+ _latest: 1.3.7
  _:
-  '^1.3.5,~1.3.5': 1.3.5
- 1.3.5:
-  $: sha1-63d99gEXI6OxTopywIBcjoZ0a9I=
-  _: 'http://localhost:4873/accepts/-/accepts-1.3.5.tgz'
+  '^1.3.5,~1.3.7': 1.3.7
+ 1.3.7:
+  $: sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA==
+  _: 'https://npme.walmart.com/accepts/-/accepts-1.3.7.tgz'
   dependencies:
-   mime-types: ~2.1.18
-   negotiator: 0.6.1
+   mime-types: ~2.1.24
+   negotiator: 0.6.2
 acorn:
+ _latest: 7.1.1
  _:
   ^3.0.4: 3.3.0
-  ^5.5.0: 5.7.3
- 5.7.3:
-  $: sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
-  _: 'http://localhost:4873/acorn/-/acorn-5.7.3.tgz'
+  ^5.5.0: 5.7.4
+ 5.7.4:
+  $: sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
+  _: 'https://npme.walmart.com/acorn/-/acorn-5.7.4.tgz'
  3.3.0:
   $: sha1-ReN/s56No/JbruP/U2niu18iAXo=
-  _: 'http://localhost:4873/acorn/-/acorn-3.3.0.tgz'
+  _: 'https://npme.walmart.com/acorn/-/acorn-3.3.0.tgz'
 acorn-jsx:
+ _latest: 5.2.0
  _:
   ^3.0.0: 3.0.1
  3.0.1:
   $: sha1-r9+UiPsezvyDSPb7IvRk4ypYs2s=
-  _: 'http://localhost:4873/acorn-jsx/-/acorn-jsx-3.0.1.tgz'
+  _: 'https://npme.walmart.com/acorn-jsx/-/acorn-jsx-3.0.1.tgz'
   dependencies:
    acorn: ^3.0.4
 ajv:
+ _latest: 6.12.0
  _:
   '^5.2.3,^5.3.0': 5.5.2
+  '^6.10.2,^6.11.0,^6.12.0': 6.12.0
+ 6.12.0:
+  $: sha512-D6gFiFA0RRLyUbvijN74DWAjXSFxWKaWP7mldxkVhyhAV3+SWA9HEJPHQ2c9soIeTFJqcSdFDGFgdqs1iUU2Hw==
+  _: 'https://npme.walmart.com/ajv/-/ajv-6.12.0.tgz'
+  dependencies:
+   fast-deep-equal: ^3.1.1
+   fast-json-stable-stringify: ^2.0.0
+   json-schema-traverse: ^0.4.1
+   uri-js: ^4.2.2
  5.5.2:
   $: sha1-c7Xuyj+rZT49P5Qis0GtQiBdyWU=
-  _: 'http://localhost:4873/ajv/-/ajv-5.5.2.tgz'
+  _: 'https://npme.walmart.com/ajv/-/ajv-5.5.2.tgz'
   dependencies:
    co: ^4.6.0
    fast-deep-equal: ^1.0.0
    fast-json-stable-stringify: ^2.0.0
    json-schema-traverse: ^0.3.0
 ajv-keywords:
+ _latest: 3.4.1
  _:
   ^2.1.0: 2.1.1
  2.1.1:
   $: sha1-YXmX/F9gV2iUxDX5QNgZ4TW4B2I=
-  _: 'http://localhost:4873/ajv-keywords/-/ajv-keywords-2.1.1.tgz'
+  _: 'https://npme.walmart.com/ajv-keywords/-/ajv-keywords-2.1.1.tgz'
   peerDependencies:
    ajv: ^5.0.0
 amdefine:
+ _latest: 1.0.1
  _:
   '>=0.0.4': 1.0.1
  1.0.1:
   $: sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
-  _: 'http://localhost:4873/amdefine/-/amdefine-1.0.1.tgz'
+  _: 'https://npme.walmart.com/amdefine/-/amdefine-1.0.1.tgz'
 ammo:
+ _latest: 3.0.3
  _:
-  '2.x.x,^2.0.4': 2.0.4
-  3.x.x: 3.0.1
- 3.0.1:
-  $: sha512-4UqoM8xQjwkQ78oiU4NbBK0UgYqeKMAKmwE4ec7Rz3rGU8ZEBFxzgF2sUYKOAlqIXExBDYLN6y1ShF5yQ4hwLQ==
-  _: 'http://localhost:4873/ammo/-/ammo-3.0.1.tgz'
+  2.x.x: 2.0.4
+  3.x.x: 3.0.3
+ 3.0.3:
+  $: sha512-vo76VJ44MkUBZL/BzpGXaKzMfroF4ZR6+haRuw9p+eSWfoNaH2AxVc8xmiEPC08jhzJSeM6w7/iMUGet8b4oBQ==
+  _: 'https://npme.walmart.com/ammo/-/ammo-3.0.3.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
+  deprecated: 'This module has moved and is now available at @hapi/ammo. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  2.0.4:
   $: sha1-v4CqshFpjqePY+9efxE91dnokX8=
-  _: 'http://localhost:4873/ammo/-/ammo-2.0.4.tgz'
+  _: 'https://npme.walmart.com/ammo/-/ammo-2.0.4.tgz'
   dependencies:
    boom: 5.x.x
    hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 ansi-escapes:
+ _latest: 4.3.1
  _:
-  ^3.0.0: 3.1.0
- 3.1.0:
-  $: sha512-UgAb8H9D41AQnu/PbWlCofQVcnV4Gs2bBJi9eZPxfU/hgglFh3SMDMENRIqdr7H6XFnXdoknctFByVsCOotTVw==
-  _: 'http://localhost:4873/ansi-escapes/-/ansi-escapes-3.1.0.tgz'
+  ^3.0.0: 3.2.0
+ 3.2.0:
+  $: sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==
+  _: 'https://npme.walmart.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz'
 ansi-regex:
+ _latest: 5.0.0
  _:
   ^2.0.0: 2.1.1
   ^3.0.0: 3.0.0
  3.0.0:
   $: sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=
-  _: 'http://localhost:4873/ansi-regex/-/ansi-regex-3.0.0.tgz'
+  _: 'https://npme.walmart.com/ansi-regex/-/ansi-regex-3.0.0.tgz'
  2.1.1:
   $: sha1-w7M6te42DYbg5ijwRorn7yfWVN8=
-  _: 'http://localhost:4873/ansi-regex/-/ansi-regex-2.1.1.tgz'
+  _: 'https://npme.walmart.com/ansi-regex/-/ansi-regex-2.1.1.tgz'
 ansi-styles:
+ _latest: 4.2.1
  _:
   ^2.2.1: 2.2.1
   ^3.2.1: 3.2.1
+  ^4.1.0: 4.2.1
+ 4.2.1:
+  $: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
+  _: 'https://npme.walmart.com/ansi-styles/-/ansi-styles-4.2.1.tgz'
+  dependencies:
+   '@types/color-name': ^1.1.1
+   color-convert: ^2.0.1
  3.2.1:
   $: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
-  _: 'http://localhost:4873/ansi-styles/-/ansi-styles-3.2.1.tgz'
+  _: 'https://npme.walmart.com/ansi-styles/-/ansi-styles-3.2.1.tgz'
   dependencies:
    color-convert: ^1.9.0
  2.2.1:
   $: sha1-tDLdM1i2NM914eRmQ2gkBTPB3b4=
-  _: 'http://localhost:4873/ansi-styles/-/ansi-styles-2.2.1.tgz'
+  _: 'https://npme.walmart.com/ansi-styles/-/ansi-styles-2.2.1.tgz'
 any-promise:
+ _latest: 1.3.0
  _:
   ^1.1.0: 1.3.0
  1.3.0:
   $: sha1-q8av7tzqUugJzcA3au0845Y10X8=
-  _: 'http://localhost:4873/any-promise/-/any-promise-1.3.0.tgz'
+  _: 'https://npme.walmart.com/any-promise/-/any-promise-1.3.0.tgz'
+archy:
+ _latest: 1.0.0
+ _:
+  ^1.0.0: 1.0.0
+ 1.0.0:
+  $: sha1-+cjBN1fMHde8N5rHeyxipcKGjEA=
+  _: 'https://npme.walmart.com/archy/-/archy-1.0.0.tgz'
 argparse:
+ _latest: 1.0.10
  _:
   ^1.0.7: 1.0.10
  1.0.10:
   $: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
-  _: 'http://localhost:4873/argparse/-/argparse-1.0.10.tgz'
+  _: 'https://npme.walmart.com/argparse/-/argparse-1.0.10.tgz'
   dependencies:
    sprintf-js: ~1.0.2
 array-flatten:
+ _latest: 3.0.0
  _:
   1.1.1: 1.1.1
  1.1.1:
   $: sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
-  _: 'http://localhost:4873/array-flatten/-/array-flatten-1.1.1.tgz'
+  _: 'https://npme.walmart.com/array-flatten/-/array-flatten-1.1.1.tgz'
 array-from:
+ _latest: 2.1.1
  _:
   ^2.1.1: 2.1.1
  2.1.1:
   $: sha1-z+nYwmYoudxa7MYqn12PHzUsEZU=
-  _: 'http://localhost:4873/array-from/-/array-from-2.1.1.tgz'
-array-union:
- _:
-  ^1.0.1: 1.0.2
- 1.0.2:
-  $: sha1-mjRBDk9OPaI96jdb5b5w8kd47Dk=
-  _: 'http://localhost:4873/array-union/-/array-union-1.0.2.tgz'
-  dependencies:
-   array-uniq: ^1.0.1
-array-uniq:
- _:
-  ^1.0.1: 1.0.3
- 1.0.3:
-  $: sha1-r2rId6Jcx/dOBYiUdThY39sk/bY=
-  _: 'http://localhost:4873/array-uniq/-/array-uniq-1.0.3.tgz'
-arrify:
- _:
-  ^1.0.0: 1.0.1
- 1.0.1:
-  $: sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
-  _: 'http://localhost:4873/arrify/-/arrify-1.0.1.tgz'
+  _: 'https://npme.walmart.com/array-from/-/array-from-2.1.1.tgz'
 assertion-error:
+ _latest: 1.1.0
  _:
   ^1.1.0: 1.1.0
  1.1.0:
   $: sha512-jgsaNduz+ndvGyFt3uSuWqvy4lCnIJiovtouQN5JZHOKCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyWlEeuDw==
-  _: 'http://localhost:4873/assertion-error/-/assertion-error-1.1.0.tgz'
+  _: 'https://npme.walmart.com/assertion-error/-/assertion-error-1.1.0.tgz'
 async:
+ _latest: 3.2.0
  _:
   1.x: 1.5.2
-  '^2.4.0,^2.5.0': 2.6.1
- 2.6.1:
-  $: sha512-fNEiL2+AZt6AlAw/29Cr0UDe4sRAHCpEHh54WMz+Bb7QfNcFw4h3loofyJpLeQs4Yx7yuqu/2dLgM5hKOs6HlQ==
-  _: 'http://localhost:4873/async/-/async-2.6.1.tgz'
+  ^2.4.0: 2.6.3
+ 2.6.3:
+  $: sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
+  _: 'https://npme.walmart.com/async/-/async-2.6.3.tgz'
   dependencies:
-   lodash: ^4.17.10
+   lodash: ^4.17.14
  1.5.2:
   $: sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
-  _: 'http://localhost:4873/async/-/async-1.5.2.tgz'
+  _: 'https://npme.walmart.com/async/-/async-1.5.2.tgz'
 async-eventemitter:
+ _latest: 0.2.4
  _:
   ^0.2.2: 0.2.4
  0.2.4:
   $: sha512-pd20BwL7Yt1zwDFy+8MX8F1+WCT8aQeKj0kQnTrH9WaeRETlRamVhD0JtRPmrV4GfOJ2F9CvdQkZeZhnh2TuHw==
-  _: 'http://localhost:4873/async-eventemitter/-/async-eventemitter-0.2.4.tgz'
+  _: 'https://npme.walmart.com/async-eventemitter/-/async-eventemitter-0.2.4.tgz'
   dependencies:
    async: ^2.4.0
+atomic-sleep:
+ _latest: 1.0.0
+ _:
+  ^1.0.0: 1.0.0
+ 1.0.0:
+  $: sha512-kNOjDqAh7px0XWNI+4QbzoiR/nTkHAWNud2uvnJquD1/x5a7EQZMJT0AczqK0Qn67oY/TTQ1LbUKajZpp3I9tQ==
+  _: 'https://npme.walmart.com/atomic-sleep/-/atomic-sleep-1.0.0.tgz'
+avvio:
+ _latest: 6.4.1
+ _:
+  ^6.3.1: 6.4.1
+ 6.4.1:
+  $: sha512-jeZaUK+F7MuWSNT3VHfltskPJZKqVeTWQqBA4SDaDoLaQ0lb5TOgLeQT1BEuhTIUNISCDCGY3zjYyVmQQ48gKA==
+  _: 'https://npme.walmart.com/avvio/-/avvio-6.4.1.tgz'
+  dependencies:
+   archy: ^1.0.0
+   debug: ^4.0.0
+   fastq: ^1.6.0
 b64:
+ _latest: 4.1.2
  _:
   3.x.x: 3.0.3
-  4.x.x: 4.0.0
- 4.0.0:
-  $: sha512-EhmUQodKB0sdzPPrbIWbGqA5cQeTWxYrAgNeeT1rLZWtD3tbNTnphz8J4vkXI3cPgBNlXBjzEbzDzq0Nwi4f9A==
-  _: 'http://localhost:4873/b64/-/b64-4.0.0.tgz'
+  4.x.x: 4.1.2
+ 4.1.2:
+  $: sha512-+GUspBxlH3CJaxMUGUE1EBoWM6RKgWiYwUDal0qdf8m3ArnXNN1KzKVo5HOnE/FSq4HHyWf3TlHLsZI8PKQgrQ==
+  _: 'https://npme.walmart.com/b64/-/b64-4.1.2.tgz'
+  dependencies:
+   hoek: 6.x.x
+  deprecated: 'This module has moved and is now available at @hapi/b64. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  3.0.3:
   $: sha512-Pbeh0i6OLubPJdIdCepn8ZQHwN2MWznZHbHABSTEfQ706ie+yuxNSaPdqX1xRatT6WanaS1EazMiSg0NUW2XxQ==
-  _: 'http://localhost:4873/b64/-/b64-3.0.3.tgz'
+  _: 'https://npme.walmart.com/b64/-/b64-3.0.3.tgz'
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 babel-code-frame:
+ _latest: 6.26.0
  _:
-  '^6.22.0,^6.26.0': 6.26.0
+  ^6.22.0: 6.26.0
  6.26.0:
   $: sha1-Y/1D99weO7fONZR9uP42mj9Yx0s=
-  _: 'http://localhost:4873/babel-code-frame/-/babel-code-frame-6.26.0.tgz'
+  _: 'https://npme.walmart.com/babel-code-frame/-/babel-code-frame-6.26.0.tgz'
   dependencies:
    chalk: ^1.1.3
    esutils: ^2.0.2
    js-tokens: ^3.0.2
 babel-eslint:
+ _latest: 10.1.0
  _:
-  ^7.1.1: 7.2.3
- 7.2.3:
-  $: sha1-sv4tgBJkcPXBlELcdXJTqJdxCCc=
-  _: 'http://localhost:4873/babel-eslint/-/babel-eslint-7.2.3.tgz'
+  ^8.1.2: 8.2.6
+ 8.2.6:
+  $: sha512-aCdHjhzcILdP8c9lej7hvXKvQieyRt20SF102SIGyY4cUIiw6UaAtK4j2o3dXX74jEmy0TJ0CEhv4fTIM3SzcA==
+  _: 'https://npme.walmart.com/babel-eslint/-/babel-eslint-8.2.6.tgz'
   dependencies:
-   babel-code-frame: ^6.22.0
-   babel-traverse: ^6.23.1
-   babel-types: ^6.23.0
-   babylon: ^6.17.0
-babel-messages:
- _:
-  ^6.23.0: 6.23.0
- 6.23.0:
-  $: sha1-8830cDhYA1sqKVHG7F7fbGLyYw4=
-  _: 'http://localhost:4873/babel-messages/-/babel-messages-6.23.0.tgz'
-  dependencies:
-   babel-runtime: ^6.22.0
-babel-runtime:
- _:
-  '^6.22.0,^6.26.0': 6.26.0
- 6.26.0:
-  $: sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
-  _: 'http://localhost:4873/babel-runtime/-/babel-runtime-6.26.0.tgz'
-  dependencies:
-   core-js: ^2.4.0
-   regenerator-runtime: ^0.11.0
-babel-traverse:
- _:
-  ^6.23.1: 6.26.0
- 6.26.0:
-  $: sha1-RqnL1+3MYsjlwGTi0tjQ9ANXZu4=
-  _: 'http://localhost:4873/babel-traverse/-/babel-traverse-6.26.0.tgz'
-  dependencies:
-   babel-code-frame: ^6.26.0
-   babel-messages: ^6.23.0
-   babel-runtime: ^6.26.0
-   babel-types: ^6.26.0
-   babylon: ^6.18.0
-   debug: ^2.6.8
-   globals: ^9.18.0
-   invariant: ^2.2.2
-   lodash: ^4.17.4
-babel-types:
- _:
-  '^6.23.0,^6.26.0': 6.26.0
- 6.26.0:
-  $: sha1-o7Bz+Uq0nrb6Vc1lInozQ4BjJJc=
-  _: 'http://localhost:4873/babel-types/-/babel-types-6.26.0.tgz'
-  dependencies:
-   babel-runtime: ^6.26.0
-   esutils: ^2.0.2
-   lodash: ^4.17.4
-   to-fast-properties: ^1.0.3
+   '@babel/code-frame': 7.0.0-beta.44
+   '@babel/traverse': 7.0.0-beta.44
+   '@babel/types': 7.0.0-beta.44
+   babylon: 7.0.0-beta.44
+   eslint-scope: 3.7.1
+   eslint-visitor-keys: ^1.0.0
 babylon:
+ _latest: 6.18.0
  _:
-  '^6.17.0,^6.18.0': 6.18.0
- 6.18.0:
-  $: sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==
-  _: 'http://localhost:4873/babylon/-/babylon-6.18.0.tgz'
+  7.0.0-beta.44: 7.0.0-beta.44
+ 7.0.0-beta.44:
+  $: sha512-5Hlm13BJVAioCHpImtFqNOF2H3ieTOHd0fmFGMxOJ9jgeFqeAwsv3u5P5cR7CSeFrkgHsT19DgFJkHV0/Mcd8g==
+  _: 'https://npme.walmart.com/babylon/-/babylon-7.0.0-beta.44.tgz'
 balanced-match:
+ _latest: 1.0.0
  _:
   ^1.0.0: 1.0.0
  1.0.0:
   $: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
-  _: 'http://localhost:4873/balanced-match/-/balanced-match-1.0.0.tgz'
+  _: 'https://npme.walmart.com/balanced-match/-/balanced-match-1.0.0.tgz'
 big-time:
+ _latest: 2.0.1
  _:
   2.x.x: 2.0.1
  2.0.1:
   $: sha1-aMffjcMPl+lT8lpnp2rJcTwWyd4=
-  _: 'http://localhost:4873/big-time/-/big-time-2.0.1.tgz'
+  _: 'https://npme.walmart.com/big-time/-/big-time-2.0.1.tgz'
 bluebird:
+ _latest: 3.7.2
  _:
-  '>= 2.10.0 <= 3.x.x': 3.5.2
- 3.5.2:
-  $: sha512-dhHTWMI7kMx5whMQntl7Vr9C6BvV10lFXDAasnqnrMYhXVCzzk6IO9Fo2L75jXHT07WrOngL1WDXOp+yYS91Yg==
-  _: 'http://localhost:4873/bluebird/-/bluebird-3.5.2.tgz'
+  '>= 2.10.0 <= 3.x.x': 3.7.2
+ 3.7.2:
+  $: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
+  _: 'https://npme.walmart.com/bluebird/-/bluebird-3.7.2.tgz'
 body-parser:
+ _latest: 1.19.0
  _:
-  '1.18.3,^1.14.2': 1.18.3
- 1.18.3:
+  '1.19.0,^1.14.2': 1.19.0
+ 1.19.0:
   top: 1
-  $: sha1-WykhmP/dVTs6DyDe0FkrlWlVyLQ=
-  _: 'http://localhost:4873/body-parser/-/body-parser-1.18.3.tgz'
+  $: sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw==
+  _: 'https://npme.walmart.com/body-parser/-/body-parser-1.19.0.tgz'
   dependencies:
-   bytes: 3.0.0
+   bytes: 3.1.0
    content-type: ~1.0.4
    debug: 2.6.9
    depd: ~1.1.2
-   http-errors: ~1.6.3
-   iconv-lite: 0.4.23
+   http-errors: 1.7.2
+   iconv-lite: 0.4.24
    on-finished: ~2.3.0
-   qs: 6.5.2
-   raw-body: 2.3.3
-   type-is: ~1.6.16
+   qs: 6.7.0
+   raw-body: 2.4.0
+   type-is: ~1.6.17
 boom:
+ _latest: 7.3.0
  _:
   4.x.x: 4.3.1
-  '5.x.x,^5.2.0': 5.2.0
-  7.x.x: 7.2.0
- 7.2.0:
-  $: sha1-K/8kpVVldn/ehp7ICDF+sQxI6WY=
-  _: 'http://localhost:4873/boom/-/boom-7.2.0.tgz'
+  5.x.x: 5.2.0
+  7.x.x: 7.2.2
+ 7.2.2:
+  $: sha512-IFUbOa8PS7xqmhIjpeStwT3d09hGkNYQ6aj2iELSTxcVs2u0aKn1NzhkdUQSzsRg1FVkj3uit3I6mXQCBixw+A==
+  _: 'https://npme.walmart.com/boom/-/boom-7.2.2.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
  5.2.0:
   $: sha512-Z5BTk6ZRe4tXXQlkqftmsAUANpXmuwlsF5Oov8ThoMbQRzdGTA1ngYRW160GexgOgjsFOKJz0LYhoNi+2AMBUw==
-  _: 'http://localhost:4873/boom/-/boom-5.2.0.tgz'
+  _: 'https://npme.walmart.com/boom/-/boom-5.2.0.tgz'
   dependencies:
    hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
  4.3.1:
   $: sha1-T4owBctKfjiJ90kDD9JbluAdLjE=
-  _: 'http://localhost:4873/boom/-/boom-4.3.1.tgz'
+  _: 'https://npme.walmart.com/boom/-/boom-4.3.1.tgz'
   dependencies:
    hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 bounce:
+ _latest: 1.2.3
  _:
-  1.x.x: 1.2.0
- 1.2.0:
-  $: sha512-8syCGe8B2/WC53118/F/tFy5aW00j+eaGPXmAUP7iBhxc+EBZZxS1vKelWyBCH6IqojgS2t1gF0glH30qAJKEw==
-  _: 'http://localhost:4873/bounce/-/bounce-1.2.0.tgz'
+  1.x.x: 1.2.2
+ 1.2.2:
+  $: sha512-1LPcXg3fkGVhjdA/P3DcR5cDktKEYtDpruJv9Nhmy36RoYaoxZfC82Zr2JmS3vysDJKqMtP0qJw3/P6iisTASg==
+  _: 'https://npme.walmart.com/bounce/-/bounce-1.2.2.tgz'
   dependencies:
    boom: 7.x.x
-   hoek: 5.x.x
+   hoek: 6.x.x
+  deprecated: 'This module has moved and is now available at @hapi/bounce. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
+bourne:
+ _latest: 1.1.2
+ _:
+  1.x.x:
+   - 1.1.2
+   - 1.1.1
+ 1.1.2:
+  $: sha512-b2dgVkTZhkQirNMohgC00rWfpVqEi9y5tKM1k3JvoNx05ODtfQoPPd4js9CYFQoY0IM8LAmnJulEuWv74zjUOg==
+  _: 'https://npme.walmart.com/bourne/-/bourne-1.1.2.tgz'
+  deprecated: 'This module has moved and is now available at @hapi/bourne. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
+ 1.1.1:
+  $: sha512-Ou0l3W8+n1FuTOoIfIrCk9oF9WVWc+9fKoAl67XQr9Ws0z7LgILRZ7qtc9xdT4BveSKtnYXfKPgn8pFAqeQRew==
+  _: 'https://npme.walmart.com/bourne/-/bourne-1.1.1.tgz'
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 brace-expansion:
+ _latest: 1.1.11
  _:
   ^1.1.7: 1.1.11
  1.1.11:
   $: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
-  _: 'http://localhost:4873/brace-expansion/-/brace-expansion-1.1.11.tgz'
+  _: 'https://npme.walmart.com/brace-expansion/-/brace-expansion-1.1.11.tgz'
   dependencies:
    balanced-match: ^1.0.0
    concat-map: 0.0.1
 browser-stdout:
+ _latest: 1.3.1
  _:
   1.3.0: 1.3.0
  1.3.0:
   $: sha1-81HTKWnTL6XXpVZxVCY9korjvR8=
-  _: 'http://localhost:4873/browser-stdout/-/browser-stdout-1.3.0.tgz'
+  _: 'https://npme.walmart.com/browser-stdout/-/browser-stdout-1.3.0.tgz'
 buffer-equal-constant-time:
+ _latest: 1.0.1
  _:
   1.0.1: 1.0.1
  1.0.1:
   $: sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk=
-  _: 'http://localhost:4873/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz'
+  _: 'https://npme.walmart.com/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz'
 buffer-from:
+ _latest: 1.1.1
  _:
   ^1.0.0: 1.1.1
  1.1.1:
   $: sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
-  _: 'http://localhost:4873/buffer-from/-/buffer-from-1.1.1.tgz'
+  _: 'https://npme.walmart.com/buffer-from/-/buffer-from-1.1.1.tgz'
 bytes:
+ _latest: 3.1.0
  _:
   2.4.0: 2.4.0
-  3.0.0: 3.0.0
- 3.0.0:
-  $: sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=
-  _: 'http://localhost:4873/bytes/-/bytes-3.0.0.tgz'
+  3.1.0: 3.1.0
+ 3.1.0:
+  $: sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
+  _: 'https://npme.walmart.com/bytes/-/bytes-3.1.0.tgz'
  2.4.0:
   $: sha1-fZcZb51br39pNeJZhVSe3SpsIzk=
-  _: 'http://localhost:4873/bytes/-/bytes-2.4.0.tgz'
+  _: 'https://npme.walmart.com/bytes/-/bytes-2.4.0.tgz'
 cache-content-type:
+ _latest: 1.0.1
  _:
   ^1.0.0: 1.0.1
  1.0.1:
   $: sha512-IKufZ1o4Ut42YUrZSo8+qnMTrFuKkvyoLXUywKz9GJ5BrhOFGhLdkx9sG4KAnVvbY6kEcSFjLQul+DVmBm2bgA==
-  _: 'http://localhost:4873/cache-content-type/-/cache-content-type-1.0.1.tgz'
+  _: 'https://npme.walmart.com/cache-content-type/-/cache-content-type-1.0.1.tgz'
   dependencies:
    mime-types: ^2.1.18
    ylru: ^1.2.0
 call:
+ _latest: 5.0.3
  _:
-  5.x.x: 5.0.1
-  ^4.0.2: 4.0.2
- 5.0.1:
-  $: sha512-ollfFPSshiuYLp7AsrmpkQJ/PxCi6AzV81rCjBwWhyF2QGyUY/vPDMzoh4aUcWyucheRglG2LaS5qkIEfLRh6A==
-  _: 'http://localhost:4873/call/-/call-5.0.1.tgz'
+  4.x.x: 4.0.2
+  5.x.x: 5.0.3
+ 5.0.3:
+  $: sha512-eX16KHiAYXugbFu6VifstSdwH6aMuWWb4s0qvpq1nR1b+Sf+u68jjttg8ixDBEldPqBi30bDU35OJQWKeTLKxg==
+  _: 'https://npme.walmart.com/call/-/call-5.0.3.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
    boom: 7.x.x
+  deprecated: 'This module has moved and is now available at @hapi/call. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  4.0.2:
   $: sha1-33b19R7o3Ui4VqyEAPfmnm1zmcQ=
-  _: 'http://localhost:4873/call/-/call-4.0.2.tgz'
+  _: 'https://npme.walmart.com/call/-/call-4.0.2.tgz'
   dependencies:
    hoek: 4.x.x
    boom: 5.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 caller-path:
+ _latest: 3.0.0
  _:
   ^0.1.0: 0.1.0
  0.1.0:
   $: sha1-lAhe9jWB7NPaqSREqP6U6CV3dR8=
-  _: 'http://localhost:4873/caller-path/-/caller-path-0.1.0.tgz'
+  _: 'https://npme.walmart.com/caller-path/-/caller-path-0.1.0.tgz'
   dependencies:
    callsites: ^0.2.0
 callsites:
+ _latest: 3.1.0
  _:
   ^0.2.0: 0.2.0
  0.2.0:
   $: sha1-r6uWJikQp/M8GaV3WCXGnzTjUMo=
-  _: 'http://localhost:4873/callsites/-/callsites-0.2.0.tgz'
+  _: 'https://npme.walmart.com/callsites/-/callsites-0.2.0.tgz'
 catbox:
+ _latest: 10.0.6
  _:
-  10.x.x: 10.0.3
-  ^7.1.5: 7.1.5
- 10.0.3:
-  $: sha512-qwus6RnVctHXYwfxvvDwvlMWHwCjQdIpQQbtyHnRF0JpwmxbQJ/UIZi9y8O6DpphKCdfO9gpxgb2ne9ZDx39BQ==
-  _: 'http://localhost:4873/catbox/-/catbox-10.0.3.tgz'
+  10.x.x: 10.0.5
+  7.x.x: 7.1.5
+ 10.0.5:
+  $: sha512-5SpI/tEP3SiLE1qkkV+/hdVW48sHVBEbzPX4jBiwl6hsZh/gkl4bqfGLkvh7mjpMK5evJ0Rm/6NRlhF/Jsy9ow==
+  _: 'https://npme.walmart.com/catbox/-/catbox-10.0.5.tgz'
   dependencies:
    boom: 7.x.x
-   hoek: 5.x.x
-   joi: 13.x.x
+   hoek: 6.x.x
+   joi: 14.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
  7.1.5:
   $: sha512-4fui5lELzqZ+9cnaAP/BcqXTH6LvWLBRtFhJ0I4FfgfXiSaZcf6k9m9dqOyChiTxNYtvLk7ZMYSf7ahMq3bf5A==
-  _: 'http://localhost:4873/catbox/-/catbox-7.1.5.tgz'
+  _: 'https://npme.walmart.com/catbox/-/catbox-7.1.5.tgz'
   dependencies:
    boom: 5.x.x
    hoek: 4.x.x
    joi: 10.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 catbox-memory:
+ _latest: 4.0.1
  _:
-  3.x.x: 3.1.2
-  ^2.0.4: 2.0.4
- 3.1.2:
-  $: sha512-lhWtutLVhsq3Mucxk2McxBPPibJ34WcHuWFz3xqub9u9Ve/IQYpZv3ijLhQXfQped9DXozURiaq9O3aZpP91eg==
-  _: 'http://localhost:4873/catbox-memory/-/catbox-memory-3.1.2.tgz'
+  2.x.x: 2.0.4
+  3.x.x: 3.1.4
+ 3.1.4:
+  $: sha512-1tDnll066au0HXBSDHS/YQ34MQ2omBsmnA9g/jseyq/M3m7UPrajVtPDZK/rXgikSC1dfjo9Pa+kQ1qcyG2d3g==
+  _: 'https://npme.walmart.com/catbox-memory/-/catbox-memory-3.1.4.tgz'
   dependencies:
    big-time: 2.x.x
    boom: 7.x.x
-   hoek: 5.x.x
+   hoek: 6.x.x
+  deprecated: 'This module has moved and is now available at @hapi/catbox-memory. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  2.0.4:
   $: sha1-Qz4lWQLK9UIz0ShkKcj03xToItU=
-  _: 'http://localhost:4873/catbox-memory/-/catbox-memory-2.0.4.tgz'
+  _: 'https://npme.walmart.com/catbox-memory/-/catbox-memory-2.0.4.tgz'
   dependencies:
    hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 chai:
+ _latest: 4.2.0
  _:
   ^4.1.2: 4.2.0
  4.2.0:
   $: sha512-XQU3bhBukrOsQCuwZndwGcCVQHyZi53fQ6Ys1Fym7E4olpIqqZZhhoFJoaKVvV17lWQoXYwgWN2nF5crA8J2jw==
-  _: 'http://localhost:4873/chai/-/chai-4.2.0.tgz'
+  _: 'https://npme.walmart.com/chai/-/chai-4.2.0.tgz'
   dependencies:
    assertion-error: ^1.1.0
    check-error: ^1.0.2
@@ -496,327 +686,396 @@ chai:
    pathval: ^1.1.0
    type-detect: ^4.0.5
 chalk:
+ _latest: 4.0.0
  _:
   '^1.1.1,^1.1.3': 1.1.3
-  '^2.0.0,^2.0.1,^2.1.0': 2.4.1
- 2.4.1:
-  $: sha512-ObN6h1v2fTJSmUXoS3nMQ92LbDK9be4TV+6G+omQlGJFdcUX5heKi1LZ1YnRMIgwTLEj3E24bT6tYni50rlCfQ==
-  _: 'http://localhost:4873/chalk/-/chalk-2.4.1.tgz'
+  '^2.0.0,^2.1.0': 2.4.2
+  ^4.0.0: 4.0.0
+ 4.0.0:
+  $: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
+  _: 'https://npme.walmart.com/chalk/-/chalk-4.0.0.tgz'
+  dependencies:
+   ansi-styles: ^4.1.0
+   supports-color: ^7.1.0
+ 2.4.2:
+  $: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
+  _: 'https://npme.walmart.com/chalk/-/chalk-2.4.2.tgz'
   dependencies:
    ansi-styles: ^3.2.1
    escape-string-regexp: ^1.0.5
    supports-color: ^5.3.0
  1.1.3:
   $: sha1-qBFcVeSnAv5NFQq9OHKCKn4J/Jg=
-  _: 'http://localhost:4873/chalk/-/chalk-1.1.3.tgz'
+  _: 'https://npme.walmart.com/chalk/-/chalk-1.1.3.tgz'
   dependencies:
    ansi-styles: ^2.2.1
    escape-string-regexp: ^1.0.2
    has-ansi: ^2.0.0
    strip-ansi: ^3.0.0
    supports-color: ^2.0.0
+chalker:
+ _latest: 1.2.0
+ _:
+  ^1.2.0: 1.2.0
+ 1.2.0:
+  $: sha512-Cag6asQV/lK6AQGBWGGDt5bu+FSzo4OlLHQVrd4Io1cJCGNXIvKcaxx6JH0+iL1azQ4Bs1i7qkvzlkH2Vwo2OQ==
+  _: 'https://npme.walmart.com/chalker/-/chalker-1.2.0.tgz'
+  dependencies:
+   chalk: ^4.0.0
 chardet:
+ _latest: 1.0.0
  _:
   ^0.4.0: 0.4.2
  0.4.2:
   $: sha1-tUc7M9yXxCTl2Y3IfVXU2KKci/I=
-  _: 'http://localhost:4873/chardet/-/chardet-0.4.2.tgz'
+  _: 'https://npme.walmart.com/chardet/-/chardet-0.4.2.tgz'
 check-error:
+ _latest: 1.0.2
  _:
   ^1.0.2: 1.0.2
  1.0.2:
   $: sha1-V00xLt2Iu13YkS6Sht1sCu1KrII=
-  _: 'http://localhost:4873/check-error/-/check-error-1.0.2.tgz'
+  _: 'https://npme.walmart.com/check-error/-/check-error-1.0.2.tgz'
 circular-json:
+ _latest: 0.5.9
  _:
   ^0.3.1: 0.3.3
  0.3.3:
   $: sha512-UZK3NBx2Mca+b5LsG7bY183pHWt5Y1xts4P3Pz7ENTwGVnJOUWbRb3ocjvX7hx9tq/yTAdclXm9sZ38gNuem4A==
-  _: 'http://localhost:4873/circular-json/-/circular-json-0.3.3.tgz'
+  _: 'https://npme.walmart.com/circular-json/-/circular-json-0.3.3.tgz'
+  deprecated: 'CircularJSON is in maintenance only, flatted is its successor.'
 cli-cursor:
+ _latest: 3.1.0
  _:
   ^2.1.0: 2.1.0
  2.1.0:
   $: sha1-s12sN2R5+sw+lHR9QdDQ9SOP/LU=
-  _: 'http://localhost:4873/cli-cursor/-/cli-cursor-2.1.0.tgz'
+  _: 'https://npme.walmart.com/cli-cursor/-/cli-cursor-2.1.0.tgz'
   dependencies:
    restore-cursor: ^2.0.0
 cli-width:
+ _latest: 2.2.0
  _:
   ^2.0.0: 2.2.0
  2.2.0:
   $: sha1-/xnt6Kml5XkyQUewwR8PvLq+1jk=
-  _: 'http://localhost:4873/cli-width/-/cli-width-2.2.0.tgz'
+  _: 'https://npme.walmart.com/cli-width/-/cli-width-2.2.0.tgz'
 co:
+ _latest: 4.6.0
  _:
   ^4.6.0: 4.6.0
  4.6.0:
   $: sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ=
-  _: 'http://localhost:4873/co/-/co-4.6.0.tgz'
+  _: 'https://npme.walmart.com/co/-/co-4.6.0.tgz'
 co-body:
+ _latest: 6.0.0
  _:
   ^4.2.0: 4.2.0
  4.2.0:
   $: sha1-dN8g+nMmISXcRUgq8E40LqjbNRU=
-  _: 'http://localhost:4873/co-body/-/co-body-4.2.0.tgz'
+  _: 'https://npme.walmart.com/co-body/-/co-body-4.2.0.tgz'
   dependencies:
    qs: ~4.0.0
    raw-body: ~2.1.2
    inflation: ~2.0.0
    type-is: ~1.6.6
 color-convert:
+ _latest: 2.0.1
  _:
   ^1.9.0: 1.9.3
+  ^2.0.1: 2.0.1
+ 2.0.1:
+  $: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==
+  _: 'https://npme.walmart.com/color-convert/-/color-convert-2.0.1.tgz'
+  dependencies:
+   color-name: ~1.1.4
  1.9.3:
   $: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
-  _: 'http://localhost:4873/color-convert/-/color-convert-1.9.3.tgz'
+  _: 'https://npme.walmart.com/color-convert/-/color-convert-1.9.3.tgz'
   dependencies:
    color-name: 1.1.3
 color-name:
+ _latest: 1.1.4
  _:
   1.1.3: 1.1.3
+  ~1.1.4: 1.1.4
+ 1.1.4:
+  $: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+  _: 'https://npme.walmart.com/color-name/-/color-name-1.1.4.tgz'
  1.1.3:
   $: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
-  _: 'http://localhost:4873/color-name/-/color-name-1.1.3.tgz'
+  _: 'https://npme.walmart.com/color-name/-/color-name-1.1.3.tgz'
 commander:
+ _latest: 5.0.0
  _:
   2.11.0: 2.11.0
   2.9.0: 2.9.0
-  ~2.17.1: 2.17.1
- 2.17.1:
-  $: sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==
-  _: 'http://localhost:4873/commander/-/commander-2.17.1.tgz'
+  ~2.20.3: 2.20.3
+ 2.20.3:
+  $: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+  _: 'https://npme.walmart.com/commander/-/commander-2.20.3.tgz'
  2.11.0:
   $: sha512-b0553uYA5YAEGgyYIGYROzKQ7X5RAqedkfjiZxwi0kL1g3bOaBNNZfYkzt/CL0umgD5wc9Jec2FbB98CjkMRvQ==
-  _: 'http://localhost:4873/commander/-/commander-2.11.0.tgz'
+  _: 'https://npme.walmart.com/commander/-/commander-2.11.0.tgz'
  2.9.0:
   $: sha1-nJkJQXbhIkDLItbFFGCYQA/g99Q=
-  _: 'http://localhost:4873/commander/-/commander-2.9.0.tgz'
+  _: 'https://npme.walmart.com/commander/-/commander-2.9.0.tgz'
   dependencies:
    graceful-readlink: '>= 1.0.0'
 concat-map:
+ _latest: 0.0.1
  _:
   0.0.1: 0.0.1
  0.0.1:
   $: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
-  _: 'http://localhost:4873/concat-map/-/concat-map-0.0.1.tgz'
+  _: 'https://npme.walmart.com/concat-map/-/concat-map-0.0.1.tgz'
 concat-stream:
+ _latest: 2.0.0
  _:
   ^1.6.0: 1.6.2
  1.6.2:
   $: sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==
-  _: 'http://localhost:4873/concat-stream/-/concat-stream-1.6.2.tgz'
+  _: 'https://npme.walmart.com/concat-stream/-/concat-stream-1.6.2.tgz'
   dependencies:
    buffer-from: ^1.0.0
    inherits: ^2.0.3
    readable-stream: ^2.2.2
    typedarray: ^0.0.6
 content:
+ _latest: 4.0.6
  _:
   3.x.x: 3.0.7
-  4.x.x: 4.0.5
- 4.0.5:
-  $: sha512-wDP6CTWDpwCf791fNxlCCkZGRkrNzSEU/8ju9Hnr3Uc5mF/gFR5W+fcoGm6zUSlVPdSXYn5pCbySADKj7YM4Cg==
-  _: 'http://localhost:4873/content/-/content-4.0.5.tgz'
+  4.x.x: 4.0.6
+ 4.0.6:
+  $: sha512-lR9ND3dXiMdmsE84K6l02rMdgiBVmtYWu1Vr/gfSGHcIcznBj2QxmSdUgDuNFOA+G9yrb1IIWkZ7aKtB6hDGyA==
+  _: 'https://npme.walmart.com/content/-/content-4.0.6.tgz'
   dependencies:
    boom: 7.x.x
+  deprecated: 'This module has moved and is now available at @hapi/content. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  3.0.7:
   $: sha512-LXtnSnvE+Z1Cjpa3P9gh9kb396qV4MqpfwKy777BOSF8n6nw2vAi03tHNl0/XRqZUyzVzY/+nMXOZVnEapWzdg==
-  _: 'http://localhost:4873/content/-/content-3.0.7.tgz'
+  _: 'https://npme.walmart.com/content/-/content-3.0.7.tgz'
   dependencies:
    boom: 5.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 content-disposition:
+ _latest: 0.5.3
  _:
-  '0.5.2,~0.5.2': 0.5.2
- 0.5.2:
-  $: sha1-DPaLud318r55YcOoUXjLhdunjLQ=
-  _: 'http://localhost:4873/content-disposition/-/content-disposition-0.5.2.tgz'
+  '0.5.3,~0.5.2': 0.5.3
+ 0.5.3:
+  $: sha512-ExO0774ikEObIAEV9kDo50o+79VCUdEB6n6lzKgGwupcVeRlhrj3qGAfwq8G6uBJjkqLrhT0qEYFcWng8z1z0g==
+  _: 'https://npme.walmart.com/content-disposition/-/content-disposition-0.5.3.tgz'
+  dependencies:
+   safe-buffer: 5.1.2
 content-type:
+ _latest: 1.0.4
  _:
   '^1.0.4,~1.0.4': 1.0.4
  1.0.4:
   $: sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
-  _: 'http://localhost:4873/content-type/-/content-type-1.0.4.tgz'
+  _: 'https://npme.walmart.com/content-type/-/content-type-1.0.4.tgz'
 cookie:
+ _latest: 0.4.0
  _:
-  0.3.1: 0.3.1
- 0.3.1:
-  $: sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
-  _: 'http://localhost:4873/cookie/-/cookie-0.3.1.tgz'
+  '0.4.0,^0.4.0': 0.4.0
+ 0.4.0:
+  $: sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
+  _: 'https://npme.walmart.com/cookie/-/cookie-0.4.0.tgz'
 cookie-parser:
+ _latest: 1.4.5
  _:
-  ^1.4.1: 1.4.3
- 1.4.3:
+  ^1.4.1: 1.4.5
+ 1.4.5:
   top: 1
-  $: sha1-D+MfoZ0AC5X0qt8fU/3CuKIDuqU=
-  _: 'http://localhost:4873/cookie-parser/-/cookie-parser-1.4.3.tgz'
+  $: sha512-f13bPUj/gG/5mDr+xLmSxxDsB9DQiTIfhJS/sqjrmfAWiAN+x2O4i/XguTL9yDZ+/IFDanJ+5x7hC4CXT9Tdzw==
+  _: 'https://npme.walmart.com/cookie-parser/-/cookie-parser-1.4.5.tgz'
   dependencies:
-   cookie: 0.3.1
+   cookie: 0.4.0
    cookie-signature: 1.0.6
 cookie-signature:
+ _latest: 1.1.0
  _:
   1.0.6: 1.0.6
+  ^1.1.0: 1.1.0
+ 1.1.0:
+  $: sha512-Alvs19Vgq07eunykd3Xy2jF0/qSNv2u7KDbAek9H5liV1UMijbqFs5cycZvv5dVsvseT/U4H8/7/w8Koh35C4A==
+  _: 'https://npme.walmart.com/cookie-signature/-/cookie-signature-1.1.0.tgz'
  1.0.6:
   $: sha1-4wOogrNCzD7oylE6eZmXNNqzriw=
-  _: 'http://localhost:4873/cookie-signature/-/cookie-signature-1.0.6.tgz'
+  _: 'https://npme.walmart.com/cookie-signature/-/cookie-signature-1.0.6.tgz'
 cookies:
+ _latest: 0.8.0
  _:
-  ~0.7.1: 0.7.2
- 0.7.2:
-  $: sha512-J2JjH9T3PUNKPHknprxgCrCaZshIfxW2j49gq1E1CP5Micj1LppWAR2y9EHSQAzEiX84zOsScWNwUZ0b/ChlMw==
-  _: 'http://localhost:4873/cookies/-/cookies-0.7.2.tgz'
+  ~0.8.0: 0.8.0
+ 0.8.0:
+  $: sha512-8aPsApQfebXnuI+537McwYsDtjVxGm8gTIzQI3FDW6t5t/DAhERxtnbEPN/8RX+uZthoz4eCOgloXaE5cYyNow==
+  _: 'https://npme.walmart.com/cookies/-/cookies-0.8.0.tgz'
   dependencies:
-   depd: ~1.1.2
-   keygrip: ~1.0.2
-core-js:
- _:
-  ^2.4.0: 2.5.7
- 2.5.7:
-  $: sha512-RszJCAxg/PP6uzXVXL6BsxSXx/B05oJAQ2vkJRjyjrEcNVycaqOmNb5OTxZPE3xa5gwZduqza6L9JOCenh/Ecw==
-  _: 'http://localhost:4873/core-js/-/core-js-2.5.7.tgz'
+   depd: ~2.0.0
+   keygrip: ~1.1.0
 core-util-is:
+ _latest: 1.0.2
  _:
   ~1.0.0: 1.0.2
  1.0.2:
   $: sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
-  _: 'http://localhost:4873/core-util-is/-/core-util-is-1.0.2.tgz'
+  _: 'https://npme.walmart.com/core-util-is/-/core-util-is-1.0.2.tgz'
 cross-spawn:
+ _latest: 7.0.2
  _:
   ^5.1.0: 5.1.0
  5.1.0:
   $: sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk=
-  _: 'http://localhost:4873/cross-spawn/-/cross-spawn-5.1.0.tgz'
+  _: 'https://npme.walmart.com/cross-spawn/-/cross-spawn-5.1.0.tgz'
   dependencies:
    lru-cache: ^4.0.1
    shebang-command: ^1.2.0
    which: ^1.2.9
 cryptiles:
+ _latest: 4.1.3
  _:
-  '3.x.x,^3.1.2': 3.1.2
-  4.x.x: 4.1.2
- 4.1.2:
-  $: sha512-U2ALcoAHvA1oO2xOreyHvtkQ+IELqDG2WVWRI1GH/XEmmfGIOalnM5MU5Dd2ITyWfr3m6kNqXiy8XuYyd4wKJw==
-  _: 'http://localhost:4873/cryptiles/-/cryptiles-4.1.2.tgz'
+  3.x.x: 3.1.4
+  4.x.x: 4.1.3
+ 4.1.3:
+  $: sha512-gT9nyTMSUC1JnziQpPbxKGBbUg8VL7Zn2NB4E1cJYvuXdElHrwxrV9bmltZGDzet45zSDGyYceueke1TjynGzw==
+  _: 'https://npme.walmart.com/cryptiles/-/cryptiles-4.1.3.tgz'
   dependencies:
    boom: 7.x.x
- 3.1.2:
-  $: sha1-qJ+7Ig9c4l7FboxKqKT9e1sNKf4=
-  _: 'http://localhost:4873/cryptiles/-/cryptiles-3.1.2.tgz'
+  deprecated: 'This module has moved and is now available at @hapi/cryptiles. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
+ 3.1.4:
+  $: sha512-8I1sgZHfVwcSOY6mSGpVU3lw/GSIZvusg8dD2+OGehCJpOhQRLNcH0qb9upQnOH4XhgxxFJSg6E2kx95deb1Tw==
+  _: 'https://npme.walmart.com/cryptiles/-/cryptiles-3.1.4.tgz'
   dependencies:
    boom: 5.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 debug:
+ _latest: 4.1.1
  _:
   2.6.8: 2.6.8
-  '2.6.9,^2.6.8': 2.6.9
+  2.6.9: 2.6.9
   '3.1.0,^3.1.0,~3.1.0': 3.1.0
+  ^4.0.0: 4.1.1
+ 4.1.1:
+  $: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  _: 'https://npme.walmart.com/debug/-/debug-4.1.1.tgz'
+  dependencies:
+   ms: ^2.1.1
  3.1.0:
   $: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
-  _: 'http://localhost:4873/debug/-/debug-3.1.0.tgz'
+  _: 'https://npme.walmart.com/debug/-/debug-3.1.0.tgz'
   dependencies:
    ms: 2.0.0
  2.6.9:
   $: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
-  _: 'http://localhost:4873/debug/-/debug-2.6.9.tgz'
+  _: 'https://npme.walmart.com/debug/-/debug-2.6.9.tgz'
   dependencies:
    ms: 2.0.0
  2.6.8:
   $: sha1-5zFTHKLt4n0YgiJCfaF4IdaP9Pw=
-  _: 'http://localhost:4873/debug/-/debug-2.6.8.tgz'
+  _: 'https://npme.walmart.com/debug/-/debug-2.6.8.tgz'
   dependencies:
    ms: 2.0.0
 deep-eql:
+ _latest: 4.0.0
  _:
   ^3.0.1: 3.0.1
  3.0.1:
   $: sha512-+QeIQyN5ZuO+3Uk5DYh6/1eKO0m0YmJFGNmFHGACpf1ClL1nmlV/p4gNgbl2pJGxgXb4faqo6UE+M5ACEMyVcw==
-  _: 'http://localhost:4873/deep-eql/-/deep-eql-3.0.1.tgz'
+  _: 'https://npme.walmart.com/deep-eql/-/deep-eql-3.0.1.tgz'
   dependencies:
    type-detect: ^4.0.0
 deep-equal:
+ _latest: 2.0.2
  _:
   ~1.0.1: 1.0.1
  1.0.1:
   $: sha1-9dJgKStmDghO/0zbyfCK0yR0SLU=
-  _: 'http://localhost:4873/deep-equal/-/deep-equal-1.0.1.tgz'
+  _: 'https://npme.walmart.com/deep-equal/-/deep-equal-1.0.1.tgz'
 deep-is:
+ _latest: 0.1.3
  _:
   ~0.1.3: 0.1.3
  0.1.3:
   $: sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
-  _: 'http://localhost:4873/deep-is/-/deep-is-0.1.3.tgz'
-del:
+  _: 'https://npme.walmart.com/deep-is/-/deep-is-0.1.3.tgz'
+deepmerge:
+ _latest: 4.2.2
  _:
-  ^2.0.2: 2.2.2
- 2.2.2:
-  $: sha1-wSyYHQZ4RshLyvhiz/kw2Qf/0ag=
-  _: 'http://localhost:4873/del/-/del-2.2.2.tgz'
-  dependencies:
-   globby: ^5.0.0
-   is-path-cwd: ^1.0.0
-   is-path-in-cwd: ^1.0.0
-   object-assign: ^4.0.1
-   pify: ^2.0.0
-   pinkie-promise: ^2.0.0
-   rimraf: ^2.2.8
+  ^4.2.2: 4.2.2
+ 4.2.2:
+  $: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
+  _: 'https://npme.walmart.com/deepmerge/-/deepmerge-4.2.2.tgz'
 delegates:
+ _latest: 1.0.0
  _:
   ^1.0.0: 1.0.0
  1.0.0:
   $: sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
-  _: 'http://localhost:4873/delegates/-/delegates-1.0.0.tgz'
+  _: 'https://npme.walmart.com/delegates/-/delegates-1.0.0.tgz'
 depd:
+ _latest: 2.0.0
  _:
   '^1.1.2,~1.1.2': 1.1.2
+  ~2.0.0: 2.0.0
+ 2.0.0:
+  $: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==
+  _: 'https://npme.walmart.com/depd/-/depd-2.0.0.tgz'
  1.1.2:
   $: sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
-  _: 'http://localhost:4873/depd/-/depd-1.1.2.tgz'
+  _: 'https://npme.walmart.com/depd/-/depd-1.1.2.tgz'
 destroy:
+ _latest: 1.0.4
  _:
   '^1.0.4,~1.0.4': 1.0.4
  1.0.4:
   $: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
-  _: 'http://localhost:4873/destroy/-/destroy-1.0.4.tgz'
+  _: 'https://npme.walmart.com/destroy/-/destroy-1.0.4.tgz'
 diff:
+ _latest: 4.0.2
  _:
   '3.2.0,^3.1.0': 3.2.0
   3.3.1: 3.3.1
  3.3.1:
   $: sha512-MKPHZDMB0o6yHyDryUOScqZibp914ksXwAMYMTHj6KO8UeKsRYNJD3oNCKjTqZon+V488P7N/HzXF8t7ZR95ww==
-  _: 'http://localhost:4873/diff/-/diff-3.3.1.tgz'
+  _: 'https://npme.walmart.com/diff/-/diff-3.3.1.tgz'
  3.2.0:
   $: sha1-yc45Okt8vQsFinJck98pkCeGj/k=
-  _: 'http://localhost:4873/diff/-/diff-3.2.0.tgz'
+  _: 'https://npme.walmart.com/diff/-/diff-3.2.0.tgz'
 doctrine:
+ _latest: 3.0.0
  _:
   ^2.1.0: 2.1.0
  2.1.0:
   $: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==
-  _: 'http://localhost:4873/doctrine/-/doctrine-2.1.0.tgz'
+  _: 'https://npme.walmart.com/doctrine/-/doctrine-2.1.0.tgz'
   dependencies:
    esutils: ^2.0.2
 ecdsa-sig-formatter:
+ _latest: 1.0.11
  _:
-  1.0.10: 1.0.10
- 1.0.10:
-  $: sha1-HFlQAPBKiJffuFAAiSoPTDOvhsM=
-  _: 'http://localhost:4873/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.10.tgz'
+  1.0.11: 1.0.11
+ 1.0.11:
+  $: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==
+  _: 'https://npme.walmart.com/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz'
   dependencies:
    safe-buffer: ^5.0.1
 ee-first:
+ _latest: 1.1.1
  _:
   1.1.1: 1.1.1
  1.1.1:
   $: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  _: 'http://localhost:4873/ee-first/-/ee-first-1.1.1.tgz'
+  _: 'https://npme.walmart.com/ee-first/-/ee-first-1.1.1.tgz'
 electrode-archetype-njs-module-dev:
+ _latest: 3.0.2
  _:
-  ^3.0.0: 3.0.0
- 3.0.0:
+  ^3.0.0: 3.0.2
+ 3.0.2:
   top: 1
-  $: sha1-eRpWX1NJKuwoIMHViXHHZ4YHVnk=
-  _: 'http://localhost:4873/electrode-archetype-njs-module-dev/-/electrode-archetype-njs-module-dev-3.0.0.tgz'
+  $: sha512-esvvPn6OKP/ExNbUXMNqK2ySvRTFhjogt30QhAhk3YioroIwL7LBLoPMtk5qeIDC0cQ6Je+EntjZeq/WGXGDpg==
+  _: 'https://npme.walmart.com/electrode-archetype-njs-module-dev/-/electrode-archetype-njs-module-dev-3.0.2.tgz'
   dependencies:
-   babel-eslint: ^7.1.1
+   babel-eslint: ^8.1.2
    chai: ^4.1.2
    eslint: ^4.8.0
    eslint-config-walmart: ^1.1.1
@@ -825,89 +1084,99 @@ electrode-archetype-njs-module-dev:
    nyc: ^11.2.1
    sinon: ^4.0.1
    sinon-chai: ^2.14.0
-   xclap: ^0.2.0
+   unwrap-npm-cmd: ^1.1.0
+   xclap: ^0.2.34
    xsh: ^0.3.2
 electrode-confippet:
+ _latest: 1.5.0
  _:
-  ^1.2.10: 1.5.0
+  ^1.5.0: 1.5.0
  1.5.0:
   $: sha1-aEFlFNEp5fsqzP2jazEoSbnjrzY=
-  _: 'http://localhost:4873/electrode-confippet/-/electrode-confippet-1.5.0.tgz'
+  _: 'https://npme.walmart.com/electrode-confippet/-/electrode-confippet-1.5.0.tgz'
   dependencies:
    js-yaml: ^3.5.3
    lodash: ^4.13.1
 electrode-hapi-compat:
- _latest: 1.2.0
+ _latest: 1.3.2
  _:
-  ^1.2.0: 1.2.0
- 1.2.0:
+  ^1.2.0: 1.3.2
+ 1.3.2:
   top: 1
-  $: sha512-oalPOkP3+eLQGV/fQPKf3NRjIZkUXvjb6WflB6wRscCvy7G4JShs2I0fmYHWD/Bp/7ro+9qlno78K97HTDsteQ==
-  _: 'https://repository.cache.walmart.com/content/groups/npm/electrode-hapi-compat/-/electrode-hapi-compat-1.2.0.tgz'
+  $: sha512-EvWzSIFj1nNSbGqnJjiXt5yc6sACM42Ftu0aA+4buf3GXQgN8OnamBL3wuAetQvp5MG1cyqf7WzWWuoqbgyJ9A==
+  _: 'https://npme.walmart.com/electrode-hapi-compat/-/electrode-hapi-compat-1.3.2.tgz'
 electrode-server:
+ _latest: 2.3.1
  _:
-  ^1.5.0: 1.5.1
- 1.5.1:
+  ^1.5.0: 1.8.0
+ 1.8.0:
   top: 1
-  $: sha512-MljNKOdrNKtJBX/3YJ1006poWcFzKI9nP6sFYc7orvF+XIPOWDZFy9ed5Ml6N6A6EowU9wuVrHEje45dTTpKMg==
-  _: 'http://localhost:4873/electrode-server/-/electrode-server-1.5.1.tgz'
+  $: sha512-H9s3FqTqcdjCsbIXvA0PEZ4bAidP1aOzd9XmRvddQPMUkWuN+YFcPP3ico4+K8vm1BNGzEmra/ljYaJGGBkHlw==
+  _: 'https://npme.walmart.com/electrode-server/-/electrode-server-1.8.0.tgz'
   dependencies:
-   electrode-confippet: ^1.2.10
    async-eventemitter: ^0.2.2
    bluebird: '>= 2.10.0 <= 3.x.x'
    chalk: ^1.1.1
+   electrode-confippet: ^1.5.0
    hapi: '>= 11.1.4 <= 16.x.x'
-   in-publish: ^2.0.0
-   lodash: ^4.5.1
+   lodash: ^4.17.11
+   require-at: ^1.0.1
 electrode-static-paths:
+ _latest: 3.0.0
  _:
-  ^1.1.0: 1.1.0
- 1.1.0:
+  ^1.1.0: 1.1.1
+ 1.1.1:
   top: 1
-  $: sha1-xAFg9pAY6h1ek0iIx0tNaE5FT/U=
-  _: 'http://localhost:4873/electrode-static-paths/-/electrode-static-paths-1.1.0.tgz'
+  $: sha512-etRnnHgH6InRauyhaYx2ApxK//wq3UyZfGlH2Ls8ID5GhbW8S5aBNEvT7Bf2Ixmt2pLW8ADomPQdH8T5UBGeaQ==
+  _: 'https://npme.walmart.com/electrode-static-paths/-/electrode-static-paths-1.1.1.tgz'
   dependencies:
    chalk: ^1.1.1
    inert: ^4.0.1
    lodash: ^4.5.1
 encodeurl:
+ _latest: 1.0.2
  _:
-  ~1.0.2: 1.0.2
+  '^1.0.2,~1.0.2': 1.0.2
  1.0.2:
   $: sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
-  _: 'http://localhost:4873/encodeurl/-/encodeurl-1.0.2.tgz'
+  _: 'https://npme.walmart.com/encodeurl/-/encodeurl-1.0.2.tgz'
 encoding:
+ _latest: 0.1.12
  _:
   ^0.1.11: 0.1.12
  0.1.12:
   $: sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
-  _: 'http://localhost:4873/encoding/-/encoding-0.1.12.tgz'
+  _: 'https://npme.walmart.com/encoding/-/encoding-0.1.12.tgz'
   dependencies:
    iconv-lite: ~0.4.13
 error-inject:
+ _latest: 1.0.0
  _:
   ^1.0.0: 1.0.0
  1.0.0:
   $: sha1-4rPZG1Su1nLzCdlQ0VSFD6EdTzc=
-  _: 'http://localhost:4873/error-inject/-/error-inject-1.0.0.tgz'
+  _: 'https://npme.walmart.com/error-inject/-/error-inject-1.0.0.tgz'
 escape-html:
+ _latest: 1.0.3
  _:
   '^1.0.3,~1.0.3': 1.0.3
  1.0.3:
   $: sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
-  _: 'http://localhost:4873/escape-html/-/escape-html-1.0.3.tgz'
+  _: 'https://npme.walmart.com/escape-html/-/escape-html-1.0.3.tgz'
 escape-string-regexp:
+ _latest: 3.0.0
  _:
   '1.0.5,^1.0.2,^1.0.5': 1.0.5
  1.0.5:
   $: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  _: 'http://localhost:4873/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz'
+  _: 'https://npme.walmart.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz'
 escodegen:
+ _latest: 1.14.1
  _:
   1.8.x: 1.8.1
  1.8.1:
   $: sha1-WltTr0aTEQvrsIZ6o0MN07cKEBg=
-  _: 'http://localhost:4873/escodegen/-/escodegen-1.8.1.tgz'
+  _: 'https://npme.walmart.com/escodegen/-/escodegen-1.8.1.tgz'
   dependencies:
    estraverse: ^1.9.1
    esutils: ^2.0.2
@@ -916,11 +1185,12 @@ escodegen:
   optionalDependencies:
    source-map: ~0.2.0
 eslint:
+ _latest: 6.8.0
  _:
   ^4.8.0: 4.19.1
  4.19.1:
   $: sha512-bT3/1x1EbZB7phzYu7vCr1v3ONuzDtX8WjuM9c0iYxe+cq+pwcKEoQjl7zd3RpC6YOLgnSy3cTN58M2jcoPDIQ==
-  _: 'http://localhost:4873/eslint/-/eslint-4.19.1.tgz'
+  _: 'https://npme.walmart.com/eslint/-/eslint-4.19.1.tgz'
   dependencies:
    ajv: ^5.3.0
    babel-code-frame: ^6.22.0
@@ -961,17 +1231,19 @@ eslint:
    table: 4.0.2
    text-table: ~0.2.0
 eslint-config-walmart:
+ _latest: 2.2.1
  _:
   ^1.1.1: 1.2.4
  1.2.4:
   $: sha1-0TIFHLUp65Vl88R0yq7mCm5AJVM=
-  _: 'http://localhost:4873/eslint-config-walmart/-/eslint-config-walmart-1.2.4.tgz'
+  _: 'https://npme.walmart.com/eslint-config-walmart/-/eslint-config-walmart-1.2.4.tgz'
 eslint-plugin-filenames:
+ _latest: 1.3.2
  _:
   ^1.1.0: 1.3.2
  1.3.2:
   $: sha512-tqxJTiEM5a0JmRCUYQmxw23vtTxrb2+a3Q2mMOPhFxvt7ZQQJmdiuMby9B/vUAuVMghyP7oET+nIf6EO6CBd/w==
-  _: 'http://localhost:4873/eslint-plugin-filenames/-/eslint-plugin-filenames-1.3.2.tgz'
+  _: 'https://npme.walmart.com/eslint-plugin-filenames/-/eslint-plugin-filenames-1.3.2.tgz'
   dependencies:
    lodash.camelcase: 4.3.0
    lodash.kebabcase: 4.1.1
@@ -980,224 +1252,359 @@ eslint-plugin-filenames:
   peerDependencies:
    eslint: '*'
 eslint-scope:
+ _latest: 5.0.0
  _:
-  ^3.7.1: 3.7.3
- 3.7.3:
-  $: sha512-W+B0SvF4gamyCTmUc+uITPY0989iXVfKvhwtmJocTaYoc/3khEHmEmvfY/Gn9HA9VV75jrQECsHizkNw1b68FA==
-  _: 'http://localhost:4873/eslint-scope/-/eslint-scope-3.7.3.tgz'
+  '3.7.1,^3.7.1': 3.7.1
+ 3.7.1:
+  $: sha1-PWPD7f2gLgbgGkUq2IyqzHzctug=
+  _: 'https://npme.walmart.com/eslint-scope/-/eslint-scope-3.7.1.tgz'
   dependencies:
    esrecurse: ^4.1.0
    estraverse: ^4.1.1
 eslint-visitor-keys:
+ _latest: 1.1.0
  _:
-  ^1.0.0: 1.0.0
- 1.0.0:
-  $: sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
-  _: 'http://localhost:4873/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz'
+  ^1.0.0: 1.1.0
+ 1.1.0:
+  $: sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
+  _: 'https://npme.walmart.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz'
 espree:
+ _latest: 6.2.1
  _:
   ^3.5.4: 3.5.4
  3.5.4:
   $: sha512-yAcIQxtmMiB/jL32dzEp2enBeidsB7xWPLNiw3IIkpVds1P+h7qF9YwJq1yUNzp2OKXgAprs4F61ih66UsoD1A==
-  _: 'http://localhost:4873/espree/-/espree-3.5.4.tgz'
+  _: 'https://npme.walmart.com/espree/-/espree-3.5.4.tgz'
   dependencies:
    acorn: ^5.5.0
    acorn-jsx: ^3.0.0
 esprima:
+ _latest: 4.0.1
  _:
   '2.7.x,^2.7.1': 2.7.3
   ^4.0.0: 4.0.1
  4.0.1:
   $: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
-  _: 'http://localhost:4873/esprima/-/esprima-4.0.1.tgz'
+  _: 'https://npme.walmart.com/esprima/-/esprima-4.0.1.tgz'
  2.7.3:
   $: sha1-luO3DVd59q1JzQMmc9HDEnZ7pYE=
-  _: 'http://localhost:4873/esprima/-/esprima-2.7.3.tgz'
+  _: 'https://npme.walmart.com/esprima/-/esprima-2.7.3.tgz'
 esquery:
+ _latest: 1.2.1
  _:
-  ^1.0.0: 1.0.1
- 1.0.1:
-  $: sha512-SmiyZ5zIWH9VM+SRUReLS5Q8a7GxtRdxEBVZpm98rJM7Sb+A9DVCndXfkeFUd3byderg+EbDkfnevfCwynWaNA==
-  _: 'http://localhost:4873/esquery/-/esquery-1.0.1.tgz'
+  ^1.0.0: 1.2.1
+ 1.2.1:
+  $: sha512-/IcAXa9GWOX9BUIb/Tz2QrrAWFWzWGrFIeLeMRwtiuwg9qTFhSYemsi9DixwrFFqVbhBZ47vGcxEnu5mbPqbig==
+  _: 'https://npme.walmart.com/esquery/-/esquery-1.2.1.tgz'
   dependencies:
-   estraverse: ^4.0.0
+   estraverse: ^5.0.0
 esrecurse:
+ _latest: 4.2.1
  _:
   ^4.1.0: 4.2.1
  4.2.1:
   $: sha512-64RBB++fIOAXPw3P9cy89qfMlvZEXZkqqJkjqqXIvzP5ezRZjW+lPWjw35UX/3EhUPFYbg5ER4JYgDw4007/DQ==
-  _: 'http://localhost:4873/esrecurse/-/esrecurse-4.2.1.tgz'
+  _: 'https://npme.walmart.com/esrecurse/-/esrecurse-4.2.1.tgz'
   dependencies:
    estraverse: ^4.1.0
 estraverse:
+ _latest: 5.0.0
  _:
   ^1.9.1: 1.9.3
-  '^4.0.0,^4.1.0,^4.1.1': 4.2.0
- 4.2.0:
-  $: sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
-  _: 'http://localhost:4873/estraverse/-/estraverse-4.2.0.tgz'
+  '^4.1.0,^4.1.1': 4.3.0
+  ^5.0.0: 5.0.0
+ 5.0.0:
+  $: sha512-j3acdrMzqrxmJTNj5dbr1YbjacrYgAxVMeF0gK16E3j494mOe7xygM/ZLIguEQ0ETwAg2hlJCtHRGav+y0Ny5A==
+  _: 'https://npme.walmart.com/estraverse/-/estraverse-5.0.0.tgz'
+ 4.3.0:
+  $: sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==
+  _: 'https://npme.walmart.com/estraverse/-/estraverse-4.3.0.tgz'
  1.9.3:
   $: sha1-r2fy3JIlgkFZUJJgkaQAXSnJu0Q=
-  _: 'http://localhost:4873/estraverse/-/estraverse-1.9.3.tgz'
+  _: 'https://npme.walmart.com/estraverse/-/estraverse-1.9.3.tgz'
 esutils:
+ _latest: 2.0.3
  _:
-  ^2.0.2: 2.0.2
- 2.0.2:
-  $: sha1-Cr9PHKpbyx96nYrMbepPqqBLrJs=
-  _: 'http://localhost:4873/esutils/-/esutils-2.0.2.tgz'
+  ^2.0.2: 2.0.3
+ 2.0.3:
+  $: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
+  _: 'https://npme.walmart.com/esutils/-/esutils-2.0.3.tgz'
 etag:
+ _latest: 1.8.1
  _:
   ~1.8.1: 1.8.1
  1.8.1:
   $: sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
-  _: 'http://localhost:4873/etag/-/etag-1.8.1.tgz'
+  _: 'https://npme.walmart.com/etag/-/etag-1.8.1.tgz'
 express:
+ _latest: 4.17.1
  _:
-  ^4.13.3: 4.16.4
- 4.16.4:
+  ^4.13.3: 4.17.1
+ 4.17.1:
   top: 1
-  $: sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg==
-  _: 'http://localhost:4873/express/-/express-4.16.4.tgz'
+  $: sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g==
+  _: 'https://npme.walmart.com/express/-/express-4.17.1.tgz'
   dependencies:
-   accepts: ~1.3.5
+   accepts: ~1.3.7
    array-flatten: 1.1.1
-   body-parser: 1.18.3
-   content-disposition: 0.5.2
+   body-parser: 1.19.0
+   content-disposition: 0.5.3
    content-type: ~1.0.4
-   cookie: 0.3.1
+   cookie: 0.4.0
    cookie-signature: 1.0.6
    debug: 2.6.9
    depd: ~1.1.2
    encodeurl: ~1.0.2
    escape-html: ~1.0.3
    etag: ~1.8.1
-   finalhandler: 1.1.1
+   finalhandler: ~1.1.2
    fresh: 0.5.2
    merge-descriptors: 1.0.1
    methods: ~1.1.2
    on-finished: ~2.3.0
-   parseurl: ~1.3.2
+   parseurl: ~1.3.3
    path-to-regexp: 0.1.7
-   proxy-addr: ~2.0.4
-   qs: 6.5.2
-   range-parser: ~1.2.0
+   proxy-addr: ~2.0.5
+   qs: 6.7.0
+   range-parser: ~1.2.1
    safe-buffer: 5.1.2
-   send: 0.16.2
-   serve-static: 1.13.2
-   setprototypeof: 1.1.0
-   statuses: ~1.4.0
-   type-is: ~1.6.16
+   send: 0.17.1
+   serve-static: 1.14.1
+   setprototypeof: 1.1.1
+   statuses: ~1.5.0
+   type-is: ~1.6.18
    utils-merge: 1.0.1
    vary: ~1.1.2
 external-editor:
+ _latest: 3.1.0
  _:
   ^2.0.4: 2.2.0
  2.2.0:
   $: sha512-bSn6gvGxKt+b7+6TKEv1ZycHleA7aHhRHyAqJyp5pbUFuYYNIzpZnQDk7AsYckyWdEnTeAnay0aCy2aV6iTk9A==
-  _: 'http://localhost:4873/external-editor/-/external-editor-2.2.0.tgz'
+  _: 'https://npme.walmart.com/external-editor/-/external-editor-2.2.0.tgz'
   dependencies:
    chardet: ^0.4.0
    iconv-lite: ^0.4.17
    tmp: ^0.0.33
+fast-decode-uri-component:
+ _latest: 1.0.1
+ _:
+  ^1.0.0: 1.0.1
+ 1.0.1:
+  $: sha512-WKgKWg5eUxvRZGwW8FvfbaH7AXSh2cL+3j5fMGzUMCxWBJ3dV3a7Wz8y2f/uQ0e3B6WmodD3oS54jTQ9HVTIIg==
+  _: 'https://npme.walmart.com/fast-decode-uri-component/-/fast-decode-uri-component-1.0.1.tgz'
 fast-deep-equal:
+ _latest: 3.1.1
  _:
   ^1.0.0: 1.1.0
+  ^3.1.1: 3.1.1
+ 3.1.1:
+  $: sha512-8UEa58QDLauDNfpbrX55Q9jrGHThw2ZMdOky5Gl1CDtVeJDPVrG4Jxx1N8jw2gkWaff5UUuX1KJd+9zGe2B+ZA==
+  _: 'https://npme.walmart.com/fast-deep-equal/-/fast-deep-equal-3.1.1.tgz'
  1.1.0:
   $: sha1-wFNHeBfIa1HaqFPIHgWbcz0CNhQ=
-  _: 'http://localhost:4873/fast-deep-equal/-/fast-deep-equal-1.1.0.tgz'
+  _: 'https://npme.walmart.com/fast-deep-equal/-/fast-deep-equal-1.1.0.tgz'
 fast-json-stable-stringify:
+ _latest: 2.1.0
+ _:
+  ^2.0.0: 2.1.0
+ 2.1.0:
+  $: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
+  _: 'https://npme.walmart.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz'
+fast-json-stringify:
+ _latest: 2.0.0
+ _:
+  ^1.18.0: 1.20.1
+ 1.20.1:
+  $: sha512-PEPWrRZvKqI11fY2uDhLLuoapIda9wVQ2mzAj8rkBfVD7jWvOSIICL0Om1knoReIWKF5y/5bbR/GzcZANaaJfQ==
+  _: 'https://npme.walmart.com/fast-json-stringify/-/fast-json-stringify-1.20.1.tgz'
+  dependencies:
+   ajv: ^6.11.0
+   deepmerge: ^4.2.2
+   string-similarity: ^4.0.1
+fast-levenshtein:
+ _latest: 2.0.6
+ _:
+  ~2.0.6: 2.0.6
+ 2.0.6:
+  $: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
+  _: 'https://npme.walmart.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz'
+fast-redact:
+ _latest: 2.0.0
  _:
   ^2.0.0: 2.0.0
  2.0.0:
-  $: sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
-  _: 'http://localhost:4873/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz'
-fast-levenshtein:
+  $: sha512-zxpkULI9W9MNTK2sJ3BpPQrTEXFNESd2X6O1tXMFpK/XM0G5c5Rll2EVYZH2TqI3xRGK/VaJ+eEOt7pnENJpeA==
+  _: 'https://npme.walmart.com/fast-redact/-/fast-redact-2.0.0.tgz'
+fast-safe-stringify:
+ _latest: 2.0.7
  _:
-  ~2.0.4: 2.0.6
- 2.0.6:
-  $: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
-  _: 'http://localhost:4873/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz'
+  ^2.0.7: 2.0.7
+ 2.0.7:
+  $: sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
+  _: 'https://npme.walmart.com/fast-safe-stringify/-/fast-safe-stringify-2.0.7.tgz'
+fastify:
+ _latest: 2.13.1
+ _:
+  ^2.13.1: 2.13.1
+ 2.13.1:
+  top: 1
+  $: sha512-ssh4CneRqWqYeHun03XicIcYxWXLEam5V9wHYSYm22yvSm91SnTzzajxs1w135rdZnT+VJ1MwOfToqwR6G5MoA==
+  _: 'https://npme.walmart.com/fastify/-/fastify-2.13.1.tgz'
+  dependencies:
+   abstract-logging: ^2.0.0
+   ajv: ^6.12.0
+   avvio: ^6.3.1
+   fast-json-stringify: ^1.18.0
+   find-my-way: ^2.2.2
+   flatstr: ^1.0.12
+   light-my-request: ^3.7.3
+   middie: ^4.1.0
+   pino: ^5.17.0
+   proxy-addr: ^2.0.6
+   readable-stream: ^3.6.0
+   rfdc: ^1.1.2
+   secure-json-parse: ^2.1.0
+   tiny-lru: ^7.0.2
+fastify-cookie:
+ _latest: 3.6.0
+ _:
+  ^3.6.0: 3.6.0
+ 3.6.0:
+  top: 1
+  $: sha512-pvGzhtBIHP3NG/EWpf7WGzMjY+ur31uJ7XA2tz7iMpbl+T43pUM8WtDVMVoDAH1AJ3RAvSdVk58vZiqO4jUVfA==
+  _: 'https://npme.walmart.com/fastify-cookie/-/fastify-cookie-3.6.0.tgz'
+  dependencies:
+   cookie: ^0.4.0
+   cookie-signature: ^1.1.0
+   fastify-plugin: ^1.4.0
+fastify-plugin:
+ _latest: 1.6.1
+ _:
+  ^1.4.0: 1.6.1
+ 1.6.1:
+  $: sha512-APBcb27s+MjaBIerFirYmBLatoPCgmHZM6XP0K+nDL9k0yX8NJPWDY1RAC3bh6z+AB5ULS2j31BUfLMT3uaZ4A==
+  _: 'https://npme.walmart.com/fastify-plugin/-/fastify-plugin-1.6.1.tgz'
+  dependencies:
+   semver: ^6.3.0
+fastq:
+ _latest: 1.7.0
+ _:
+  ^1.6.0: 1.7.0
+ 1.7.0:
+  $: sha512-YOadQRnHd5q6PogvAR/x62BGituF2ufiEA6s8aavQANw5YKHERI4AREboX6KotzP8oX2klxYF2wcV/7bn1clfQ==
+  _: 'https://npme.walmart.com/fastq/-/fastq-1.7.0.tgz'
+  dependencies:
+   reusify: ^1.0.4
 figures:
+ _latest: 3.2.0
  _:
   ^2.0.0: 2.0.0
  2.0.0:
   $: sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=
-  _: 'http://localhost:4873/figures/-/figures-2.0.0.tgz'
+  _: 'https://npme.walmart.com/figures/-/figures-2.0.0.tgz'
   dependencies:
    escape-string-regexp: ^1.0.5
 file-entry-cache:
+ _latest: 5.0.1
  _:
   ^2.0.0: 2.0.0
  2.0.0:
   $: sha1-w5KZDD5oR4PYOLjISkXYoEhFg2E=
-  _: 'http://localhost:4873/file-entry-cache/-/file-entry-cache-2.0.0.tgz'
+  _: 'https://npme.walmart.com/file-entry-cache/-/file-entry-cache-2.0.0.tgz'
   dependencies:
    flat-cache: ^1.2.1
    object-assign: ^4.0.1
 finalhandler:
+ _latest: 1.1.2
  _:
-  1.1.1: 1.1.1
- 1.1.1:
-  $: sha512-Y1GUDo39ez4aHAw7MysnUD5JzYX+WaIj8I57kO3aEPT1fFRL4sr7mjei97FgnwhAyyzRYmQZaTHb2+9uZ1dPtg==
-  _: 'http://localhost:4873/finalhandler/-/finalhandler-1.1.1.tgz'
+  ~1.1.2: 1.1.2
+ 1.1.2:
+  $: sha512-aAWcW57uxVNrQZqFXjITpW3sIUQmHGG3qSb9mUah9MgMC4NeWhNOlNjXEYq3HjRAvL6arUviZGGJsBg6z0zsWA==
+  _: 'https://npme.walmart.com/finalhandler/-/finalhandler-1.1.2.tgz'
   dependencies:
    debug: 2.6.9
    encodeurl: ~1.0.2
    escape-html: ~1.0.3
    on-finished: ~2.3.0
-   parseurl: ~1.3.2
-   statuses: ~1.4.0
+   parseurl: ~1.3.3
+   statuses: ~1.5.0
    unpipe: ~1.0.0
-flat-cache:
+find-my-way:
+ _latest: 2.2.2
  _:
-  ^1.2.1: 1.3.0
- 1.3.0:
-  $: sha1-0wMLMrOBVPTjt+nHCfSQ9++XxIE=
-  _: 'http://localhost:4873/flat-cache/-/flat-cache-1.3.0.tgz'
+  ^2.2.2: 2.2.2
+ 2.2.2:
+  $: sha512-zk3eOsS1tABNQjII0vCbhkqgsX/COpRUxl0b5rlA41V2Ft7jWDr30LhYq4BZXLAlzw5yskg24XQG/U1wCT30vQ==
+  _: 'https://npme.walmart.com/find-my-way/-/find-my-way-2.2.2.tgz'
+  dependencies:
+   fast-decode-uri-component: ^1.0.0
+   safe-regex2: ^2.0.0
+   semver-store: ^0.3.0
+flat-cache:
+ _latest: 2.0.1
+ _:
+  ^1.2.1: 1.3.4
+ 1.3.4:
+  $: sha512-VwyB3Lkgacfik2vhqR4uv2rvebqmDvFu4jlN/C1RzWoJEo8I7z4Q404oiqYCkq41mni8EzQnm95emU9seckwtg==
+  _: 'https://npme.walmart.com/flat-cache/-/flat-cache-1.3.4.tgz'
   dependencies:
    circular-json: ^0.3.1
-   del: ^2.0.2
    graceful-fs: ^4.1.2
+   rimraf: ~2.6.2
    write: ^0.2.1
+flatstr:
+ _latest: 1.0.12
+ _:
+  ^1.0.12: 1.0.12
+ 1.0.12:
+  $: sha512-4zPxDyhCyiN2wIAtSLI6gc82/EjqZc1onI4Mz/l0pWrAlsSfYH/2ZIcU+e3oA2wDwbzIWNKwa23F8rh6+DRWkw==
+  _: 'https://npme.walmart.com/flatstr/-/flatstr-1.0.12.tgz'
 forwarded:
+ _latest: 0.1.2
  _:
   ~0.1.2: 0.1.2
  0.1.2:
   $: sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
-  _: 'http://localhost:4873/forwarded/-/forwarded-0.1.2.tgz'
+  _: 'https://npme.walmart.com/forwarded/-/forwarded-0.1.2.tgz'
 fresh:
+ _latest: 0.5.2
  _:
   '0.5.2,~0.5.2': 0.5.2
  0.5.2:
   $: sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
-  _: 'http://localhost:4873/fresh/-/fresh-0.5.2.tgz'
+  _: 'https://npme.walmart.com/fresh/-/fresh-0.5.2.tgz'
 fs.realpath:
+ _latest: 1.0.0
  _:
   ^1.0.0: 1.0.0
  1.0.0:
   $: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  _: 'http://localhost:4873/fs.realpath/-/fs.realpath-1.0.0.tgz'
+  _: 'https://npme.walmart.com/fs.realpath/-/fs.realpath-1.0.0.tgz'
 functional-red-black-tree:
+ _latest: 1.0.1
  _:
   ^1.0.1: 1.0.1
  1.0.1:
   $: sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
-  _: 'http://localhost:4873/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz'
+  _: 'https://npme.walmart.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz'
 get-func-name:
+ _latest: 2.0.0
  _:
   ^2.0.0: 2.0.0
  2.0.0:
   $: sha1-6td0q+5y4gQJQzoGY2YCPdaIekE=
-  _: 'http://localhost:4873/get-func-name/-/get-func-name-2.0.0.tgz'
+  _: 'https://npme.walmart.com/get-func-name/-/get-func-name-2.0.0.tgz'
 glob:
+ _latest: 7.1.6
  _:
   '7.1.1,^7.0.0': 7.1.1
   7.1.2: 7.1.2
   ^5.0.15: 5.0.15
-  '^7.0.3,^7.0.5,^7.1.2': 7.1.3
- 7.1.3:
-  $: sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
-  _: 'http://localhost:4873/glob/-/glob-7.1.3.tgz'
+  '^7.1.2,^7.1.3': 7.1.6
+ 7.1.6:
+  $: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
+  _: 'https://npme.walmart.com/glob/-/glob-7.1.6.tgz'
   dependencies:
    fs.realpath: ^1.0.0
    inflight: ^1.0.4
@@ -1207,7 +1614,7 @@ glob:
    path-is-absolute: ^1.0.0
  7.1.2:
   $: sha512-MJTUg1kjuLeQCJ+ccE4Vpa6kKVXkPYJ2mOCQyUuKLcLQsdrMCpBPUi8qVE6+YuaJkozeA9NusTAw3hLr8Xe5EQ==
-  _: 'http://localhost:4873/glob/-/glob-7.1.2.tgz'
+  _: 'https://npme.walmart.com/glob/-/glob-7.1.2.tgz'
   dependencies:
    fs.realpath: ^1.0.0
    inflight: ^1.0.4
@@ -1217,7 +1624,7 @@ glob:
    path-is-absolute: ^1.0.0
  7.1.1:
   $: sha1-gFIR3wT6rxxjo2ADBs31reULLsg=
-  _: 'http://localhost:4873/glob/-/glob-7.1.1.tgz'
+  _: 'https://npme.walmart.com/glob/-/glob-7.1.1.tgz'
   dependencies:
    fs.realpath: ^1.0.0
    inflight: ^1.0.4
@@ -1227,7 +1634,7 @@ glob:
    path-is-absolute: ^1.0.0
  5.0.15:
   $: sha1-G8k2ueAvSmA/zCIuz3Yz0wuLk7E=
-  _: 'http://localhost:4873/glob/-/glob-5.0.15.tgz'
+  _: 'https://npme.walmart.com/glob/-/glob-5.0.15.tgz'
   dependencies:
    inflight: ^1.0.4
    inherits: '2'
@@ -1235,69 +1642,59 @@ glob:
    once: ^1.3.0
    path-is-absolute: ^1.0.0
 globals:
+ _latest: 13.0.0
  _:
-  ^11.0.1: 11.8.0
-  ^9.18.0: 9.18.0
- 11.8.0:
-  $: sha512-io6LkyPVuzCHBSQV9fmOwxZkUk6nIaGmxheLDgmuFv89j0fm2aqDbIXKAGfzCMHqz3HLF2Zf8WSG6VqMh2qFmA==
-  _: 'http://localhost:4873/globals/-/globals-11.8.0.tgz'
- 9.18.0:
-  $: sha512-S0nG3CLEQiY/ILxqtztTWH/3iRRdyBLw6KMDxnKMchrtbj2OFmehVh0WUCfW3DUrIgx/qFrJPICrq4Z4sTR9UQ==
-  _: 'http://localhost:4873/globals/-/globals-9.18.0.tgz'
-globby:
- _:
-  ^5.0.0: 5.0.0
- 5.0.0:
-  $: sha1-69hGZ8oNuzMLmbz8aOrCvFQ3Dg0=
-  _: 'http://localhost:4873/globby/-/globby-5.0.0.tgz'
-  dependencies:
-   array-union: ^1.0.1
-   arrify: ^1.0.0
-   glob: ^7.0.3
-   object-assign: ^4.0.1
-   pify: ^2.0.0
-   pinkie-promise: ^2.0.0
+  '^11.0.1,^11.1.0': 11.12.0
+ 11.12.0:
+  $: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
+  _: 'https://npme.walmart.com/globals/-/globals-11.12.0.tgz'
 graceful-fs:
+ _latest: 4.2.3
  _:
-  ^4.1.2: 4.1.11
- 4.1.11:
-  $: sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg=
-  _: 'http://localhost:4873/graceful-fs/-/graceful-fs-4.1.11.tgz'
+  ^4.1.2: 4.2.3
+ 4.2.3:
+  $: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
+  _: 'https://npme.walmart.com/graceful-fs/-/graceful-fs-4.2.3.tgz'
 graceful-readlink:
+ _latest: 1.0.1
  _:
   '>= 1.0.0': 1.0.1
  1.0.1:
   $: sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
-  _: 'http://localhost:4873/graceful-readlink/-/graceful-readlink-1.0.1.tgz'
+  _: 'https://npme.walmart.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz'
 growl:
+ _latest: 1.10.5
  _:
   1.10.3: 1.10.3
   1.9.2: 1.9.2
  1.10.3:
   $: sha512-hKlsbA5Vu3xsh1Cg3J7jSmX/WaW6A5oBeqzM88oNbCRQFz+zUaXm6yxS4RVytp1scBoJzSYl4YAEOQIt6O8V1Q==
-  _: 'http://localhost:4873/growl/-/growl-1.10.3.tgz'
+  _: 'https://npme.walmart.com/growl/-/growl-1.10.3.tgz'
  1.9.2:
   $: sha1-Dqd0NxXbjY3ixe3hd14bRayFwC8=
-  _: 'http://localhost:4873/growl/-/growl-1.9.2.tgz'
+  _: 'https://npme.walmart.com/growl/-/growl-1.9.2.tgz'
 handlebars:
+ _latest: 4.7.6
  _:
-  ^4.0.1: 4.0.12
- 4.0.12:
-  $: sha512-RhmTekP+FZL+XNhwS1Wf+bTTZpdLougwt5pcgA1tuz6Jcx0fpH/7z0qd71RKnZHBCxIRBHfBOnio4gViPemNzA==
-  _: 'http://localhost:4873/handlebars/-/handlebars-4.0.12.tgz'
+  ^4.0.1: 4.7.6
+ 4.7.6:
+  $: sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA==
+  _: 'https://npme.walmart.com/handlebars/-/handlebars-4.7.6.tgz'
   dependencies:
-   async: ^2.5.0
-   optimist: ^0.6.1
+   minimist: ^1.2.5
+   neo-async: ^2.6.0
    source-map: ^0.6.1
+   wordwrap: ^1.0.0
   optionalDependencies:
    uglify-js: ^3.1.4
 hapi:
+ _latest: 18.1.0
  _:
-  '>= 11.1.4 <= 16.x.x,^16.2.0': 16.6.3
-  ^17: 17.6.0
- 17.6.0:
-  $: sha512-GSHjE1hJExluAukrT/QuYSk96irmbYBDd3wOgywiHsPoR2QeKgDnIttD+dB6NbADEmSdb9MS5gTUIVq0uHTdkA==
-  _: 'http://localhost:4873/hapi/-/hapi-17.6.0.tgz'
+  '>= 11.1.4 <= 16.x.x,^16.2.0': 16.7.0
+  ^17: 17.8.5
+ 17.8.5:
+  $: sha512-+RnMWK/HI3VCvzfy0vO28YycMX19OiY8h9tYaDzjjOJ1eTh/HY2URvhFNkcqxZ1R1uoUdiB+pnjGi9e+vkaPEw==
+  _: 'https://npme.walmart.com/hapi/-/hapi-17.8.5.tgz'
   dependencies:
    accept: 3.x.x
    ammo: 3.x.x
@@ -1307,38 +1704,43 @@ hapi:
    catbox: 10.x.x
    catbox-memory: 3.x.x
    heavy: 6.x.x
-   hoek: 5.x.x
-   joi: 13.x.x
+   hoek: 6.x.x
+   joi: 14.x.x
    mimos: 4.x.x
    podium: 3.x.x
    shot: 4.x.x
+   somever: 2.x.x
    statehood: 6.x.x
    subtext: 6.x.x
    teamwork: 3.x.x
    topo: 3.x.x
- 16.6.3:
+  deprecated: 'This module has moved and is now available at @hapi/hapi. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
+  _hasShrinkwrap: 1
+ 16.7.0:
   top: 1
-  $: sha512-Fe1EtSlRWdez9c1sLDrHZYxpsp3IddwtUWp7y65TCBW5CMcBP98X4WnoBJZTGsDZnk/FDkRyEMhUVsC9qysDPg==
-  _: 'http://localhost:4873/hapi/-/hapi-16.6.3.tgz'
+  $: sha512-UeMX1LMWmHEIgMlwZGK/3lhI7X0VRvOioVply0Y9qF+/O5woGdQzNB8ZmDnLOBjnB6bdWWHyo5DEamuCsE1vmg==
+  _: 'https://npme.walmart.com/hapi/-/hapi-16.7.0.tgz'
   dependencies:
-   accept: ^2.1.4
-   ammo: ^2.0.4
-   boom: ^5.2.0
-   call: ^4.0.2
-   catbox: ^7.1.5
-   catbox-memory: ^2.0.4
-   cryptiles: ^3.1.2
-   heavy: ^4.0.4
-   hoek: ^4.2.0
-   iron: ^4.0.5
-   items: ^2.1.1
-   joi: ^11.1.0
-   mimos: ^3.0.3
-   podium: ^1.3.0
-   shot: ^3.4.2
-   statehood: ^5.0.3
-   subtext: ^5.0.0
-   topo: ^2.0.2
+   accept: 2.x.x
+   ammo: 2.x.x
+   boom: 5.x.x
+   call: 4.x.x
+   catbox: 7.x.x
+   catbox-memory: 2.x.x
+   cryptiles: 3.x.x
+   heavy: 4.x.x
+   hoek: 4.x.x
+   iron: 4.x.x
+   items: 2.x.x
+   joi: 11.x.x
+   mimos: 3.x.x
+   podium: 1.x.x
+   shot: 3.x.x
+   somever: 1.x.x
+   statehood: 5.x.x
+   subtext: 5.x.x
+   topo: 2.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 hapi17:
  _latest: 17.0.0-fynlocal_h
  _:
@@ -1351,127 +1753,131 @@ hapi17:
    hapi: ^17
    vision: ^5
 has-ansi:
+ _latest: 4.0.0
  _:
   ^2.0.0: 2.0.0
  2.0.0:
   $: sha1-NPUEnOHs3ysGSa8+8k5F7TVBbZE=
-  _: 'http://localhost:4873/has-ansi/-/has-ansi-2.0.0.tgz'
+  _: 'https://npme.walmart.com/has-ansi/-/has-ansi-2.0.0.tgz'
   dependencies:
    ansi-regex: ^2.0.0
 has-flag:
+ _latest: 4.0.0
  _:
   ^1.0.0: 1.0.0
   ^2.0.0: 2.0.0
   ^3.0.0: 3.0.0
+  ^4.0.0: 4.0.0
+ 4.0.0:
+  $: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
+  _: 'https://npme.walmart.com/has-flag/-/has-flag-4.0.0.tgz'
  3.0.0:
   $: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
-  _: 'http://localhost:4873/has-flag/-/has-flag-3.0.0.tgz'
+  _: 'https://npme.walmart.com/has-flag/-/has-flag-3.0.0.tgz'
  2.0.0:
   $: sha1-6CB68cx7MNRGzHC3NLXovhj4jVE=
-  _: 'http://localhost:4873/has-flag/-/has-flag-2.0.0.tgz'
+  _: 'https://npme.walmart.com/has-flag/-/has-flag-2.0.0.tgz'
  1.0.0:
   $: sha1-nZ55MWXOAXoA8AQYxD+UKnsdEfo=
-  _: 'http://localhost:4873/has-flag/-/has-flag-1.0.0.tgz'
+  _: 'https://npme.walmart.com/has-flag/-/has-flag-1.0.0.tgz'
 he:
+ _latest: 1.2.0
  _:
   1.1.1: 1.1.1
  1.1.1:
   $: sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
-  _: 'http://localhost:4873/he/-/he-1.1.1.tgz'
+  _: 'https://npme.walmart.com/he/-/he-1.1.1.tgz'
 heavy:
+ _latest: 6.1.2
  _:
-  6.x.x: 6.1.0
-  ^4.0.4: 4.0.4
- 6.1.0:
-  $: sha512-TKS9DC9NOTGulHQI31Lx+bmeWmNOstbJbGMiN3pX6bF+Zc2GKSpbbym4oasNnB6yPGkqJ9TQXXYDGohqNSJRxA==
-  _: 'http://localhost:4873/heavy/-/heavy-6.1.0.tgz'
+  4.x.x: 4.0.4
+  6.x.x: 6.1.2
+ 6.1.2:
+  $: sha512-cJp884bqhiebNcEHydW0g6V1MUGYOXRPw9c7MFiHQnuGxtbWuSZpsbojwb2kxb3AA1/Rfs8CNiV9MMOF8pFRDg==
+  _: 'https://npme.walmart.com/heavy/-/heavy-6.1.2.tgz'
   dependencies:
    boom: 7.x.x
-   hoek: 5.x.x
-   joi: 13.x.x
+   hoek: 6.x.x
+   joi: 14.x.x
+  deprecated: 'This module has moved and is now available at @hapi/heavy. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  4.0.4:
   $: sha1-NskTNsAMz+hSyqTRUwhjNc0vAOk=
-  _: 'http://localhost:4873/heavy/-/heavy-4.0.4.tgz'
+  _: 'https://npme.walmart.com/heavy/-/heavy-4.0.4.tgz'
   dependencies:
    boom: 5.x.x
    hoek: 4.x.x
    joi: 10.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 hoek:
+ _latest: 6.1.3
  _:
-  '4.x.x,^4.2.0': 4.2.1
-  5.x.x: 5.0.4
- 5.0.4:
-  $: sha512-Alr4ZQgoMlnere5FZJsIyfIjORBqZll5POhDsF4q64dPuJR6rNxXdDxtHSQq8OXRurhmx+PWYEE8bXRROY8h0w==
-  _: 'http://localhost:4873/hoek/-/hoek-5.0.4.tgz'
+  4.x.x: 4.2.1
+  6.x.x: 6.0.1
+ 6.0.1:
+  $: sha512-3PvUwBerLNVJiIVQdpkWF9F/M0ekgb2NPJWOhsE28RXSQPsY42YSnaJ8d1kZjcAz58TZ/Fk9Tw64xJsENFlJNw==
+  _: 'https://npme.walmart.com/hoek/-/hoek-6.0.1.tgz'
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
  4.2.1:
   $: sha512-QLg82fGkfnJ/4iy1xZ81/9SIJiq1NGFUMGs6ParyjBZr6jW2Ufj/snDqTHixNlHdPNwN2RLVD0Pi3igeK9+JfA==
-  _: 'http://localhost:4873/hoek/-/hoek-4.2.1.tgz'
+  _: 'https://npme.walmart.com/hoek/-/hoek-4.2.1.tgz'
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 http-assert:
+ _latest: 1.4.1
  _:
-  ^1.3.0: 1.4.0
- 1.4.0:
-  $: sha512-tPVv62a6l3BbQoM/N5qo969l0OFxqpnQzNUPeYfTP6Spo4zkgWeDBD1D5thI7sDLg7jCCihXTLB0X8UtdyAy8A==
-  _: 'http://localhost:4873/http-assert/-/http-assert-1.4.0.tgz'
+  ^1.3.0: 1.4.1
+ 1.4.1:
+  $: sha512-rdw7q6GTlibqVVbXr0CKelfV5iY8G2HqEUkhSk297BMbSpSL8crXC+9rjKoMcZZEsksX30le6f/4ul4E28gegw==
+  _: 'https://npme.walmart.com/http-assert/-/http-assert-1.4.1.tgz'
   dependencies:
    deep-equal: ~1.0.1
-   http-errors: ~1.7.1
+   http-errors: ~1.7.2
 http-errors:
+ _latest: 1.7.3
  _:
-  '1.6.3,^1.3.1,^1.6.3,~1.6.2,~1.6.3': 1.6.3
-  ~1.7.1: 1.7.1
- 1.7.1:
-  $: sha512-jWEUgtZWGSMba9I1N3gc1HmvpBUaNC9vDdA46yScAdp+C5rdEuKWUBLWTQpW9FwSWSbYYs++b6SDCxf9UEJzfw==
-  _: 'http://localhost:4873/http-errors/-/http-errors-1.7.1.tgz'
+  '1.7.2,^1.3.1,^1.6.3,~1.7.2': 1.7.2
+ 1.7.2:
+  $: sha512-uUQBt3H/cSIVfch6i1EuPNy/YsRSOUBXTVfZ+yR7Zjez3qjBz6i9+i4zjNaoqcoFVI4lQJ5plg63TvGfRSDCRg==
+  _: 'https://npme.walmart.com/http-errors/-/http-errors-1.7.2.tgz'
   dependencies:
    depd: ~1.1.2
    inherits: 2.0.3
-   setprototypeof: 1.1.0
+   setprototypeof: 1.1.1
    statuses: '>= 1.5.0 < 2'
    toidentifier: 1.0.0
- 1.6.3:
-  $: sha1-i1VoC7S+KDoLW/TqLjhYC+HZMg0=
-  _: 'http://localhost:4873/http-errors/-/http-errors-1.6.3.tgz'
-  dependencies:
-   depd: ~1.1.2
-   inherits: 2.0.3
-   setprototypeof: 1.1.0
-   statuses: '>= 1.4.0 < 2'
 iconv-lite:
+ _latest: 0.5.1
  _:
   0.4.13: 0.4.13
-  '0.4.23,^0.4.17,~0.4.13': 0.4.23
- 0.4.23:
-  $: sha512-neyTUVFtahjf0mB3dZT77u+8O0QB89jFdnBkd5P1JgYPbPaia3gXXOVL2fq8VyU2gMMD7SaN7QukTB/pmXYvDA==
-  _: 'http://localhost:4873/iconv-lite/-/iconv-lite-0.4.23.tgz'
+  '0.4.24,^0.4.17,~0.4.13': 0.4.24
+ 0.4.24:
+  $: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
+  _: 'https://npme.walmart.com/iconv-lite/-/iconv-lite-0.4.24.tgz'
   dependencies:
    safer-buffer: '>= 2.1.2 < 3'
  0.4.13:
   $: sha1-H4irpKsLFQjoMSrMOTRfNumS4vI=
-  _: 'http://localhost:4873/iconv-lite/-/iconv-lite-0.4.13.tgz'
+  _: 'https://npme.walmart.com/iconv-lite/-/iconv-lite-0.4.13.tgz'
 ignore:
+ _latest: 5.1.4
  _:
   ^3.3.3: 3.3.10
  3.3.10:
   $: sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug==
-  _: 'http://localhost:4873/ignore/-/ignore-3.3.10.tgz'
+  _: 'https://npme.walmart.com/ignore/-/ignore-3.3.10.tgz'
 imurmurhash:
+ _latest: 0.1.4
  _:
   ^0.1.4: 0.1.4
  0.1.4:
   $: sha1-khi5srkoojixPcT7a21XbyMUU+o=
-  _: 'http://localhost:4873/imurmurhash/-/imurmurhash-0.1.4.tgz'
-in-publish:
- _:
-  ^2.0.0: 2.0.0
- 2.0.0:
-  $: sha1-4g/146KvwmkDILbcVSaCqcf631E=
-  _: 'http://localhost:4873/in-publish/-/in-publish-2.0.0.tgz'
+  _: 'https://npme.walmart.com/imurmurhash/-/imurmurhash-0.1.4.tgz'
 inert:
+ _latest: 5.1.3
  _:
   ^4.0.1: 4.2.1
  4.2.1:
   $: sha512-qmbbZYPSzU/eOUOStPQvSjrU9IR1Q3uDtsEsVwnBQeZG43xu7Nrj6yuUrX3ice/03rv5dj/KiKB+NGCbiqH+aQ==
-  _: 'http://localhost:4873/inert/-/inert-4.2.1.tgz'
+  _: 'https://npme.walmart.com/inert/-/inert-4.2.1.tgz'
   dependencies:
    ammo: 2.x.x
    boom: 5.x.x
@@ -1479,33 +1885,38 @@ inert:
    items: 2.x.x
    joi: 10.x.x
    lru-cache: 4.1.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 inflation:
+ _latest: 2.0.0
  _:
   ~2.0.0: 2.0.0
  2.0.0:
   $: sha1-i0F+R8KPklpFEz2RTKH9OJEH8w8=
-  _: 'http://localhost:4873/inflation/-/inflation-2.0.0.tgz'
+  _: 'https://npme.walmart.com/inflation/-/inflation-2.0.0.tgz'
 inflight:
+ _latest: 1.0.6
  _:
   ^1.0.4: 1.0.6
  1.0.6:
   $: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
-  _: 'http://localhost:4873/inflight/-/inflight-1.0.6.tgz'
+  _: 'https://npme.walmart.com/inflight/-/inflight-1.0.6.tgz'
   dependencies:
    once: ^1.3.0
    wrappy: '1'
 inherits:
+ _latest: 2.0.4
  _:
   '2,2.0.3,^2.0.3,~2.0.3': 2.0.3
  2.0.3:
   $: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
-  _: 'http://localhost:4873/inherits/-/inherits-2.0.3.tgz'
+  _: 'https://npme.walmart.com/inherits/-/inherits-2.0.3.tgz'
 inquirer:
+ _latest: 7.1.0
  _:
   ^3.0.6: 3.3.0
  3.3.0:
   $: sha512-h+xtnyk4EwKvFWHrUYsWErEVR+igKtLdchu+o0Z1RL7VU/jVMFbYir2bp6bAj8efFNxWqHX0dIss6fJQ+/+qeQ==
-  _: 'http://localhost:4873/inquirer/-/inquirer-3.3.0.tgz'
+  _: 'https://npme.walmart.com/inquirer/-/inquirer-3.3.0.tgz'
   dependencies:
    ansi-escapes: ^3.0.0
    chalk: ^2.0.0
@@ -1522,140 +1933,135 @@ inquirer:
    strip-ansi: ^4.0.0
    through: ^2.3.6
 insync:
+ _latest: 2.1.1
  _:
   ^2.1.1: 2.1.1
  2.1.1:
   $: sha1-IuJsYRITA8BvUdNaPM9tj8HpFMQ=
-  _: 'http://localhost:4873/insync/-/insync-2.1.1.tgz'
+  _: 'https://npme.walmart.com/insync/-/insync-2.1.1.tgz'
 invariant:
+ _latest: 2.2.4
  _:
-  ^2.2.2: 2.2.4
+  ^2.2.0: 2.2.4
  2.2.4:
   $: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
-  _: 'http://localhost:4873/invariant/-/invariant-2.2.4.tgz'
+  _: 'https://npme.walmart.com/invariant/-/invariant-2.2.4.tgz'
   dependencies:
    loose-envify: ^1.0.0
 ipaddr.js:
+ _latest: 1.9.1
  _:
-  1.8.0: 1.8.0
- 1.8.0:
-  $: sha1-6qM9bd16zo9/b+DJygRA5wZzix4=
-  _: 'http://localhost:4873/ipaddr.js/-/ipaddr.js-1.8.0.tgz'
+  1.9.1: 1.9.1
+ 1.9.1:
+  $: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==
+  _: 'https://npme.walmart.com/ipaddr.js/-/ipaddr.js-1.9.1.tgz'
 iron:
+ _latest: 5.0.6
  _:
-  '4.x.x,^4.0.5': 4.0.5
-  5.x.x: 5.0.4
- 5.0.4:
-  $: sha512-7iQ5/xFMIYaNt9g2oiNiWdhrOTdRUMFaWENUd0KghxwPUhrIH8DUY8FEyLNTTzf75jaII+jMexLdY/2HfV61RQ==
-  _: 'http://localhost:4873/iron/-/iron-5.0.4.tgz'
+  4.x.x: 4.0.5
+  5.x.x: 5.0.6
+ 5.0.6:
+  $: sha512-zYUMOSkEXGBdwlV/AXF9zJC0aLuTJUKHkGeYS5I2g225M5i6SrxQyGJGhPgOR8BK1omL6N5i6TcwfsXbP8/Exw==
+  _: 'https://npme.walmart.com/iron/-/iron-5.0.6.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
+   b64: 4.x.x
    boom: 7.x.x
    cryptiles: 4.x.x
+  deprecated: 'This module has moved and is now available at @hapi/iron. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  4.0.5:
   $: sha1-TwQszri5c480a1mqc0yDqJvDFCg=
-  _: 'http://localhost:4873/iron/-/iron-4.0.5.tgz'
+  _: 'https://npme.walmart.com/iron/-/iron-4.0.5.tgz'
   dependencies:
    hoek: 4.x.x
    boom: 5.x.x
    cryptiles: 3.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 is-fullwidth-code-point:
+ _latest: 3.0.0
  _:
   ^2.0.0: 2.0.0
  2.0.0:
   $: sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=
-  _: 'http://localhost:4873/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz'
+  _: 'https://npme.walmart.com/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz'
 is-generator-function:
+ _latest: 1.0.7
  _:
   ^1.0.7: 1.0.7
  1.0.7:
   $: sha512-YZc5EwyO4f2kWCax7oegfuSr9mFz1ZvieNYBEjmukLxgXfBUbxAWGVF7GZf0zidYtoBl3WvC07YK0wT76a+Rtw==
-  _: 'http://localhost:4873/is-generator-function/-/is-generator-function-1.0.7.tgz'
-is-path-cwd:
- _:
-  ^1.0.0: 1.0.0
- 1.0.0:
-  $: sha1-0iXsIxMuie3Tj9p2dHLmLmXxEG0=
-  _: 'http://localhost:4873/is-path-cwd/-/is-path-cwd-1.0.0.tgz'
-is-path-in-cwd:
- _:
-  ^1.0.0: 1.0.1
- 1.0.1:
-  $: sha512-FjV1RTW48E7CWM7eE/J2NJvAEEVektecDBVBE5Hh3nM1Jd0kvhHtX68Pr3xsDf857xt3Y4AkwVULK1Vku62aaQ==
-  _: 'http://localhost:4873/is-path-in-cwd/-/is-path-in-cwd-1.0.1.tgz'
-  dependencies:
-   is-path-inside: ^1.0.0
-is-path-inside:
- _:
-  ^1.0.0: 1.0.1
- 1.0.1:
-  $: sha1-jvW33lBDej/cprToZe96pVy0gDY=
-  _: 'http://localhost:4873/is-path-inside/-/is-path-inside-1.0.1.tgz'
-  dependencies:
-   path-is-inside: ^1.0.1
+  _: 'https://npme.walmart.com/is-generator-function/-/is-generator-function-1.0.7.tgz'
 is-promise:
+ _latest: 2.1.0
  _:
   ^2.1.0: 2.1.0
  2.1.0:
   $: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  _: 'http://localhost:4873/is-promise/-/is-promise-2.1.0.tgz'
+  _: 'https://npme.walmart.com/is-promise/-/is-promise-2.1.0.tgz'
 is-resolvable:
+ _latest: 1.1.0
  _:
   ^1.0.0: 1.1.0
  1.1.0:
   $: sha512-qgDYXFSR5WvEfuS5dMj6oTMEbrrSaM0CrFk2Yiq/gXnBvD9pMa2jGXxyhGLfvhZpuMZe18CJpFxAt3CRs42NMg==
-  _: 'http://localhost:4873/is-resolvable/-/is-resolvable-1.1.0.tgz'
+  _: 'https://npme.walmart.com/is-resolvable/-/is-resolvable-1.1.0.tgz'
 is-stream:
+ _latest: 2.0.0
  _:
   ^1.0.1: 1.1.0
  1.1.0:
   $: sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
-  _: 'http://localhost:4873/is-stream/-/is-stream-1.1.0.tgz'
+  _: 'https://npme.walmart.com/is-stream/-/is-stream-1.1.0.tgz'
 isarray:
+ _latest: 2.0.5
  _:
   0.0.1: 0.0.1
   ~1.0.0: 1.0.0
  1.0.0:
   $: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
-  _: 'http://localhost:4873/isarray/-/isarray-1.0.0.tgz'
+  _: 'https://npme.walmart.com/isarray/-/isarray-1.0.0.tgz'
  0.0.1:
   $: sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
-  _: 'http://localhost:4873/isarray/-/isarray-0.0.1.tgz'
+  _: 'https://npme.walmart.com/isarray/-/isarray-0.0.1.tgz'
 isemail:
+ _latest: 3.2.0
  _:
   2.x.x: 2.2.1
-  3.x.x: 3.1.3
- 3.1.3:
-  $: sha512-5xbsG5wYADIcB+mfLsd+nst1V/D+I7EU7LEZPo2GOIMu4JzfcRs5yQoypP4avA7QtUqgxYLKBYNv4IdzBmbhdw==
-  _: 'http://localhost:4873/isemail/-/isemail-3.1.3.tgz'
+  3.x.x: 3.2.0
+ 3.2.0:
+  $: sha512-zKqkK+O+dGqevc93KNsbZ/TqTUFd46MwWjYOoMrjIMZ51eU7DtQG3Wmd9SQQT7i7RVnuTPEiYEWHU3MSbxC1Tg==
+  _: 'https://npme.walmart.com/isemail/-/isemail-3.2.0.tgz'
   dependencies:
    punycode: 2.x.x
  2.2.1:
   $: sha1-A1PT2aYpUQgMJiwqoKQrjqjp4qY=
-  _: 'http://localhost:4873/isemail/-/isemail-2.2.1.tgz'
+  _: 'https://npme.walmart.com/isemail/-/isemail-2.2.1.tgz'
 isexe:
+ _latest: 2.0.0
  _:
   ^2.0.0: 2.0.0
  2.0.0:
   $: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
-  _: 'http://localhost:4873/isexe/-/isexe-2.0.0.tgz'
+  _: 'https://npme.walmart.com/isexe/-/isexe-2.0.0.tgz'
 isomorphic-fetch:
+ _latest: 2.2.1
  _:
   ^2.2.1: 2.2.1
  2.2.1:
   top: 1
   $: sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
-  _: 'http://localhost:4873/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz'
+  _: 'https://npme.walmart.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz'
   dependencies:
    node-fetch: ^1.0.1
    whatwg-fetch: '>=0.10.0'
 istanbul:
+ _latest: 0.4.5
  _:
   ^0.4.5: 0.4.5
  0.4.5:
   top: 1
   $: sha1-ZcfXPUxNqE1POsMQuRj7C4Azczs=
-  _: 'http://localhost:4873/istanbul/-/istanbul-0.4.5.tgz'
+  _: 'https://npme.walmart.com/istanbul/-/istanbul-0.4.5.tgz'
   dependencies:
    abbrev: 1.0.x
    async: 1.x
@@ -1671,81 +2077,122 @@ istanbul:
    supports-color: ^3.1.0
    which: ^1.1.1
    wordwrap: ^1.0.0
+  deprecated: "This module is no longer maintained, try this instead:\n  npm i nyc\nVisit https://istanbul.js.org/integrations for other alternatives."
 items:
+ _latest: 2.1.2
  _:
-  '2.x.x,^2.1.1': 2.1.1
- 2.1.1:
-  $: sha1-i9FtnIOxlSneWuoyGsqtp4NkoZg=
-  _: 'http://localhost:4873/items/-/items-2.1.1.tgz'
+  2.x.x: 2.1.2
+ 2.1.2:
+  $: sha512-kezcEqgB97BGeZZYtX/MA8AG410ptURstvnz5RAgyFZ8wQFPMxHY8GpTq+/ZHKT3frSlIthUq7EvLt9xn3TvXg==
+  _: 'https://npme.walmart.com/items/-/items-2.1.2.tgz'
+  deprecated: 'This module has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version of hapi to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
+jaro-winkler:
+ _latest: 0.2.8
+ _:
+  ^0.2.8: 0.2.8
+ 0.2.8:
+  $: sha1-Zyfg0LcJHiQ2+TVt6b+I+tI+U0o=
+  _: 'https://npme.walmart.com/jaro-winkler/-/jaro-winkler-0.2.8.tgz'
 joi:
+ _latest: 14.3.1
  _:
   10.x.x: 10.6.0
-  13.x.x: 13.7.0
-  ^11.1.0: 11.4.0
- 13.7.0:
-  $: sha512-xuY5VkHfeOYK3Hdi91ulocfuFopwgbSORmIwzcwHKESQhC7w1kD5jaVSPnqDxS2I8t3RZ9omCKAxNwXN5zG1/Q==
-  _: 'http://localhost:4873/joi/-/joi-13.7.0.tgz'
+  11.x.x: 11.4.0
+  12.x.x: 12.0.0
+  14.x.x: 14.0.4
+ 14.0.4:
+  $: sha512-KUXRcinDUMMbtlOk7YLGHQvG73dLyf8bmgE+6sBTkdJbZpeGVGAlPXEHLiQBV7KinD/VLD5OA0EUgoTTfbRAJQ==
+  _: 'https://npme.walmart.com/joi/-/joi-14.0.4.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
    isemail: 3.x.x
    topo: 3.x.x
- 11.4.0:
-  $: sha512-O7Uw+w/zEWgbL6OcHbyACKSj0PkQeUgmehdoXVSxt92QFCq4+1390Rwh5moI2K/OgC7D8RHRZqHZxT2husMJHA==
-  _: 'http://localhost:4873/joi/-/joi-11.4.0.tgz'
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
+ 12.0.0:
+  $: sha512-z0FNlV4NGgjQN1fdtHYXf5kmgludM65fG/JlXzU6+rwkt9U5UWuXVYnXa2FpK0u6+qBuCmrm5byPNuiiddAHvQ==
+  _: 'https://npme.walmart.com/joi/-/joi-12.0.0.tgz'
   dependencies:
    hoek: 4.x.x
    isemail: 3.x.x
    topo: 2.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
+ 11.4.0:
+  $: sha512-O7Uw+w/zEWgbL6OcHbyACKSj0PkQeUgmehdoXVSxt92QFCq4+1390Rwh5moI2K/OgC7D8RHRZqHZxT2husMJHA==
+  _: 'https://npme.walmart.com/joi/-/joi-11.4.0.tgz'
+  dependencies:
+   hoek: 4.x.x
+   isemail: 3.x.x
+   topo: 2.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
  10.6.0:
   $: sha512-hBF3LcqyAid+9X/pwg+eXjD2QBZI5eXnBFJYaAkH4SK3mp9QSRiiQnDYlmlz5pccMvnLcJRS4whhDOTCkmsAdQ==
-  _: 'http://localhost:4873/joi/-/joi-10.6.0.tgz'
+  _: 'https://npme.walmart.com/joi/-/joi-10.6.0.tgz'
   dependencies:
    hoek: 4.x.x
    isemail: 2.x.x
    items: 2.x.x
    topo: 2.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 js-tokens:
+ _latest: 5.0.0
  _:
-  '^3.0.0 || ^4.0.0,^3.0.2': 3.0.2
+  '^3.0.0,^3.0.0 || ^4.0.0,^3.0.2': 3.0.2
  3.0.2:
   $: sha1-mGbfOVECEw449/mWvOtlRDIJwls=
-  _: 'http://localhost:4873/js-tokens/-/js-tokens-3.0.2.tgz'
+  _: 'https://npme.walmart.com/js-tokens/-/js-tokens-3.0.2.tgz'
 js-yaml:
+ _latest: 3.13.1
  _:
-  '3.x,^3.5.3,^3.9.1': 3.12.0
- 3.12.0:
-  $: sha512-PIt2cnwmPfL4hKNwqeiuz4bKfnzHTBv6HyVgjahA6mPLwPDzjDWrplJBMjHUFxku/N3FlmrbyPclad+I+4mJ3A==
-  _: 'http://localhost:4873/js-yaml/-/js-yaml-3.12.0.tgz'
+  '3.x,^3.5.3,^3.9.1': 3.13.1
+ 3.13.1:
+  $: sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+  _: 'https://npme.walmart.com/js-yaml/-/js-yaml-3.13.1.tgz'
   dependencies:
    argparse: ^1.0.7
    esprima: ^4.0.0
+jsesc:
+ _latest: 3.0.1
+ _:
+  ^2.5.1: 2.5.2
+ 2.5.2:
+  $: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
+  _: 'https://npme.walmart.com/jsesc/-/jsesc-2.5.2.tgz'
 json-schema-traverse:
+ _latest: 0.4.1
  _:
   ^0.3.0: 0.3.1
+  ^0.4.1: 0.4.1
+ 0.4.1:
+  $: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
+  _: 'https://npme.walmart.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz'
  0.3.1:
   $: sha1-NJptRMU6Ud6JtAgFxdXlm0F9M0A=
-  _: 'http://localhost:4873/json-schema-traverse/-/json-schema-traverse-0.3.1.tgz'
+  _: 'https://npme.walmart.com/json-schema-traverse/-/json-schema-traverse-0.3.1.tgz'
 json-stable-stringify-without-jsonify:
+ _latest: 1.0.1
  _:
   ^1.0.1: 1.0.1
  1.0.1:
   $: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
-  _: 'http://localhost:4873/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz'
+  _: 'https://npme.walmart.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz'
 json3:
+ _latest: 3.3.3
  _:
   3.3.2: 3.3.2
  3.3.2:
   $: sha1-PAQ0dD35Pi9cQq7nsZvLSDV19OE=
-  _: 'http://localhost:4873/json3/-/json3-3.3.2.tgz'
+  _: 'https://npme.walmart.com/json3/-/json3-3.3.2.tgz'
+  deprecated: 'Please use the native JSON object instead of JSON 3'
 jsonwebtoken:
+ _latest: 8.5.1
  _:
-  ^8.0.0: 8.3.0
- 8.3.0:
+  ^8.0.0: 8.5.1
+ 8.5.1:
   top: 1
-  $: sha512-oge/hvlmeJCH+iIz1DwcO7vKPkNGJHhgkspk8OH3VKlw+mbi42WtD4ig1+VXRln765vxptAv+xT26Fd3cteqag==
-  _: 'http://localhost:4873/jsonwebtoken/-/jsonwebtoken-8.3.0.tgz'
+  $: sha512-XjwVfRS6jTMsqYs0EsuJ4LGxXV14zQybNd4L2r0UvbVnSF9Af8x7p5MzbJ90Ioz/9TI41/hTCvznF/loiSzn8w==
+  _: 'https://npme.walmart.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz'
   dependencies:
-   jws: ^3.1.5
+   jws: ^3.2.2
    lodash.includes: ^4.3.0
    lodash.isboolean: ^3.0.3
    lodash.isinteger: ^4.0.4
@@ -1754,54 +2201,63 @@ jsonwebtoken:
    lodash.isstring: ^4.0.1
    lodash.once: ^4.0.0
    ms: ^2.1.1
+   semver: ^5.6.0
 just-extend:
+ _latest: 4.1.0
  _:
-  ^3.0.0: 3.0.0
- 3.0.0:
-  $: sha512-Fu3T6pKBuxjWT/p4DkqGHFRsysc8OauWr4ZRTY9dIx07Y9O0RkoR5jcv28aeD1vuAwhm3nLkDurwLXoALp4DpQ==
-  _: 'http://localhost:4873/just-extend/-/just-extend-3.0.0.tgz'
+  ^4.0.2: 4.1.0
+ 4.1.0:
+  $: sha512-ApcjaOdVTJ7y4r08xI5wIqpvwS48Q0PBG4DJROcEkH1f8MdAiNFyFxz3xoL0LWAVwjrwPYZdVHHxhRHcx/uGLA==
+  _: 'https://npme.walmart.com/just-extend/-/just-extend-4.1.0.tgz'
 jwa:
+ _latest: 2.0.0
  _:
-  ^1.1.5: 1.1.6
- 1.1.6:
-  $: sha512-tBO/cf++BUsJkYql/kBbJroKOgHWEigTKBAjjBEmrMGYd1QMBC74Hr4Wo2zCZw6ZrVhlJPvoMrkcOnlWR/DJfw==
-  _: 'http://localhost:4873/jwa/-/jwa-1.1.6.tgz'
+  ^1.4.1: 1.4.1
+ 1.4.1:
+  $: sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA==
+  _: 'https://npme.walmart.com/jwa/-/jwa-1.4.1.tgz'
   dependencies:
    buffer-equal-constant-time: 1.0.1
-   ecdsa-sig-formatter: 1.0.10
+   ecdsa-sig-formatter: 1.0.11
    safe-buffer: ^5.0.1
 jws:
+ _latest: 4.0.0
  _:
-  ^3.1.5: 3.1.5
- 3.1.5:
-  $: sha512-GsCSexFADNQUr8T5HPJvayTjvPIfoyJPtLQBwn5a4WZQchcrPMPMAWcC1AzJVRDKyD6ZPROPAxgv6rfHViO4uQ==
-  _: 'http://localhost:4873/jws/-/jws-3.1.5.tgz'
+  ^3.2.2: 3.2.2
+ 3.2.2:
+  $: sha512-YHlZCB6lMTllWDtSPHz/ZXTsi8S00usEV6v1tjq8tOUZzw7DpSDWVXjXDre6ed1w/pd495ODpHZYSdkRTsa0HA==
+  _: 'https://npme.walmart.com/jws/-/jws-3.2.2.tgz'
   dependencies:
-   jwa: ^1.1.5
+   jwa: ^1.4.1
    safe-buffer: ^5.0.1
 keygrip:
+ _latest: 1.1.0
  _:
-  ~1.0.2: 1.0.3
- 1.0.3:
-  $: sha512-/PpesirAIfaklxUzp4Yb7xBper9MwP6hNRA6BGGUFCgbJ+BM5CKBtsoxinNXkLHAr+GXS1/lSlF2rP7cv5Fl+g==
-  _: 'http://localhost:4873/keygrip/-/keygrip-1.0.3.tgz'
+  ~1.1.0: 1.1.0
+ 1.1.0:
+  $: sha512-iYSchDJ+liQ8iwbSI2QqsQOvqv58eJCEanyJPJi+Khyu8smkcKSFUCbPwzFcL7YVtZ6eONjqRX/38caJ7QjRAQ==
+  _: 'https://npme.walmart.com/keygrip/-/keygrip-1.1.0.tgz'
+  dependencies:
+   tsscmp: 1.0.6
 koa:
+ _latest: 2.11.0
  _:
-  ^2.0.0: 2.5.3
- 2.5.3:
+  ^2.0.0: 2.11.0
+ 2.11.0:
   top: 1
-  $: sha512-U6rgy2kwlfO+3P1phAidDrRZpGfwcpHCxl33wFe+fHXalpzEshHGnMaSU7I/ZeDFpGRQkbQOYsXkXfUjn+AtdQ==
-  _: 'http://localhost:4873/koa/-/koa-2.5.3.tgz'
+  $: sha512-EpR9dElBTDlaDgyhDMiLkXrPwp6ZqgAIBvhhmxQ9XN4TFgW+gEz6tkcsNI6BnUbUftrKDjVFj4lW2/J2aNBMMA==
+  _: 'https://npme.walmart.com/koa/-/koa-2.11.0.tgz'
   dependencies:
    accepts: ^1.3.5
    cache-content-type: ^1.0.0
    content-disposition: ~0.5.2
    content-type: ^1.0.4
-   cookies: ~0.7.1
+   cookies: ~0.8.0
    debug: ~3.1.0
    delegates: ^1.0.0
    depd: ^1.1.2
    destroy: ^1.0.4
+   encodeurl: ^1.0.2
    error-inject: ^1.0.0
    escape-html: ^1.0.3
    fresh: ~0.5.2
@@ -1810,7 +2266,6 @@ koa:
    is-generator-function: ^1.0.7
    koa-compose: ^4.1.0
    koa-convert: ^1.2.0
-   koa-is-json: ^1.0.0
    on-finished: ^2.3.0
    only: ~0.0.2
    parseurl: ^1.3.2
@@ -1818,48 +2273,46 @@ koa:
    type-is: ^1.6.16
    vary: ^1.1.2
 koa-bodyparser:
+ _latest: 4.3.0
  _:
   ^3.2.0: 3.2.0
  3.2.0:
   top: 1
   $: sha1-uRbeF+IDn+gmUEgZc9fClPELVxk=
-  _: 'http://localhost:4873/koa-bodyparser/-/koa-bodyparser-3.2.0.tgz'
+  _: 'https://npme.walmart.com/koa-bodyparser/-/koa-bodyparser-3.2.0.tgz'
   dependencies:
    co-body: ^4.2.0
 koa-compose:
+ _latest: 4.1.0
  _:
   ^3.0.0: 3.2.1
   ^4.1.0: 4.1.0
  4.1.0:
   $: sha512-8ODW8TrDuMYvXRwra/Kh7/rJo9BtOfPc6qO8eAfC80CnCvSjSl0bkRM24X6/XBBEyj0v1nRUQ1LyOy3dbqOWXw==
-  _: 'http://localhost:4873/koa-compose/-/koa-compose-4.1.0.tgz'
+  _: 'https://npme.walmart.com/koa-compose/-/koa-compose-4.1.0.tgz'
  3.2.1:
   $: sha1-qFzLQLfZhtjlo0Wzoazo6rz1Tec=
-  _: 'http://localhost:4873/koa-compose/-/koa-compose-3.2.1.tgz'
+  _: 'https://npme.walmart.com/koa-compose/-/koa-compose-3.2.1.tgz'
   dependencies:
    any-promise: ^1.1.0
 koa-convert:
+ _latest: 1.2.0
  _:
   ^1.2.0: 1.2.0
  1.2.0:
   $: sha1-2kCHXfSd4FOQmNFwC1CCDOvNIdA=
-  _: 'http://localhost:4873/koa-convert/-/koa-convert-1.2.0.tgz'
+  _: 'https://npme.walmart.com/koa-convert/-/koa-convert-1.2.0.tgz'
   dependencies:
    co: ^4.6.0
    koa-compose: ^3.0.0
-koa-is-json:
- _:
-  ^1.0.0: 1.0.0
- 1.0.0:
-  $: sha1-JzwH7c3Ljfaiwat9We52SRRR7BQ=
-  _: 'http://localhost:4873/koa-is-json/-/koa-is-json-1.0.0.tgz'
 koa-router:
+ _latest: 8.0.8
  _:
   ^7.0.1: 7.4.0
  7.4.0:
   top: 1
   $: sha512-IWhaDXeAnfDBEpWS6hkGdZ1ablgr6Q6pGdXCyK38RbzuH4LkUOpPqPw+3f8l8aTDrQmBQ7xJc0bs2yV4dzcO+g==
-  _: 'http://localhost:4873/koa-router/-/koa-router-7.4.0.tgz'
+  _: 'https://npme.walmart.com/koa-router/-/koa-router-7.4.0.tgz'
   dependencies:
    debug: ^3.1.0
    http-errors: ^1.3.1
@@ -1868,275 +2321,361 @@ koa-router:
    path-to-regexp: ^1.1.1
    urijs: ^1.19.0
 levn:
+ _latest: 0.4.1
  _:
   '^0.3.0,~0.3.0': 0.3.0
  0.3.0:
   $: sha1-OwmSTt+fCDwEkP3UwLxEIeBHZO4=
-  _: 'http://localhost:4873/levn/-/levn-0.3.0.tgz'
+  _: 'https://npme.walmart.com/levn/-/levn-0.3.0.tgz'
   dependencies:
    prelude-ls: ~1.1.2
    type-check: ~0.3.2
-lodash:
+light-my-request:
+ _latest: 3.7.4
  _:
-  '^4.13.1,^4.17.10,^4.17.4,^4.3.0,^4.5.1': 4.17.11
- 4.17.11:
-  $: sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
-  _: 'http://localhost:4873/lodash/-/lodash-4.17.11.tgz'
+  ^3.7.3: 3.7.4
+ 3.7.4:
+  $: sha512-xiAMJBW3Zaxz+C42Uo0N6spUqhcSsmB9IqxE/VF+J7HWuxsRPeOzeY2SOMtTR0dbsX/RVpxGAFHR0uB6vuTs8A==
+  _: 'https://npme.walmart.com/light-my-request/-/light-my-request-3.7.4.tgz'
+  dependencies:
+   ajv: ^6.10.2
+   cookie: ^0.4.0
+   readable-stream: ^3.4.0
+   set-cookie-parser: ^2.4.1
+lodash:
+ _latest: 4.17.15
+ _:
+  '^4.13.1,^4.17.11,^4.17.14,^4.17.15,^4.17.4,^4.2.0,^4.3.0,^4.5.1': 4.17.15
+ 4.17.15:
+  $: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  _: 'https://npme.walmart.com/lodash/-/lodash-4.17.15.tgz'
 lodash._baseassign:
+ _latest: 3.2.0
  _:
   ^3.0.0: 3.2.0
  3.2.0:
   $: sha1-jDigmVAPIVrQnlnxci/QxSv+Ck4=
-  _: 'http://localhost:4873/lodash._baseassign/-/lodash._baseassign-3.2.0.tgz'
+  _: 'https://npme.walmart.com/lodash._baseassign/-/lodash._baseassign-3.2.0.tgz'
   dependencies:
    lodash._basecopy: ^3.0.0
    lodash.keys: ^3.0.0
 lodash._basecopy:
+ _latest: 3.0.1
  _:
   ^3.0.0: 3.0.1
  3.0.1:
   $: sha1-jaDmqHbPNEwK2KVIghEd08XHyjY=
-  _: 'http://localhost:4873/lodash._basecopy/-/lodash._basecopy-3.0.1.tgz'
+  _: 'https://npme.walmart.com/lodash._basecopy/-/lodash._basecopy-3.0.1.tgz'
 lodash._basecreate:
+ _latest: 3.0.3
  _:
   ^3.0.0: 3.0.3
  3.0.3:
   $: sha1-G8ZhYU2qf8MRt9A78WgGoCE8+CE=
-  _: 'http://localhost:4873/lodash._basecreate/-/lodash._basecreate-3.0.3.tgz'
+  _: 'https://npme.walmart.com/lodash._basecreate/-/lodash._basecreate-3.0.3.tgz'
 lodash._getnative:
+ _latest: 3.9.1
  _:
   ^3.0.0: 3.9.1
  3.9.1:
   $: sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
-  _: 'http://localhost:4873/lodash._getnative/-/lodash._getnative-3.9.1.tgz'
+  _: 'https://npme.walmart.com/lodash._getnative/-/lodash._getnative-3.9.1.tgz'
 lodash._isiterateecall:
+ _latest: 3.0.9
  _:
   ^3.0.0: 3.0.9
  3.0.9:
   $: sha1-UgOte6Ql+uhCRg5pbbnPPmqsBXw=
-  _: 'http://localhost:4873/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz'
+  _: 'https://npme.walmart.com/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz'
 lodash.camelcase:
+ _latest: 4.3.0
  _:
   4.3.0: 4.3.0
  4.3.0:
   $: sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
-  _: 'http://localhost:4873/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz'
+  _: 'https://npme.walmart.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz'
 lodash.create:
+ _latest: 4.2.0
  _:
   3.1.1: 3.1.1
  3.1.1:
   $: sha1-1/KEnw29p+BGgruM1yqwIkYd6+c=
-  _: 'http://localhost:4873/lodash.create/-/lodash.create-3.1.1.tgz'
+  _: 'https://npme.walmart.com/lodash.create/-/lodash.create-3.1.1.tgz'
   dependencies:
    lodash._baseassign: ^3.0.0
    lodash._basecreate: ^3.0.0
    lodash._isiterateecall: ^3.0.0
 lodash.foreach:
+ _latest: 4.5.0
  _:
   ^4.5.0: 4.5.0
  4.5.0:
   $: sha1-Gmo16s5AEoDH8G3d7DUWWrJ+PlM=
-  _: 'http://localhost:4873/lodash.foreach/-/lodash.foreach-4.5.0.tgz'
+  _: 'https://npme.walmart.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz'
 lodash.get:
+ _latest: 4.4.2
  _:
   ^4.4.2: 4.4.2
  4.4.2:
   $: sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
-  _: 'http://localhost:4873/lodash.get/-/lodash.get-4.4.2.tgz'
+  _: 'https://npme.walmart.com/lodash.get/-/lodash.get-4.4.2.tgz'
 lodash.includes:
+ _latest: 4.3.0
  _:
   ^4.3.0: 4.3.0
  4.3.0:
   $: sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8=
-  _: 'http://localhost:4873/lodash.includes/-/lodash.includes-4.3.0.tgz'
+  _: 'https://npme.walmart.com/lodash.includes/-/lodash.includes-4.3.0.tgz'
 lodash.isarguments:
+ _latest: 3.1.0
  _:
   ^3.0.0: 3.1.0
  3.1.0:
   $: sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=
-  _: 'http://localhost:4873/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz'
+  _: 'https://npme.walmart.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz'
 lodash.isarray:
+ _latest: 4.0.0
  _:
   ^3.0.0: 3.0.4
  3.0.4:
   $: sha1-eeTriMNqgSKvhvhEqpvNhRtfu1U=
-  _: 'http://localhost:4873/lodash.isarray/-/lodash.isarray-3.0.4.tgz'
+  _: 'https://npme.walmart.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz'
 lodash.isboolean:
+ _latest: 3.0.3
  _:
   ^3.0.3: 3.0.3
  3.0.3:
   $: sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=
-  _: 'http://localhost:4873/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz'
+  _: 'https://npme.walmart.com/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz'
 lodash.isinteger:
+ _latest: 4.0.4
  _:
   ^4.0.4: 4.0.4
  4.0.4:
   $: sha1-YZwK89A/iwTDH1iChAt3sRzWg0M=
-  _: 'http://localhost:4873/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz'
+  _: 'https://npme.walmart.com/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz'
 lodash.isnumber:
+ _latest: 3.0.3
  _:
   ^3.0.3: 3.0.3
  3.0.3:
   $: sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w=
-  _: 'http://localhost:4873/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz'
+  _: 'https://npme.walmart.com/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz'
 lodash.isplainobject:
+ _latest: 4.0.6
  _:
   ^4.0.6: 4.0.6
  4.0.6:
   $: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
-  _: 'http://localhost:4873/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz'
+  _: 'https://npme.walmart.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz'
 lodash.isstring:
+ _latest: 4.0.1
  _:
   ^4.0.1: 4.0.1
  4.0.1:
   $: sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
-  _: 'http://localhost:4873/lodash.isstring/-/lodash.isstring-4.0.1.tgz'
+  _: 'https://npme.walmart.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz'
 lodash.kebabcase:
+ _latest: 4.1.1
  _:
   4.1.1: 4.1.1
  4.1.1:
   $: sha1-hImxyw0p/4gZXM7KRI/21swpXDY=
-  _: 'http://localhost:4873/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz'
+  _: 'https://npme.walmart.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz'
 lodash.keys:
+ _latest: 4.2.0
  _:
   ^3.0.0: 3.1.2
  3.1.2:
   $: sha1-TbwEcrFWvlCgsoaFXRvQsMZWCYo=
-  _: 'http://localhost:4873/lodash.keys/-/lodash.keys-3.1.2.tgz'
+  _: 'https://npme.walmart.com/lodash.keys/-/lodash.keys-3.1.2.tgz'
   dependencies:
    lodash._getnative: ^3.0.0
    lodash.isarguments: ^3.0.0
    lodash.isarray: ^3.0.0
 lodash.once:
+ _latest: 4.1.1
  _:
   ^4.0.0: 4.1.1
  4.1.1:
   $: sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
-  _: 'http://localhost:4873/lodash.once/-/lodash.once-4.1.1.tgz'
+  _: 'https://npme.walmart.com/lodash.once/-/lodash.once-4.1.1.tgz'
 lodash.snakecase:
+ _latest: 4.1.1
  _:
   4.1.1: 4.1.1
  4.1.1:
   $: sha1-OdcUo1NXFHg3rv1ktdy7Fr7Nj40=
-  _: 'http://localhost:4873/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz'
+  _: 'https://npme.walmart.com/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz'
 lodash.upperfirst:
+ _latest: 4.3.1
  _:
   4.3.1: 4.3.1
  4.3.1:
   $: sha1-E2Xt9DFIBIHvDRxolXpe2Z1J984=
-  _: 'http://localhost:4873/lodash.upperfirst/-/lodash.upperfirst-4.3.1.tgz'
+  _: 'https://npme.walmart.com/lodash.upperfirst/-/lodash.upperfirst-4.3.1.tgz'
 lolex:
+ _latest: 6.0.0
  _:
-  '^2.2.0,^2.3.2': 2.7.5
+  ^2.2.0: 2.7.5
+  ^5.0.1: 5.1.2
+ 5.1.2:
+  $: sha512-h4hmjAvHTmd+25JSwrtTIuwbKdwg5NzZVRMLn9saij4SZaepCrTCxPr35H/3bjwfMJtN+t3CX8672UIkglz28A==
+  _: 'https://npme.walmart.com/lolex/-/lolex-5.1.2.tgz'
+  dependencies:
+   '@sinonjs/commons': ^1.7.0
  2.7.5:
   $: sha512-l9x0+1offnKKIzYVjyXU2SiwhXDLekRzKyhnbyldPHvC7BvLPVpdNUNR2KeMAiCN2D/kLNttZgQD5WjSxuBx3Q==
-  _: 'http://localhost:4873/lolex/-/lolex-2.7.5.tgz'
+  _: 'https://npme.walmart.com/lolex/-/lolex-2.7.5.tgz'
 loose-envify:
+ _latest: 1.4.0
  _:
   ^1.0.0: 1.4.0
  1.4.0:
   $: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
-  _: 'http://localhost:4873/loose-envify/-/loose-envify-1.4.0.tgz'
+  _: 'https://npme.walmart.com/loose-envify/-/loose-envify-1.4.0.tgz'
   dependencies:
    js-tokens: '^3.0.0 || ^4.0.0'
 lru-cache:
+ _latest: 5.1.1
  _:
-  '4.1.x,^4.0.1': 4.1.3
- 4.1.3:
-  $: sha512-fFEhvcgzuIoJVUF8fYr5KR0YqxD238zgObTps31YdADwPPAp82a4M8TrckkWyx7ekNlf9aBcVn81cFwwXngrJA==
-  _: 'http://localhost:4873/lru-cache/-/lru-cache-4.1.3.tgz'
+  '4.1.x,^4.0.1': 4.1.5
+ 4.1.5:
+  $: sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==
+  _: 'https://npme.walmart.com/lru-cache/-/lru-cache-4.1.5.tgz'
   dependencies:
    pseudomap: ^1.0.2
    yallist: ^2.1.2
 media-typer:
+ _latest: 1.1.0
  _:
   0.3.0: 0.3.0
  0.3.0:
   $: sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
-  _: 'http://localhost:4873/media-typer/-/media-typer-0.3.0.tgz'
+  _: 'https://npme.walmart.com/media-typer/-/media-typer-0.3.0.tgz'
 merge-descriptors:
+ _latest: 1.0.1
  _:
   1.0.1: 1.0.1
  1.0.1:
   $: sha1-sAqqVW3YtEVoFQ7J0blT8/kMu2E=
-  _: 'http://localhost:4873/merge-descriptors/-/merge-descriptors-1.0.1.tgz'
+  _: 'https://npme.walmart.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz'
 methods:
+ _latest: 1.1.2
  _:
   '^1.0.1,~1.1.2': 1.1.2
  1.1.2:
   $: sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
-  _: 'http://localhost:4873/methods/-/methods-1.1.2.tgz'
-mime:
+  _: 'https://npme.walmart.com/methods/-/methods-1.1.2.tgz'
+middie:
+ _latest: 4.1.0
  _:
-  1.4.1: 1.4.1
- 1.4.1:
-  $: sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==
-  _: 'http://localhost:4873/mime/-/mime-1.4.1.tgz'
-mime-db:
- _:
-  '1.x.x,~1.36.0': 1.36.0
- 1.36.0:
-  $: sha512-L+xvyD9MkoYMXb1jAmzI/lWYAxAMCPvIBSWur0PZ5nOf5euahRLVqH//FKW9mWp2lkqUgYiXPgkzfMUFi4zVDw==
-  _: 'http://localhost:4873/mime-db/-/mime-db-1.36.0.tgz'
-mime-types:
- _:
-  '^2.1.18,~2.1.18': 2.1.20
- 2.1.20:
-  $: sha512-HrkrPaP9vGuWbLK1B1FfgAkbqNjIuy4eHlIYnFi7kamZyLLrGlo2mpcx0bBmNpKqBtYtAfGbodDddIgddSJC2A==
-  _: 'http://localhost:4873/mime-types/-/mime-types-2.1.20.tgz'
+  ^4.1.0: 4.1.0
+ 4.1.0:
+  $: sha512-eylPpZA+K3xO9kpDjagoPkEUkNcWV3EAo5OEz0MqsekUpT7KbnQkk8HNZkh4phx2vvOAmNNZuLRWF9lDDHPpVQ==
+  _: 'https://npme.walmart.com/middie/-/middie-4.1.0.tgz'
   dependencies:
-   mime-db: ~1.36.0
+   path-to-regexp: ^4.0.0
+   reusify: ^1.0.2
+mime:
+ _latest: 2.4.4
+ _:
+  1.6.0: 1.6.0
+ 1.6.0:
+  $: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
+  _: 'https://npme.walmart.com/mime/-/mime-1.6.0.tgz'
+mime-db:
+ _latest: 1.43.0
+ _:
+  1.43.0: 1.43.0
+  1.x.x:
+   - 1.43.0
+   - 1.37.0
+ 1.43.0:
+  $: sha512-+5dsGEEovYbT8UY9yD7eE4XTc4UwJ1jBYlgaQQF38ENsKR3wj/8q8RFZrF9WIZpB2V1ArTVFUva8sAul1NzRzQ==
+  _: 'https://npme.walmart.com/mime-db/-/mime-db-1.43.0.tgz'
+ 1.37.0:
+  $: sha512-R3C4db6bgQhlIhPU48fUtdVmKnflq+hRdad7IyKhtFj06VPNVdk2RhiYL3UjQIlso8L+YxAtFkobT0VK+S/ybg==
+  _: 'https://npme.walmart.com/mime-db/-/mime-db-1.37.0.tgz'
+mime-types:
+ _latest: 2.1.26
+ _:
+  '^2.1.18,~2.1.24': 2.1.26
+ 2.1.26:
+  $: sha512-01paPWYgLrkqAyrlDorC1uDwl2p3qZT7yl806vW7DvDoxwXi46jsjFbg+WdwotBIk6/MbEhO/dh5aZ5sNj/dWQ==
+  _: 'https://npme.walmart.com/mime-types/-/mime-types-2.1.26.tgz'
+  dependencies:
+   mime-db: 1.43.0
 mimic-fn:
+ _latest: 3.0.0
  _:
   ^1.0.0: 1.2.0
  1.2.0:
   $: sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
-  _: 'http://localhost:4873/mimic-fn/-/mimic-fn-1.2.0.tgz'
+  _: 'https://npme.walmart.com/mimic-fn/-/mimic-fn-1.2.0.tgz'
 mimos:
+ _latest: 4.0.2
  _:
-  4.x.x: 4.0.0
-  ^3.0.3: 3.0.3
- 4.0.0:
-  $: sha512-JvlvRLqGIlk+AYypWrbrDmhsM+6JVx/xBM5S3AMwTBz1trPCEoPN/swO2L4Wu653fL7oJdgk8DMQyG/Gq3JkZg==
-  _: 'http://localhost:4873/mimos/-/mimos-4.0.0.tgz'
+  3.x.x: 3.0.3
+  4.x.x: 4.0.2
+ 4.0.2:
+  $: sha512-5XBsDqBqzSN88XPPH/TFpOalWOjHJM5Z2d3AMx/30iq+qXvYKd/8MPhqBwZDOLtoaIWInR3nLzMQcxfGK9djXA==
+  _: 'https://npme.walmart.com/mimos/-/mimos-4.0.2.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
    mime-db: 1.x.x
+  deprecated: 'This module has moved and is now available at @hapi/mimos. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  3.0.3:
   $: sha1-uRCQcq03jCty9qAQHEPd+ys2ZB8=
-  _: 'http://localhost:4873/mimos/-/mimos-3.0.3.tgz'
+  _: 'https://npme.walmart.com/mimos/-/mimos-3.0.3.tgz'
   dependencies:
    hoek: 4.x.x
    mime-db: 1.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 minimatch:
+ _latest: 3.0.4
  _:
   '2 || 3,^3.0.2,^3.0.4': 3.0.4
  3.0.4:
   $: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  _: 'http://localhost:4873/minimatch/-/minimatch-3.0.4.tgz'
+  _: 'https://npme.walmart.com/minimatch/-/minimatch-3.0.4.tgz'
   dependencies:
    brace-expansion: ^1.1.7
 minimist:
+ _latest: 1.2.5
  _:
-  '0.0.8,~0.0.1': 0.0.8
+  0.0.8: 0.0.8
+  ^1.2.5: 1.2.5
+ 1.2.5:
+  $: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  _: 'https://npme.walmart.com/minimist/-/minimist-1.2.5.tgz'
  0.0.8:
   $: sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
-  _: 'http://localhost:4873/minimist/-/minimist-0.0.8.tgz'
+  _: 'https://npme.walmart.com/minimist/-/minimist-0.0.8.tgz'
 mkdirp:
+ _latest: 1.0.4
  _:
-  '0.5.1,0.5.x,^0.5.1': 0.5.1
+  0.5.1: 0.5.1
+  '0.5.x,^0.5.1': 0.5.5
+ 0.5.5:
+  $: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
+  _: 'https://npme.walmart.com/mkdirp/-/mkdirp-0.5.5.tgz'
+  dependencies:
+   minimist: ^1.2.5
  0.5.1:
   $: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
-  _: 'http://localhost:4873/mkdirp/-/mkdirp-0.5.1.tgz'
+  _: 'https://npme.walmart.com/mkdirp/-/mkdirp-0.5.1.tgz'
   dependencies:
    minimist: 0.0.8
+  deprecated: 'Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)'
 mocha:
+ _latest: 7.1.1
  _:
   ^3.0.2: 3.5.3
   ^4.0.0: 4.1.0
  4.1.0:
   $: sha512-0RVnjg1HJsXY2YFDoTNzcc1NKhYuXKRrBAG2gDygmJJA136Cs2QlRliZG1mA0ap7cuaT30mw16luAeln+4RiNA==
-  _: 'http://localhost:4873/mocha/-/mocha-4.1.0.tgz'
+  _: 'https://npme.walmart.com/mocha/-/mocha-4.1.0.tgz'
   dependencies:
    browser-stdout: 1.3.0
    commander: 2.11.0
@@ -2151,7 +2690,7 @@ mocha:
  3.5.3:
   top: 1
   $: sha512-/6na001MJWEtYxHOV1WLfsmR4YIynkUEhBwzsb+fk2qmQ3iqsi258l/Q2MWHJMImAcNpZ8DEdYAK72NHoIQ9Eg==
-  _: 'http://localhost:4873/mocha/-/mocha-3.5.3.tgz'
+  _: 'https://npme.walmart.com/mocha/-/mocha-3.5.3.tgz'
   dependencies:
    browser-stdout: 1.3.0
    commander: 2.9.0
@@ -2166,93 +2705,116 @@ mocha:
    mkdirp: 0.5.1
    supports-color: 3.1.2
 ms:
+ _latest: 2.1.2
  _:
   2.0.0: 2.0.0
-  ^2.1.1: 2.1.1
- 2.1.1:
+  2.1.1: 2.1.1
+  ^2.1.1: 2.1.2
+ 2.1.2:
   top: 1
+  $: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  _: 'https://npme.walmart.com/ms/-/ms-2.1.2.tgz'
+ 2.1.1:
   $: sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
-  _: 'http://localhost:4873/ms/-/ms-2.1.1.tgz'
+  _: 'https://npme.walmart.com/ms/-/ms-2.1.1.tgz'
  2.0.0:
   $: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
-  _: 'http://localhost:4873/ms/-/ms-2.0.0.tgz'
+  _: 'https://npme.walmart.com/ms/-/ms-2.0.0.tgz'
 mute-stream:
+ _latest: 0.0.8
  _:
   0.0.7: 0.0.7
  0.0.7:
   $: sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
-  _: 'http://localhost:4873/mute-stream/-/mute-stream-0.0.7.tgz'
+  _: 'https://npme.walmart.com/mute-stream/-/mute-stream-0.0.7.tgz'
 natural-compare:
+ _latest: 1.4.0
  _:
   ^1.4.0: 1.4.0
  1.4.0:
   $: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
-  _: 'http://localhost:4873/natural-compare/-/natural-compare-1.4.0.tgz'
+  _: 'https://npme.walmart.com/natural-compare/-/natural-compare-1.4.0.tgz'
 negotiator:
+ _latest: 0.6.2
  _:
-  0.6.1: 0.6.1
- 0.6.1:
-  $: sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=
-  _: 'http://localhost:4873/negotiator/-/negotiator-0.6.1.tgz'
+  0.6.2: 0.6.2
+ 0.6.2:
+  $: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
+  _: 'https://npme.walmart.com/negotiator/-/negotiator-0.6.2.tgz'
+neo-async:
+ _latest: 2.6.1
+ _:
+  ^2.6.0: 2.6.1
+ 2.6.1:
+  $: sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
+  _: 'https://npme.walmart.com/neo-async/-/neo-async-2.6.1.tgz'
 nigel:
+ _latest: 3.0.4
  _:
   2.x.x: 2.0.2
-  3.x.x: 3.0.1
- 3.0.1:
-  $: sha512-kCVtUG9JyD//tsYrZY+/Y+2gUrANVSba8y23QkM5Znx0FOxlnl9Z4OVPBODmstKWTOvigfTO+Va1VPOu3eWSOQ==
-  _: 'http://localhost:4873/nigel/-/nigel-3.0.1.tgz'
+  3.x.x: 3.0.4
+ 3.0.4:
+  $: sha512-3SZCCS/duVDGxFpTROHEieC+itDo4UqL9JNUyQJv3rljudQbK6aqus5B4470OxhESPJLN93Qqxg16rH7DUjbfQ==
+  _: 'https://npme.walmart.com/nigel/-/nigel-3.0.4.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
    vise: 3.x.x
+  deprecated: 'This module has moved and is now available at @hapi/nigel. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  2.0.2:
   $: sha1-k6GGb7DFLYc5CqdeKxYfS1x15bE=
-  _: 'http://localhost:4873/nigel/-/nigel-2.0.2.tgz'
+  _: 'https://npme.walmart.com/nigel/-/nigel-2.0.2.tgz'
   dependencies:
    hoek: 4.x.x
    vise: 2.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 nise:
+ _latest: 4.0.3
  _:
-  ^1.2.0: 1.4.5
- 1.4.5:
-  $: sha512-OHRVvdxKgwZELf2DTgsJEIA4MOq8XWvpSUzoOXyxJ2mY0mMENWC66+70AShLR2z05B1dzrzWlUQJmJERlOUpZw==
-  _: 'http://localhost:4873/nise/-/nise-1.4.5.tgz'
+  ^1.2.0: 1.5.3
+ 1.5.3:
+  $: sha512-Ymbac/94xeIrMf59REBPOv0thr+CJVFMhrlAkW/gjCIE58BGQdCj0x7KRCb3yz+Ga2Rz3E9XXSvUyyxqqhjQAQ==
+  _: 'https://npme.walmart.com/nise/-/nise-1.5.3.tgz'
   dependencies:
-   '@sinonjs/formatio': 3.0.0
-   just-extend: ^3.0.0
-   lolex: ^2.3.2
+   '@sinonjs/formatio': ^3.2.1
+   '@sinonjs/text-encoding': ^0.7.1
+   just-extend: ^4.0.2
+   lolex: ^5.0.1
    path-to-regexp: ^1.7.0
-   text-encoding: ^0.6.4
 nix-clap:
+ _latest: 1.3.10
  _:
-  ^1.0.8: 1.3.4
- 1.3.4:
-  $: sha512-6srKaSF6+dLW2ShyxP+X/5BMxpxNQ552eFjx6rdFqQLt9af7NC5R5e59PabEO3wB96jV0F0Cw3MrbT0zZrQwuw==
-  _: 'http://localhost:4873/nix-clap/-/nix-clap-1.3.4.tgz'
+  ^1.3.10: 1.3.10
+ 1.3.10:
+  $: sha512-sdQTROrsLYFFRo4koLdVPfXC+H7kB+cEjSvSLNP/9m2foSypqoLzqfITdUHNZQi8IuvAMLdB+leaDtBj2EJPlA==
+  _: 'https://npme.walmart.com/nix-clap/-/nix-clap-1.3.10.tgz'
   dependencies:
    strip-ansi: ^4.0.0
 node-fetch:
+ _latest: 2.6.0
  _:
   ^1.0.1: 1.7.3
  1.7.3:
   $: sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==
-  _: 'http://localhost:4873/node-fetch/-/node-fetch-1.7.3.tgz'
+  _: 'https://npme.walmart.com/node-fetch/-/node-fetch-1.7.3.tgz'
   dependencies:
    encoding: ^0.1.11
    is-stream: ^1.0.1
 nopt:
+ _latest: 4.0.3
  _:
   3.x: 3.0.6
  3.0.6:
   $: sha1-xkZdvwirzU2zWTF/eaxopkayj/k=
-  _: 'http://localhost:4873/nopt/-/nopt-3.0.6.tgz'
+  _: 'https://npme.walmart.com/nopt/-/nopt-3.0.6.tgz'
   dependencies:
    abbrev: '1'
 nyc:
+ _latest: 15.0.1
  _:
   ^11.2.1: 11.9.0
  11.9.0:
   $: sha512-w8OdJAhXL5izerzZMdqzYKMj/pgHJyY3qEPYBjLLxrhcVoHEY9pU5ENIiZyCgG9OR7x3VcUMoD40o6PtVpfR4g==
-  _: 'http://localhost:4873/nyc/-/nyc-11.9.0.tgz'
+  _: 'https://npme.walmart.com/nyc/-/nyc-11.9.0.tgz'
   dependencies:
    archy: ^1.0.0
    arrify: ^1.0.1
@@ -2310,263 +2872,305 @@ nyc:
    - yargs
    - yargs-parser
 object-assign:
+ _latest: 4.1.1
  _:
   ^4.0.1: 4.1.1
  4.1.1:
   $: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
-  _: 'http://localhost:4873/object-assign/-/object-assign-4.1.1.tgz'
+  _: 'https://npme.walmart.com/object-assign/-/object-assign-4.1.1.tgz'
 on-finished:
+ _latest: 2.3.0
  _:
   '^2.3.0,~2.3.0': 2.3.0
  2.3.0:
   $: sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=
-  _: 'http://localhost:4873/on-finished/-/on-finished-2.3.0.tgz'
+  _: 'https://npme.walmart.com/on-finished/-/on-finished-2.3.0.tgz'
   dependencies:
    ee-first: 1.1.1
 on-headers:
+ _latest: 1.0.2
  _:
-  ^1.0.1: 1.0.1
- 1.0.1:
+  ^1.0.1: 1.0.2
+ 1.0.2:
   top: 1
-  $: sha1-ko9dD0cNSTQmUepnlLCFfBAGk/c=
-  _: 'http://localhost:4873/on-headers/-/on-headers-1.0.1.tgz'
+  $: sha512-pZAE+FJLoyITytdqK0U5s+FIpjN0JP3OzFi/u8Rx+EV5/W+JTWGXG8xFzevE7AjBfDqHv/8vL8qQsIhHnqRkrA==
+  _: 'https://npme.walmart.com/on-headers/-/on-headers-1.0.2.tgz'
 once:
+ _latest: 1.4.0
  _:
   '1.x,^1.3.0': 1.4.0
  1.4.0:
   $: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
-  _: 'http://localhost:4873/once/-/once-1.4.0.tgz'
+  _: 'https://npme.walmart.com/once/-/once-1.4.0.tgz'
   dependencies:
    wrappy: '1'
 onetime:
+ _latest: 5.1.0
  _:
   ^2.0.0: 2.0.1
  2.0.1:
   $: sha1-BnQoIw/WdEOyeUsiu6UotoZ5YtQ=
-  _: 'http://localhost:4873/onetime/-/onetime-2.0.1.tgz'
+  _: 'https://npme.walmart.com/onetime/-/onetime-2.0.1.tgz'
   dependencies:
    mimic-fn: ^1.0.0
 only:
+ _latest: 0.0.2
  _:
   ~0.0.2: 0.0.2
  0.0.2:
   $: sha1-Kv3oTQPlC5qO3EROMGEKcCle37Q=
-  _: 'http://localhost:4873/only/-/only-0.0.2.tgz'
-optimist:
- _:
-  ^0.6.1: 0.6.1
- 0.6.1:
-  $: sha1-2j6nRob6IaGaERwybpDrFaAZZoY=
-  _: 'http://localhost:4873/optimist/-/optimist-0.6.1.tgz'
-  dependencies:
-   wordwrap: ~0.0.2
-   minimist: ~0.0.1
+  _: 'https://npme.walmart.com/only/-/only-0.0.2.tgz'
 optional-require:
+ _latest: 1.0.0
  _:
   ^1.0.0: 1.0.0
  1.0.0:
   $: sha1-Fo02GYQ6zA+81tbMXaTL5ThmOvI=
-  _: 'http://localhost:4873/optional-require/-/optional-require-1.0.0.tgz'
+  _: 'https://npme.walmart.com/optional-require/-/optional-require-1.0.0.tgz'
 optionator:
+ _latest: 0.9.1
  _:
-  '^0.8.1,^0.8.2': 0.8.2
- 0.8.2:
-  $: sha1-NkxeQJ0/TWMB1sC0wFu6UBgK62Q=
-  _: 'http://localhost:4873/optionator/-/optionator-0.8.2.tgz'
+  '^0.8.1,^0.8.2': 0.8.3
+ 0.8.3:
+  $: sha512-+IW9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1XnIFNvfhjjIuYkDvysnPQ7qzqVzLt78BCruntqRhWQbA==
+  _: 'https://npme.walmart.com/optionator/-/optionator-0.8.3.tgz'
   dependencies:
    prelude-ls: ~1.1.2
    deep-is: ~0.1.3
-   wordwrap: ~1.0.0
+   word-wrap: ~1.2.3
    type-check: ~0.3.2
    levn: ~0.3.0
-   fast-levenshtein: ~2.0.4
+   fast-levenshtein: ~2.0.6
 os-tmpdir:
+ _latest: 2.0.0
  _:
   ~1.0.2: 1.0.2
  1.0.2:
   $: sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
-  _: 'http://localhost:4873/os-tmpdir/-/os-tmpdir-1.0.2.tgz'
+  _: 'https://npme.walmart.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz'
 parseurl:
+ _latest: 1.3.3
  _:
-  '^1.3.2,~1.3.2': 1.3.2
- 1.3.2:
-  $: sha1-/CidTtiZMRlGDBViUyYs3I3mW/M=
-  _: 'http://localhost:4873/parseurl/-/parseurl-1.3.2.tgz'
+  '^1.3.2,~1.3.3': 1.3.3
+ 1.3.3:
+  $: sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==
+  _: 'https://npme.walmart.com/parseurl/-/parseurl-1.3.3.tgz'
 path-is-absolute:
+ _latest: 2.0.0
  _:
   ^1.0.0: 1.0.1
  1.0.1:
   $: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
-  _: 'http://localhost:4873/path-is-absolute/-/path-is-absolute-1.0.1.tgz'
+  _: 'https://npme.walmart.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz'
 path-is-inside:
+ _latest: 1.0.2
  _:
-  '^1.0.1,^1.0.2': 1.0.2
+  ^1.0.2: 1.0.2
  1.0.2:
   $: sha1-NlQX3t5EQw0cEa9hAn+s8HS9/FM=
-  _: 'http://localhost:4873/path-is-inside/-/path-is-inside-1.0.2.tgz'
+  _: 'https://npme.walmart.com/path-is-inside/-/path-is-inside-1.0.2.tgz'
 path-to-regexp:
+ _latest: 6.1.0
  _:
   0.1.7: 0.1.7
-  '^1.1.1,^1.7.0': 1.7.0
- 1.7.0:
-  $: sha1-Wf3g9DW62suhA6hOnTvGTpa5k30=
-  _: 'http://localhost:4873/path-to-regexp/-/path-to-regexp-1.7.0.tgz'
+  '^1.1.1,^1.7.0': 1.8.0
+  ^4.0.0: 4.0.5
+ 4.0.5:
+  $: sha512-l+fTaGG2N9ZRpCEUj5fG1VKdDLaiqwCIvPngpnxzREhcdobhZC4ou4w984HBu72DqAJ5CfcdV6tjqNOunfpdsQ==
+  _: 'https://npme.walmart.com/path-to-regexp/-/path-to-regexp-4.0.5.tgz'
+ 1.8.0:
+  $: sha512-n43JRhlUKUAlibEJhPeir1ncUID16QnEjNpwzNdO3Lm4ywrBpBZ5oLD0I6br9evr1Y9JTqwRtAh7JLoOzAQdVA==
+  _: 'https://npme.walmart.com/path-to-regexp/-/path-to-regexp-1.8.0.tgz'
   dependencies:
    isarray: 0.0.1
  0.1.7:
   $: sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
-  _: 'http://localhost:4873/path-to-regexp/-/path-to-regexp-0.1.7.tgz'
+  _: 'https://npme.walmart.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz'
 pathval:
+ _latest: 1.1.0
  _:
   ^1.1.0: 1.1.0
  1.1.0:
   $: sha1-uULm1L3mUwBe9rcTYd74cn0GReA=
-  _: 'http://localhost:4873/pathval/-/pathval-1.1.0.tgz'
+  _: 'https://npme.walmart.com/pathval/-/pathval-1.1.0.tgz'
 pez:
+ _latest: 4.0.5
  _:
   2.x.x: 2.1.5
-  4.x.x: 4.0.2
- 4.0.2:
-  $: sha512-HuPxmGxHsEFPWhdkwBs2gIrHhFqktIxMtudISTFN95RQ85ZZAOl8Ki6u3nnN/X8OUaGlIGldk/l8p2IR4/i76w==
-  _: 'http://localhost:4873/pez/-/pez-4.0.2.tgz'
+  4.x.x: 4.0.5
+ 4.0.5:
+  $: sha512-HvL8uiFIlkXbx/qw4B8jKDCWzo7Pnnd65Uvanf9OOCtb20MRcb9gtTVBf9NCnhETif1/nzbDHIjAWC/sUp7LIQ==
+  _: 'https://npme.walmart.com/pez/-/pez-4.0.5.tgz'
   dependencies:
    b64: 4.x.x
    boom: 7.x.x
    content: 4.x.x
-   hoek: 5.x.x
+   hoek: 6.x.x
    nigel: 3.x.x
+  deprecated: 'This module has moved and is now available at @hapi/pez. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  2.1.5:
   $: sha1-XsLMYlAMw+tCNtSkFM9aF7XrUAc=
-  _: 'http://localhost:4873/pez/-/pez-2.1.5.tgz'
+  _: 'https://npme.walmart.com/pez/-/pez-2.1.5.tgz'
   dependencies:
    b64: 3.x.x
    boom: 5.x.x
    content: 3.x.x
    hoek: 4.x.x
    nigel: 2.x.x
-pify:
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
+pino:
+ _latest: 6.2.0
  _:
-  ^2.0.0: 2.3.0
- 2.3.0:
-  $: sha1-7RQaasBDqEnqWISY59yosVMw6Qw=
-  _: 'http://localhost:4873/pify/-/pify-2.3.0.tgz'
-pinkie:
- _:
-  ^2.0.0: 2.0.4
- 2.0.4:
-  $: sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
-  _: 'http://localhost:4873/pinkie/-/pinkie-2.0.4.tgz'
-pinkie-promise:
- _:
-  ^2.0.0: 2.0.1
- 2.0.1:
-  $: sha1-ITXW36ejWMBprJsXh3YogihFD/o=
-  _: 'http://localhost:4873/pinkie-promise/-/pinkie-promise-2.0.1.tgz'
+  ^5.17.0: 5.17.0
+ 5.17.0:
+  $: sha512-LqrqmRcJz8etUjyV0ddqB6OTUutCgQULPFg2b4dtijRHUsucaAdBgSUW58vY6RFSX+NT8963F+q0tM6lNwGShA==
+  _: 'https://npme.walmart.com/pino/-/pino-5.17.0.tgz'
   dependencies:
-   pinkie: ^2.0.0
+   fast-redact: ^2.0.0
+   fast-safe-stringify: ^2.0.7
+   flatstr: ^1.0.12
+   pino-std-serializers: ^2.4.2
+   quick-format-unescaped: ^3.0.3
+   sonic-boom: ^0.7.5
+pino-std-serializers:
+ _latest: 2.4.2
+ _:
+  ^2.4.2: 2.4.2
+ 2.4.2:
+  $: sha512-WaL504dO8eGs+vrK+j4BuQQq6GLKeCCcHaMB2ItygzVURcL1CycwNEUHTD/lHFHs/NL5qAz2UKrjYWXKSf4aMQ==
+  _: 'https://npme.walmart.com/pino-std-serializers/-/pino-std-serializers-2.4.2.tgz'
 pluralize:
+ _latest: 8.0.0
  _:
   ^7.0.0: 7.0.0
  7.0.0:
   $: sha512-ARhBOdzS3e41FbkW/XWrTEtukqqLoK5+Z/4UeDaLuSW+39JPeFgs4gCGqsrJHVZX0fUrx//4OF0K1CUGwlIFow==
-  _: 'http://localhost:4873/pluralize/-/pluralize-7.0.0.tgz'
+  _: 'https://npme.walmart.com/pluralize/-/pluralize-7.0.0.tgz'
 podium:
+ _latest: 3.2.0
  _:
-  3.x.x: 3.1.2
-  ^1.3.0: 1.3.0
- 3.1.2:
-  $: sha512-18VrjJAduIdPv7d9zWsfmKxTj3cQTYC5Pv5gtKxcWujYBpGbV+mhNSPYhlHW5xeWoazYyKfB9FEsPT12r5rY1A==
-  _: 'http://localhost:4873/podium/-/podium-3.1.2.tgz'
+  1.x.x: 1.3.0
+  3.x.x: 3.1.5
+ 3.1.5:
+  $: sha512-+fAPmAj3d5fWKx5oSjQKeBIcl46/qZnGLhzyi/dJ/HzNiOpuxyX/Y4091LiVxZQ4ALdf/LCS7siV6ai5nNLlOg==
+  _: 'https://npme.walmart.com/podium/-/podium-3.1.5.tgz'
   dependencies:
-   hoek: 5.x.x
-   joi: 13.x.x
+   hoek: 6.x.x
+   joi: 14.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
  1.3.0:
   $: sha512-ZIujqk1pv8bRZNVxwwwq0BhXilZ2udycQT3Kp8ah3f3TcTmVg7ILJsv/oLf47gRa2qeiP584lNq+pfvS9U3aow==
-  _: 'http://localhost:4873/podium/-/podium-1.3.0.tgz'
+  _: 'https://npme.walmart.com/podium/-/podium-1.3.0.tgz'
   dependencies:
    hoek: 4.x.x
    items: 2.x.x
    joi: 10.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 prelude-ls:
+ _latest: 1.2.1
  _:
   ~1.1.2: 1.1.2
  1.1.2:
   $: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
-  _: 'http://localhost:4873/prelude-ls/-/prelude-ls-1.1.2.tgz'
+  _: 'https://npme.walmart.com/prelude-ls/-/prelude-ls-1.1.2.tgz'
 process-nextick-args:
+ _latest: 2.0.1
  _:
-  ~2.0.0: 2.0.0
- 2.0.0:
-  $: sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
-  _: 'http://localhost:4873/process-nextick-args/-/process-nextick-args-2.0.0.tgz'
+  ~2.0.0: 2.0.1
+ 2.0.1:
+  $: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
+  _: 'https://npme.walmart.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz'
 progress:
+ _latest: 2.0.3
  _:
-  ^2.0.0: 2.0.0
- 2.0.0:
-  $: sha1-ihvjZr+Pwj2yvSPxDG/pILQ4nR8=
-  _: 'http://localhost:4873/progress/-/progress-2.0.0.tgz'
+  ^2.0.0: 2.0.3
+ 2.0.3:
+  $: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
+  _: 'https://npme.walmart.com/progress/-/progress-2.0.3.tgz'
 proxy-addr:
+ _latest: 2.0.6
  _:
-  ~2.0.4: 2.0.4
- 2.0.4:
-  $: sha512-5erio2h9jp5CHGwcybmxmVqHmnCBZeewlfJ0pex+UW7Qny7OOZXTtH56TGNyBizkgiOwhJtMKrVzDTeKcySZwA==
-  _: 'http://localhost:4873/proxy-addr/-/proxy-addr-2.0.4.tgz'
+  '^2.0.6,~2.0.5': 2.0.6
+ 2.0.6:
+  $: sha512-dh/frvCBVmSsDYzw6n926jv974gddhkFPfiN8hPOi30Wax25QZyZEGveluCgliBnqmuM+UJmBErbAUFIoDbjOw==
+  _: 'https://npme.walmart.com/proxy-addr/-/proxy-addr-2.0.6.tgz'
   dependencies:
    forwarded: ~0.1.2
-   ipaddr.js: 1.8.0
+   ipaddr.js: 1.9.1
 pseudomap:
+ _latest: 1.0.2
  _:
   ^1.0.2: 1.0.2
  1.0.2:
   $: sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
-  _: 'http://localhost:4873/pseudomap/-/pseudomap-1.0.2.tgz'
+  _: 'https://npme.walmart.com/pseudomap/-/pseudomap-1.0.2.tgz'
 punycode:
+ _latest: 2.1.1
  _:
-  2.x.x: 2.1.1
+  '2.x.x,^2.1.0': 2.1.1
  2.1.1:
   $: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
-  _: 'http://localhost:4873/punycode/-/punycode-2.1.1.tgz'
+  _: 'https://npme.walmart.com/punycode/-/punycode-2.1.1.tgz'
 qs:
+ _latest: 6.9.3
  _:
-  6.5.2: 6.5.2
+  6.7.0: 6.7.0
   ~4.0.0: 4.0.0
- 6.5.2:
-  $: sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
-  _: 'http://localhost:4873/qs/-/qs-6.5.2.tgz'
+ 6.7.0:
+  $: sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
+  _: 'https://npme.walmart.com/qs/-/qs-6.7.0.tgz'
  4.0.0:
   $: sha1-wx2bdOwn33XlQ6hseHKO2NRiNgc=
-  _: 'http://localhost:4873/qs/-/qs-4.0.0.tgz'
+  _: 'https://npme.walmart.com/qs/-/qs-4.0.0.tgz'
+quick-format-unescaped:
+ _latest: 4.0.1
+ _:
+  ^3.0.3: 3.0.3
+ 3.0.3:
+  $: sha512-dy1yjycmn9blucmJLXOfZDx1ikZJUi6E8bBZLnhPG5gBrVhHXx2xVyqqgKBubVNEXmx51dBACMHpoMQK/N/AXQ==
+  _: 'https://npme.walmart.com/quick-format-unescaped/-/quick-format-unescaped-3.0.3.tgz'
 range-parser:
+ _latest: 1.2.1
  _:
-  ~1.2.0: 1.2.0
- 1.2.0:
-  $: sha1-9JvmtIeJTdxA3MlKMi9hEJLgDV4=
-  _: 'http://localhost:4873/range-parser/-/range-parser-1.2.0.tgz'
+  ~1.2.1: 1.2.1
+ 1.2.1:
+  $: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
+  _: 'https://npme.walmart.com/range-parser/-/range-parser-1.2.1.tgz'
 raw-body:
+ _latest: 2.4.1
  _:
-  2.3.3: 2.3.3
+  2.4.0: 2.4.0
   ~2.1.2: 2.1.7
- 2.3.3:
-  $: sha512-9esiElv1BrZoI3rCDuOuKCBRbuApGGaDPQfjSflGxdy4oyzqghxu6klEkkVIvBje+FF0BX9coEv8KqW6X/7njw==
-  _: 'http://localhost:4873/raw-body/-/raw-body-2.3.3.tgz'
+ 2.4.0:
+  $: sha512-4Oz8DUIwdvoa5qMJelxipzi/iJIi40O5cGV1wNYp5hvZP8ZN0T+jiNkL0QepXs+EsQ9XJ8ipEDoiH70ySUJP3Q==
+  _: 'https://npme.walmart.com/raw-body/-/raw-body-2.4.0.tgz'
   dependencies:
-   bytes: 3.0.0
-   http-errors: 1.6.3
-   iconv-lite: 0.4.23
+   bytes: 3.1.0
+   http-errors: 1.7.2
+   iconv-lite: 0.4.24
    unpipe: 1.0.0
  2.1.7:
   $: sha1-rf6s4uT7MJgFgBTQjActzFl1h3Q=
-  _: 'http://localhost:4873/raw-body/-/raw-body-2.1.7.tgz'
+  _: 'https://npme.walmart.com/raw-body/-/raw-body-2.1.7.tgz'
   dependencies:
    bytes: 2.4.0
    iconv-lite: 0.4.13
    unpipe: 1.0.0
 readable-stream:
+ _latest: 3.6.0
  _:
-  ^2.2.2: 2.3.6
- 2.3.6:
-  $: sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
-  _: 'http://localhost:4873/readable-stream/-/readable-stream-2.3.6.tgz'
+  ^2.2.2: 2.3.7
+  '^3.4.0,^3.6.0': 3.6.0
+ 3.6.0:
+  $: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
+  _: 'https://npme.walmart.com/readable-stream/-/readable-stream-3.6.0.tgz'
+  dependencies:
+   inherits: ^2.0.3
+   string_decoder: ^1.1.1
+   util-deprecate: ^1.0.1
+ 2.3.7:
+  $: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==
+  _: 'https://npme.walmart.com/readable-stream/-/readable-stream-2.3.7.tgz'
   dependencies:
    core-util-is: ~1.0.0
    inherits: ~2.0.3
@@ -2575,108 +3179,176 @@ readable-stream:
    safe-buffer: ~5.1.1
    string_decoder: ~1.1.1
    util-deprecate: ~1.0.1
-regenerator-runtime:
- _:
-  ^0.11.0: 0.11.1
- 0.11.1:
-  $: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
-  _: 'http://localhost:4873/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz'
 regexpp:
+ _latest: 3.1.0
  _:
   ^1.0.1: 1.1.0
  1.1.0:
   $: sha512-LOPw8FpgdQF9etWMaAfG/WRthIdXJGYp4mJ2Jgn/2lpkbod9jPn0t9UqN7AxBOKNfzRbYyVfgc7Vk4t/MpnXgw==
-  _: 'http://localhost:4873/regexpp/-/regexpp-1.1.0.tgz'
+  _: 'https://npme.walmart.com/regexpp/-/regexpp-1.1.0.tgz'
+require-at:
+ _latest: 1.0.4
+ _:
+  ^1.0.1: 1.0.4
+ 1.0.4:
+  $: sha512-6CL3iL+yh6Zq5Rakldl0EgtmMkqnEUOrUPTYtOmEbtaks/sR/E4Vgx6LEsRzJ9RbEy2oH3DpZmHYV/h0y3Oj4g==
+  _: 'https://npme.walmart.com/require-at/-/require-at-1.0.4.tgz'
 require-uncached:
+ _latest: 2.0.0
  _:
   ^1.0.3: 1.0.3
  1.0.3:
   $: sha1-Tg1W1slmL9MeQwEcS5WqSZVUIdM=
-  _: 'http://localhost:4873/require-uncached/-/require-uncached-1.0.3.tgz'
+  _: 'https://npme.walmart.com/require-uncached/-/require-uncached-1.0.3.tgz'
   dependencies:
    caller-path: ^0.1.0
    resolve-from: ^1.0.0
 resolve:
+ _latest: 1.15.1
  _:
   1.1.x: 1.1.7
  1.1.7:
   $: sha1-IDEU2CrSxe2ejgQRs5ModeiJ6Xs=
-  _: 'http://localhost:4873/resolve/-/resolve-1.1.7.tgz'
+  _: 'https://npme.walmart.com/resolve/-/resolve-1.1.7.tgz'
 resolve-from:
+ _latest: 5.0.0
  _:
   ^1.0.0: 1.0.1
  1.0.1:
   $: sha1-Jsv+k10a7uq7Kbw/5a6wHpPUQiY=
-  _: 'http://localhost:4873/resolve-from/-/resolve-from-1.0.1.tgz'
+  _: 'https://npme.walmart.com/resolve-from/-/resolve-from-1.0.1.tgz'
 restore-cursor:
+ _latest: 3.1.0
  _:
   ^2.0.0: 2.0.0
  2.0.0:
   $: sha1-n37ih/gv0ybU/RYpI9YhKe7g368=
-  _: 'http://localhost:4873/restore-cursor/-/restore-cursor-2.0.0.tgz'
+  _: 'https://npme.walmart.com/restore-cursor/-/restore-cursor-2.0.0.tgz'
   dependencies:
    onetime: ^2.0.0
    signal-exit: ^3.0.2
+ret:
+ _latest: 0.3.1
+ _:
+  ~0.2.0: 0.2.2
+ 0.2.2:
+  $: sha512-M0b3YWQs7R3Z917WRQy1HHA7Ba7D8hvZg6UE5mLykJxQVE2ju0IXbGlaHPPlkY+WN7wFP+wUMXmBFA0aV6vYGQ==
+  _: 'https://npme.walmart.com/ret/-/ret-0.2.2.tgz'
+reusify:
+ _latest: 1.0.4
+ _:
+  '^1.0.2,^1.0.4': 1.0.4
+ 1.0.4:
+  $: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
+  _: 'https://npme.walmart.com/reusify/-/reusify-1.0.4.tgz'
+rfdc:
+ _latest: 1.1.4
+ _:
+  ^1.1.2: 1.1.4
+ 1.1.4:
+  $: sha512-5C9HXdzK8EAqN7JDif30jqsBzavB7wLpaubisuQIGHWf2gUXSpzy6ArX/+Da8RjFpagWsCn+pIgxTMAmKw9Zug==
+  _: 'https://npme.walmart.com/rfdc/-/rfdc-1.1.4.tgz'
 rimraf:
+ _latest: 3.0.2
  _:
-  ^2.2.8: 2.6.2
- 2.6.2:
-  $: sha512-lreewLK/BlghmxtfH36YYVg1i8IAce4TI7oao75I1g245+6BctqTVQiBP3YUJ9C6DQOXJmkYR9X9fCLtCOJc5w==
-  _: 'http://localhost:4873/rimraf/-/rimraf-2.6.2.tgz'
+  ~2.6.2: 2.6.3
+ 2.6.3:
+  $: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
+  _: 'https://npme.walmart.com/rimraf/-/rimraf-2.6.3.tgz'
   dependencies:
-   glob: ^7.0.5
+   glob: ^7.1.3
 run-async:
+ _latest: 2.4.0
  _:
-  ^2.2.0: 2.3.0
- 2.3.0:
-  $: sha1-A3GrSuC91yDUFm19/aZP96RFpsA=
-  _: 'http://localhost:4873/run-async/-/run-async-2.3.0.tgz'
+  ^2.2.0: 2.4.0
+ 2.4.0:
+  $: sha512-xJTbh/d7Lm7SBhc1tNvTpeCHaEzoyxPrqNlvSdMfBTYwaY++UJFyXUOxAtsRUXjlqOfj8luNaR9vjCh4KeV+pg==
+  _: 'https://npme.walmart.com/run-async/-/run-async-2.4.0.tgz'
   dependencies:
    is-promise: ^2.1.0
 rx-lite:
+ _latest: 4.0.8
  _:
   '*,^4.0.8': 4.0.8
  4.0.8:
   $: sha1-Cx4Rr4vESDbwSmQH6S2kJGe3lEQ=
-  _: 'http://localhost:4873/rx-lite/-/rx-lite-4.0.8.tgz'
+  _: 'https://npme.walmart.com/rx-lite/-/rx-lite-4.0.8.tgz'
 rx-lite-aggregates:
+ _latest: 4.0.8
  _:
   ^4.0.8: 4.0.8
  4.0.8:
   $: sha1-dTuHqJoRyVRnxKwWJsTvxOBcZ74=
-  _: 'http://localhost:4873/rx-lite-aggregates/-/rx-lite-aggregates-4.0.8.tgz'
+  _: 'https://npme.walmart.com/rx-lite-aggregates/-/rx-lite-aggregates-4.0.8.tgz'
   dependencies:
    rx-lite: '*'
 safe-buffer:
+ _latest: 5.2.0
  _:
   '5.1.2,^5.0.1,~5.1.0,~5.1.1': 5.1.2
+  ~5.2.0: 5.2.0
+ 5.2.0:
+  $: sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
+  _: 'https://npme.walmart.com/safe-buffer/-/safe-buffer-5.2.0.tgz'
  5.1.2:
   $: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
-  _: 'http://localhost:4873/safe-buffer/-/safe-buffer-5.1.2.tgz'
+  _: 'https://npme.walmart.com/safe-buffer/-/safe-buffer-5.1.2.tgz'
+safe-regex2:
+ _latest: 2.0.0
+ _:
+  ^2.0.0: 2.0.0
+ 2.0.0:
+  $: sha512-PaUSFsUaNNuKwkBijoAPHAK6/eM6VirvyPWlZ7BAQy4D+hCvh4B6lIG+nPdhbFfIbP+gTGBcrdsOaUs0F+ZBOQ==
+  _: 'https://npme.walmart.com/safe-regex2/-/safe-regex2-2.0.0.tgz'
+  dependencies:
+   ret: ~0.2.0
 safer-buffer:
+ _latest: 2.1.2
  _:
   '>= 2.1.2 < 3': 2.1.2
  2.1.2:
   $: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  _: 'http://localhost:4873/safer-buffer/-/safer-buffer-2.1.2.tgz'
+  _: 'https://npme.walmart.com/safer-buffer/-/safer-buffer-2.1.2.tgz'
 samsam:
+ _latest: 1.3.0
  _:
   1.3.0: 1.3.0
  1.3.0:
   $: sha512-1HwIYD/8UlOtFS3QO3w7ey+SdSDFE4HRNLZoZRYVQefrOY3l17epswImeB1ijgJFQJodIaHcwkp3r/myBjFVbg==
-  _: 'http://localhost:4873/samsam/-/samsam-1.3.0.tgz'
+  _: 'https://npme.walmart.com/samsam/-/samsam-1.3.0.tgz'
+  deprecated: 'This package has been deprecated in favour of @sinonjs/samsam'
+secure-json-parse:
+ _latest: 2.1.0
+ _:
+  ^2.1.0: 2.1.0
+ 2.1.0:
+  $: sha512-GckO+MS/wT4UogDyoI/H/S1L0MCcKS1XX/vp48wfmU7Nw4woBmb8mIpu4zPBQjKlRT88/bt9xdoV4111jPpNJA==
+  _: 'https://npme.walmart.com/secure-json-parse/-/secure-json-parse-2.1.0.tgz'
 semver:
+ _latest: 7.2.2
  _:
-  ^5.3.0: 5.6.0
- 5.6.0:
-  $: sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
-  _: 'http://localhost:4873/semver/-/semver-5.6.0.tgz'
+  '^5.3.0,^5.6.0': 5.7.1
+  ^6.3.0: 6.3.0
+ 6.3.0:
+  $: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+  _: 'https://npme.walmart.com/semver/-/semver-6.3.0.tgz'
+ 5.7.1:
+  $: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
+  _: 'https://npme.walmart.com/semver/-/semver-5.7.1.tgz'
+semver-store:
+ _latest: 0.3.0
+ _:
+  ^0.3.0: 0.3.0
+ 0.3.0:
+  $: sha512-TcZvGMMy9vodEFSse30lWinkj+JgOBvPn8wRItpQRSayhc+4ssDs335uklkfvQQJgL/WvmHLVj4Ycv2s7QCQMg==
+  _: 'https://npme.walmart.com/semver-store/-/semver-store-0.3.0.tgz'
 send:
+ _latest: 0.17.1
  _:
-  0.16.2: 0.16.2
- 0.16.2:
-  $: sha512-E64YFPUssFHEFBvpbbjr44NCLtI1AohxQ8ZSiJjQLskAdKuriYEP6VyGEsRDH8ScozGpkaX1BGvhanqCwkcEZw==
-  _: 'http://localhost:4873/send/-/send-0.16.2.tgz'
+  0.17.1: 0.17.1
+ 0.17.1:
+  $: sha512-BsVKsiGcQMFwT8UxypobUKyv7irCNRHk1T0G680vk88yf6LBByGcZJOTJCrTP2xVN6yI+XjPJcNuE3V4fT9sAg==
+  _: 'https://npme.walmart.com/send/-/send-0.17.1.tgz'
   dependencies:
    debug: 2.6.9
    depd: ~1.1.2
@@ -2685,87 +3357,98 @@ send:
    escape-html: ~1.0.3
    etag: ~1.8.1
    fresh: 0.5.2
-   http-errors: ~1.6.2
-   mime: 1.4.1
-   ms: 2.0.0
+   http-errors: ~1.7.2
+   mime: 1.6.0
+   ms: 2.1.1
    on-finished: ~2.3.0
-   range-parser: ~1.2.0
-   statuses: ~1.4.0
+   range-parser: ~1.2.1
+   statuses: ~1.5.0
 serve-static:
+ _latest: 1.14.1
  _:
-  1.13.2: 1.13.2
- 1.13.2:
-  $: sha512-p/tdJrO4U387R9oMjb1oj7qSMaMfmOyd4j9hOFoxZe2baQszgHcSWjuya/CiT5kgZZKRudHNOA0pYXOl8rQ5nw==
-  _: 'http://localhost:4873/serve-static/-/serve-static-1.13.2.tgz'
+  1.14.1: 1.14.1
+ 1.14.1:
+  $: sha512-JMrvUwE54emCYWlTI+hGrGv5I8dEwmco/00EvkzIIsR7MqrHonbD9pO2MOfFnpFntl7ecpZs+3mW+XbQZu9QCg==
+  _: 'https://npme.walmart.com/serve-static/-/serve-static-1.14.1.tgz'
   dependencies:
    encodeurl: ~1.0.2
    escape-html: ~1.0.3
-   parseurl: ~1.3.2
-   send: 0.16.2
+   parseurl: ~1.3.3
+   send: 0.17.1
 set-cookie-parser:
+ _latest: 2.4.5
  _:
-  ^2.1.1: 2.2.1
- 2.2.1:
+  '^2.1.1,^2.4.1': 2.4.5
+ 2.4.5:
   top: 1
-  $: sha1-6unjbEhmfJs4Ukarb0UKreiJqvQ=
-  _: 'http://localhost:4873/set-cookie-parser/-/set-cookie-parser-2.2.1.tgz'
+  $: sha512-LkSDwseogN5l6TerqGzFzL9mUDTxSq3hX2b5AaynjC1nSCNWiDypEgHatfc0v6KcnfgV3/6F6h4ABh6igjzlQQ==
+  _: 'https://npme.walmart.com/set-cookie-parser/-/set-cookie-parser-2.4.5.tgz'
 setprototypeof:
+ _latest: 1.2.0
  _:
-  1.1.0: 1.1.0
- 1.1.0:
-  $: sha512-BvE/TwpZX4FXExxOxZyRGQQv651MSwmWKZGqvmPcRIjDqWub67kTKuIMx43cZZrS/cBBzwBcNDWoFxt2XEFIpQ==
-  _: 'http://localhost:4873/setprototypeof/-/setprototypeof-1.1.0.tgz'
+  1.1.1: 1.1.1
+ 1.1.1:
+  $: sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
+  _: 'https://npme.walmart.com/setprototypeof/-/setprototypeof-1.1.1.tgz'
 shcmd:
+ _latest: 0.7.9
  _:
   ^0.7.9: 0.7.9
  0.7.9:
   $: sha1-8gKkRTge8uwdHfn5sGje8eW9z54=
-  _: 'http://localhost:4873/shcmd/-/shcmd-0.7.9.tgz'
+  _: 'https://npme.walmart.com/shcmd/-/shcmd-0.7.9.tgz'
   dependencies:
    glob: ^7.0.0
 shebang-command:
+ _latest: 2.0.0
  _:
   ^1.2.0: 1.2.0
  1.2.0:
   $: sha1-RKrGW2lbAzmJaMOfNj/uXer98eo=
-  _: 'http://localhost:4873/shebang-command/-/shebang-command-1.2.0.tgz'
+  _: 'https://npme.walmart.com/shebang-command/-/shebang-command-1.2.0.tgz'
   dependencies:
    shebang-regex: ^1.0.0
 shebang-regex:
+ _latest: 3.0.0
  _:
   ^1.0.0: 1.0.0
  1.0.0:
   $: sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
-  _: 'http://localhost:4873/shebang-regex/-/shebang-regex-1.0.0.tgz'
+  _: 'https://npme.walmart.com/shebang-regex/-/shebang-regex-1.0.0.tgz'
 shot:
+ _latest: 4.0.7
  _:
-  4.x.x: 4.0.5
-  ^3.4.2: 3.4.2
- 4.0.5:
-  $: sha1-x+dFXRHWD2ts08Q+FaO0McF+VWY=
-  _: 'http://localhost:4873/shot/-/shot-4.0.5.tgz'
+  3.x.x: 3.4.2
+  4.x.x: 4.0.7
+ 4.0.7:
+  $: sha512-RKaKAGKxJ11EjJl0cf2fYVSsd4KB5Cncb9J0v7w+0iIaXpxNqFWTYNDNhBX7f0XSyDrjOH9a4OWZ9Gp/ZML+ew==
+  _: 'https://npme.walmart.com/shot/-/shot-4.0.7.tgz'
   dependencies:
-   hoek: 5.x.x
-   joi: 13.x.x
+   hoek: 6.x.x
+   joi: 14.x.x
+  deprecated: 'This module has moved and is now available at @hapi/shot. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  3.4.2:
   $: sha1-Hlw/bysmZJrcQvfrNQIUpaApHWc=
-  _: 'http://localhost:4873/shot/-/shot-3.4.2.tgz'
+  _: 'https://npme.walmart.com/shot/-/shot-3.4.2.tgz'
   dependencies:
    hoek: 4.x.x
    joi: 10.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 signal-exit:
+ _latest: 3.0.3
  _:
-  ^3.0.2: 3.0.2
- 3.0.2:
-  $: sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
-  _: 'http://localhost:4873/signal-exit/-/signal-exit-3.0.2.tgz'
+  ^3.0.2: 3.0.3
+ 3.0.3:
+  $: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
+  _: 'https://npme.walmart.com/signal-exit/-/signal-exit-3.0.3.tgz'
 sinon:
+ _latest: 9.0.2
  _:
   ^4.0.1: 4.5.0
  4.5.0:
   hasI: 1
   $: sha512-trdx+mB0VBBgoYucy6a9L7/jfQOmvGeaKZT4OOJ+lPAtI8623xyGr8wLiE4eojzBS8G9yXbhx42GHUOVLr4X2w==
-  _: 'http://localhost:4873/sinon/-/sinon-4.5.0.tgz'
+  _: 'https://npme.walmart.com/sinon/-/sinon-4.5.0.tgz'
   dependencies:
    '@sinonjs/formatio': ^2.0.0
    diff: ^3.1.0
@@ -2775,175 +3458,244 @@ sinon:
    supports-color: ^5.1.0
    type-detect: ^4.0.5
 sinon-chai:
+ _latest: 3.5.0
  _:
   ^2.14.0: 2.14.0
  2.14.0:
   $: sha512-9stIF1utB0ywNHNT7RgiXbdmen8QDCRsrTjw+G9TgKt1Yexjiv8TOWZ6WHsTPz57Yky3DIswZvEqX8fpuHNDtQ==
-  _: 'http://localhost:4873/sinon-chai/-/sinon-chai-2.14.0.tgz'
+  _: 'https://npme.walmart.com/sinon-chai/-/sinon-chai-2.14.0.tgz'
   peerDependencies:
    chai: '>=1.9.2 <5'
    sinon: '^1.4.0 || ^2.1.0 || ^3.0.0 || ^4.0.0'
 slice-ansi:
+ _latest: 4.0.0
  _:
   1.0.0: 1.0.0
  1.0.0:
   $: sha512-POqxBK6Lb3q6s047D/XsDVNPnF9Dl8JSaqe9h9lURl0OdNqy/ujDrOiIHtsqXMGbWWTIomRzAMaTyawAU//Reg==
-  _: 'http://localhost:4873/slice-ansi/-/slice-ansi-1.0.0.tgz'
+  _: 'https://npme.walmart.com/slice-ansi/-/slice-ansi-1.0.0.tgz'
   dependencies:
    is-fullwidth-code-point: ^2.0.0
-source-map:
+somever:
+ _latest: 2.0.0
  _:
+  1.x.x: 1.0.1
+  2.x.x: 2.0.0
+ 2.0.0:
+  $: sha512-9JaIPP+HxwYGqCDqqK3tRaTqdtQHoK6Qy3IrXhIt2q5x8fs8RcfU7BMWlFTCOgFazK8p88zIv1tHQXvAwtXMyw==
+  _: 'https://npme.walmart.com/somever/-/somever-2.0.0.tgz'
+  dependencies:
+   bounce: 1.x.x
+   hoek: 6.x.x
+  deprecated: 'This module has moved and is now available at @hapi/somever. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
+ 1.0.1:
+  $: sha512-PCDMBcega4n7wuBUKmkiXidF3cOwtHHGg2qJYl0Rkw7StZqORoCgqce7HUuWNta/NAiQhwLDezNnTANxEWPCGA==
+  _: 'https://npme.walmart.com/somever/-/somever-1.0.1.tgz'
+  dependencies:
+   hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
+sonic-boom:
+ _latest: 1.0.1
+ _:
+  ^0.7.5: 0.7.7
+ 0.7.7:
+  $: sha512-Ei5YOo5J64GKClHIL/5evJPgASXFVpfVYbJV9PILZQytTK6/LCwHvsZJW2Ig4p9FMC2OrBrMnXKgRN/OEoAWfg==
+  _: 'https://npme.walmart.com/sonic-boom/-/sonic-boom-0.7.7.tgz'
+  dependencies:
+   atomic-sleep: ^1.0.0
+   flatstr: ^1.0.12
+source-map:
+ _latest: 0.7.3
+ _:
+  ^0.5.0: 0.5.7
   '^0.6.1,~0.6.1': 0.6.1
   ~0.2.0: 0.2.0
  0.6.1:
   $: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
-  _: 'http://localhost:4873/source-map/-/source-map-0.6.1.tgz'
+  _: 'https://npme.walmart.com/source-map/-/source-map-0.6.1.tgz'
+ 0.5.7:
+  $: sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
+  _: 'https://npme.walmart.com/source-map/-/source-map-0.5.7.tgz'
  0.2.0:
   $: sha1-2rc/vPwrqBm03gO9b26qSBZLP50=
-  _: 'http://localhost:4873/source-map/-/source-map-0.2.0.tgz'
+  _: 'https://npme.walmart.com/source-map/-/source-map-0.2.0.tgz'
   dependencies:
    amdefine: '>=0.0.4'
 sprintf-js:
+ _latest: 1.1.2
  _:
   ~1.0.2: 1.0.3
  1.0.3:
   $: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
-  _: 'http://localhost:4873/sprintf-js/-/sprintf-js-1.0.3.tgz'
+  _: 'https://npme.walmart.com/sprintf-js/-/sprintf-js-1.0.3.tgz'
 statehood:
+ _latest: 6.0.9
  _:
-  6.x.x: 6.0.6
-  ^5.0.3: 5.0.3
- 6.0.6:
-  $: sha512-jR45n5ZMAkasw0xoE9j9TuLmJv4Sa3AkXe+6yIFT6a07kXYHgSbuD2OVGECdZGFxTmvNqLwL1iRIgvq6O6rq+A==
-  _: 'http://localhost:4873/statehood/-/statehood-6.0.6.tgz'
+  5.x.x: 5.0.4
+  6.x.x: 6.0.9
+ 6.0.9:
+  $: sha512-jbFg1+MYEqfC7ABAoWZoeF4cQUtp3LUvMDUGExL76cMmleBHG7I6xlZFsE8hRi7nEySIvutHmVlLmBe9+2R5LQ==
+  _: 'https://npme.walmart.com/statehood/-/statehood-6.0.9.tgz'
   dependencies:
    boom: 7.x.x
    bounce: 1.x.x
+   bourne: 1.x.x
    cryptiles: 4.x.x
-   hoek: 5.x.x
+   hoek: 6.x.x
    iron: 5.x.x
-   joi: 13.x.x
- 5.0.3:
-  $: sha512-YrPrCt10t3ImH/JMO5szSwX7sCm8HoqVl3VFLOa9EZ1g/qJx/ZmMhN+2uzPPB/vaU6hpkJpXxcBWsgIkkG+MXA==
-  _: 'http://localhost:4873/statehood/-/statehood-5.0.3.tgz'
+   joi: 14.x.x
+  deprecated: 'This module has moved and is now available at @hapi/statehood. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
+ 5.0.4:
+  $: sha512-6/feFLqqHylvA/dHwJA0DgXvbEcKgbhRUeljsuu6+cIr8PO88nax7Wc+celZlPTncqT2arsxXL8P329Q1yfe9Q==
+  _: 'https://npme.walmart.com/statehood/-/statehood-5.0.4.tgz'
   dependencies:
    boom: 5.x.x
+   bourne: 1.x.x
    cryptiles: 3.x.x
    hoek: 4.x.x
    iron: 4.x.x
    items: 2.x.x
-   joi: 10.x.x
+   joi: 12.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 statuses:
+ _latest: 1.5.0
  _:
-  '>= 1.4.0 < 2,~1.4.0': 1.4.0
-  '>= 1.5.0 < 2,^1.5.0': 1.5.0
+  '>= 1.5.0 < 2,^1.5.0,~1.5.0': 1.5.0
  1.5.0:
   $: sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
-  _: 'http://localhost:4873/statuses/-/statuses-1.5.0.tgz'
- 1.4.0:
-  $: sha512-zhSCtt8v2NDrRlPQpCNtw/heZLtfUDqxBM1udqikb/Hbk52LK4nQSwr10u77iopCW5LsyHpuXS0GnEc48mLeew==
-  _: 'http://localhost:4873/statuses/-/statuses-1.4.0.tgz'
+  _: 'https://npme.walmart.com/statuses/-/statuses-1.5.0.tgz'
 string-array:
+ _latest: 1.0.1
  _:
   ^1.0.0: 1.0.1
  1.0.1:
   $: sha512-IHgqBWTsXuE27ZL7N9/XBIzWWrSwr9tKJw6qdIOMGIM2sxxJRvJe9vQMPW37MHrxidXlyJD8w61mQ6qLvnjqvg==
-  _: 'http://localhost:4873/string-array/-/string-array-1.0.1.tgz'
+  _: 'https://npme.walmart.com/string-array/-/string-array-1.0.1.tgz'
+string-similarity:
+ _latest: 4.0.1
+ _:
+  ^4.0.1: 4.0.1
+ 4.0.1:
+  $: sha512-v36MJzloekKVvKAsYi6O/qpn2mIuvwEFIT9Gx3yg4spkNjXYsk7yxc37g4ZTyMVIBvt/9PZGxnqEtme8XHK+Mw==
+  _: 'https://npme.walmart.com/string-similarity/-/string-similarity-4.0.1.tgz'
 string-width:
+ _latest: 4.2.0
  _:
   '^2.1.0,^2.1.1': 2.1.1
  2.1.1:
   $: sha512-nOqH59deCq9SRHlxq1Aw85Jnt4w6KvLKqWVik6oA9ZklXLNIOlqg4F2yrT1MVaTjAqvVwdfeZ7w7aCvJD7ugkw==
-  _: 'http://localhost:4873/string-width/-/string-width-2.1.1.tgz'
+  _: 'https://npme.walmart.com/string-width/-/string-width-2.1.1.tgz'
   dependencies:
    is-fullwidth-code-point: ^2.0.0
    strip-ansi: ^4.0.0
 string_decoder:
+ _latest: 1.3.0
  _:
+  ^1.1.1: 1.3.0
   ~1.1.1: 1.1.1
+ 1.3.0:
+  $: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
+  _: 'https://npme.walmart.com/string_decoder/-/string_decoder-1.3.0.tgz'
+  dependencies:
+   safe-buffer: ~5.2.0
  1.1.1:
   $: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
-  _: 'http://localhost:4873/string_decoder/-/string_decoder-1.1.1.tgz'
+  _: 'https://npme.walmart.com/string_decoder/-/string_decoder-1.1.1.tgz'
   dependencies:
    safe-buffer: ~5.1.0
 strip-ansi:
+ _latest: 6.0.0
  _:
   ^3.0.0: 3.0.1
   ^4.0.0: 4.0.0
  4.0.0:
   $: sha1-qEeQIusaw2iocTibY1JixQXuNo8=
-  _: 'http://localhost:4873/strip-ansi/-/strip-ansi-4.0.0.tgz'
+  _: 'https://npme.walmart.com/strip-ansi/-/strip-ansi-4.0.0.tgz'
   dependencies:
    ansi-regex: ^3.0.0
  3.0.1:
   $: sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
-  _: 'http://localhost:4873/strip-ansi/-/strip-ansi-3.0.1.tgz'
+  _: 'https://npme.walmart.com/strip-ansi/-/strip-ansi-3.0.1.tgz'
   dependencies:
    ansi-regex: ^2.0.0
 strip-json-comments:
+ _latest: 3.1.0
  _:
   ~2.0.1: 2.0.1
  2.0.1:
   $: sha1-PFMZQukIwml8DsNEhYwobHygpgo=
-  _: 'http://localhost:4873/strip-json-comments/-/strip-json-comments-2.0.1.tgz'
+  _: 'https://npme.walmart.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz'
 subtext:
+ _latest: 6.0.12
  _:
-  6.x.x: 6.0.7
-  ^5.0.0: 5.0.0
- 6.0.7:
-  $: sha512-IcJUvRjeR+NB437Iq+LORFNJW4L6Knqkj3oQrBrkdhIaS2VKJvx/9aYEq7vi+PEx5/OuehOL/40SkSZotLi/MA==
-  _: 'http://localhost:4873/subtext/-/subtext-6.0.7.tgz'
+  5.x.x: 5.0.1
+  6.x.x: 6.0.12
+ 6.0.12:
+  $: sha512-yT1wCDWVgqvL9BIkWzWqgj5spUSYo/Enu09iUV8t2ZvHcr2tKGTGg2kc9tUpVEsdhp1ihsZeTAiDqh0TQciTPQ==
+  _: 'https://npme.walmart.com/subtext/-/subtext-6.0.12.tgz'
   dependencies:
    boom: 7.x.x
+   bourne: 1.x.x
    content: 4.x.x
-   hoek: 5.x.x
+   hoek: 6.x.x
    pez: 4.x.x
    wreck: 14.x.x
- 5.0.0:
-  $: sha512-2nXG1G1V+K64Z20cQII7k0s38J2DSycMXBLMAk9RXUFG0uAkAbLSVoa88croX9VhTdBCJbLAe9g6LmzKwpJhhQ==
-  _: 'http://localhost:4873/subtext/-/subtext-5.0.0.tgz'
+  deprecated: 'This module has moved and is now available at @hapi/subtext. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
+ 5.0.1:
+  $: sha512-zH/jaUKJ/bkrTpEe3zuTFIRnqAwv5xcGpXA2JaxEc30KRAT4k78jZnRqM45snjBSZAuvpI8chRUh1VZprcUVfw==
+  _: 'https://npme.walmart.com/subtext/-/subtext-5.0.1.tgz'
   dependencies:
    boom: 5.x.x
+   bourne: 1.x.x
    content: 3.x.x
    hoek: 4.x.x
    pez: 2.x.x
    wreck: 12.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 supports-color:
+ _latest: 7.1.0
  _:
   3.1.2: 3.1.2
   4.4.0: 4.4.0
   ^2.0.0: 2.0.0
   ^3.1.0: 3.2.3
   '^5.1.0,^5.3.0': 5.5.0
+  ^7.1.0: 7.1.0
+ 7.1.0:
+  $: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
+  _: 'https://npme.walmart.com/supports-color/-/supports-color-7.1.0.tgz'
+  dependencies:
+   has-flag: ^4.0.0
  5.5.0:
   $: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
-  _: 'http://localhost:4873/supports-color/-/supports-color-5.5.0.tgz'
+  _: 'https://npme.walmart.com/supports-color/-/supports-color-5.5.0.tgz'
   dependencies:
    has-flag: ^3.0.0
  4.4.0:
   $: sha512-rKC3+DyXWgK0ZLKwmRsrkyHVZAjNkfzeehuFWdGGcqGDTZFH73+RH6S/RDAAxl9GusSjZSUWYLmT9N5pzXFOXQ==
-  _: 'http://localhost:4873/supports-color/-/supports-color-4.4.0.tgz'
+  _: 'https://npme.walmart.com/supports-color/-/supports-color-4.4.0.tgz'
   dependencies:
    has-flag: ^2.0.0
  3.2.3:
   $: sha1-ZawFBLOVQXHYpklGsq48u4pfVPY=
-  _: 'http://localhost:4873/supports-color/-/supports-color-3.2.3.tgz'
+  _: 'https://npme.walmart.com/supports-color/-/supports-color-3.2.3.tgz'
   dependencies:
    has-flag: ^1.0.0
  3.1.2:
   $: sha1-cqJiiU2dQIuVbKBf83su2KbiotU=
-  _: 'http://localhost:4873/supports-color/-/supports-color-3.1.2.tgz'
+  _: 'https://npme.walmart.com/supports-color/-/supports-color-3.1.2.tgz'
   dependencies:
    has-flag: ^1.0.0
  2.0.0:
   $: sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
-  _: 'http://localhost:4873/supports-color/-/supports-color-2.0.0.tgz'
+  _: 'https://npme.walmart.com/supports-color/-/supports-color-2.0.0.tgz'
 table:
+ _latest: 5.4.6
  _:
   4.0.2: 4.0.2
  4.0.2:
   $: sha512-UUkEAPdSGxtRpiV9ozJ5cMTtYiqz7Ni1OGqLXRCynrvzdtR1p+cfOWe2RJLwvUG8hNanaSRjecIqwOjqeatDsA==
-  _: 'http://localhost:4873/table/-/table-4.0.2.tgz'
+  _: 'https://npme.walmart.com/table/-/table-4.0.2.tgz'
   dependencies:
    ajv: ^5.2.3
    ajv-keywords: ^2.1.0
@@ -2952,274 +3704,351 @@ table:
    slice-ansi: 1.0.0
    string-width: ^2.1.1
 teamwork:
+ _latest: 3.2.0
  _:
-  3.x.x: 3.0.1
- 3.0.1:
-  $: sha512-hEkJIpDOfOYe9NYaLFk00zQbzZeKNCY8T2pRH3I13Y1mJwxaSQ6NEsjY5rCp+11ezCiZpWGoGFTbOuhg4qKevQ==
-  _: 'http://localhost:4873/teamwork/-/teamwork-3.0.1.tgz'
-text-encoding:
- _:
-  ^0.6.4: 0.6.4
- 0.6.4:
-  $: sha1-45mpgiV6J22uQou5KEXLcb3CbRk=
-  _: 'http://localhost:4873/text-encoding/-/text-encoding-0.6.4.tgz'
+  3.x.x: 3.0.2
+ 3.0.2:
+  $: sha512-tpG01+9Qws/oGhMBiZN3BnB32gn5QeKY84AmLxxaCJw4mNeRzhEZ6jEj/vBhKerHD7Hgq9/vOZ58pyryYSn9gA==
+  _: 'https://npme.walmart.com/teamwork/-/teamwork-3.0.2.tgz'
+  deprecated: 'This module has moved and is now available at @hapi/teamwork. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
 text-table:
+ _latest: 0.2.0
  _:
   ~0.2.0: 0.2.0
  0.2.0:
   $: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
-  _: 'http://localhost:4873/text-table/-/text-table-0.2.0.tgz'
+  _: 'https://npme.walmart.com/text-table/-/text-table-0.2.0.tgz'
 through:
+ _latest: 2.3.8
  _:
   ^2.3.6: 2.3.8
  2.3.8:
   $: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
-  _: 'http://localhost:4873/through/-/through-2.3.8.tgz'
+  _: 'https://npme.walmart.com/through/-/through-2.3.8.tgz'
+tiny-lru:
+ _latest: 7.0.2
+ _:
+  ^7.0.2: 7.0.2
+ 7.0.2:
+  $: sha512-cmc9OOwmnAJtyFBYaznKR3abypEhWecarFrvS5db6qwSgoaDUWV0JX+mdh6B9wN60Wux3+gE1vjzxkoqxFBjqw==
+  _: 'https://npme.walmart.com/tiny-lru/-/tiny-lru-7.0.2.tgz'
 tmp:
+ _latest: 0.1.0
  _:
   ^0.0.33: 0.0.33
  0.0.33:
   $: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
-  _: 'http://localhost:4873/tmp/-/tmp-0.0.33.tgz'
+  _: 'https://npme.walmart.com/tmp/-/tmp-0.0.33.tgz'
   dependencies:
    os-tmpdir: ~1.0.2
 to-fast-properties:
+ _latest: 3.0.1
  _:
-  ^1.0.3: 1.0.3
- 1.0.3:
-  $: sha1-uDVx+k2MJbguIxsG46MFXeTKGkc=
-  _: 'http://localhost:4873/to-fast-properties/-/to-fast-properties-1.0.3.tgz'
+  ^2.0.0: 2.0.0
+ 2.0.0:
+  $: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
+  _: 'https://npme.walmart.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz'
 toidentifier:
+ _latest: 1.0.0
  _:
   1.0.0: 1.0.0
  1.0.0:
   $: sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
-  _: 'http://localhost:4873/toidentifier/-/toidentifier-1.0.0.tgz'
+  _: 'https://npme.walmart.com/toidentifier/-/toidentifier-1.0.0.tgz'
 topo:
+ _latest: 3.0.3
  _:
-  '2.x.x,^2.0.2': 2.0.2
-  3.x.x: 3.0.0
- 3.0.0:
-  $: sha512-Tlu1fGlR90iCdIPURqPiufqAlCZYzLjHYVVbcFWDMcX7+tK8hdZWAfsMrD/pBul9jqHHwFjNdf1WaxA9vTRRhw==
-  _: 'http://localhost:4873/topo/-/topo-3.0.0.tgz'
+  2.x.x: 2.0.2
+  3.x.x: 3.0.3
+ 3.0.3:
+  $: sha512-IgpPtvD4kjrJ7CRA3ov2FhWQADwv+Tdqbsf1ZnPUSAtCJ9e1Z44MmoSGDXGk4IppoZA7jd/QRkNddlLJWlUZsQ==
+  _: 'https://npme.walmart.com/topo/-/topo-3.0.3.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
+  deprecated: 'This module has moved and is now available at @hapi/topo. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  2.0.2:
   $: sha1-zVYVdSU5BXwNwEkaYhw7xvvh0YI=
-  _: 'http://localhost:4873/topo/-/topo-2.0.2.tgz'
+  _: 'https://npme.walmart.com/topo/-/topo-2.0.2.tgz'
   dependencies:
    hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
+trim-right:
+ _latest: 1.0.1
+ _:
+  ^1.0.1: 1.0.1
+ 1.0.1:
+  $: sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
+  _: 'https://npme.walmart.com/trim-right/-/trim-right-1.0.1.tgz'
+tsscmp:
+ _latest: 1.0.6
+ _:
+  1.0.6: 1.0.6
+ 1.0.6:
+  $: sha512-LxhtAkPDTkVCMQjt2h6eBVY28KCjikZqZfMcC15YBeNjkgUpdCfBu5HoiOTDu86v6smE8yOjyEktJ8hlbANHQA==
+  _: 'https://npme.walmart.com/tsscmp/-/tsscmp-1.0.6.tgz'
 type-check:
+ _latest: 0.4.0
  _:
   ~0.3.2: 0.3.2
  0.3.2:
   $: sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
-  _: 'http://localhost:4873/type-check/-/type-check-0.3.2.tgz'
+  _: 'https://npme.walmart.com/type-check/-/type-check-0.3.2.tgz'
   dependencies:
    prelude-ls: ~1.1.2
 type-detect:
+ _latest: 4.0.8
  _:
-  '^4.0.0,^4.0.5': 4.0.8
+  '4.0.8,^4.0.0,^4.0.5': 4.0.8
  4.0.8:
   $: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
-  _: 'http://localhost:4873/type-detect/-/type-detect-4.0.8.tgz'
+  _: 'https://npme.walmart.com/type-detect/-/type-detect-4.0.8.tgz'
 type-is:
+ _latest: 1.6.18
  _:
-  '^1.6.16,~1.6.16,~1.6.6': 1.6.16
- 1.6.16:
-  $: sha512-HRkVv/5qY2G6I8iab9cI7v1bOIdhm94dVjQCPFElW9W+3GeDOSHmy2EBYe4VTApuzolPcmgFTN3ftVJRKR2J9Q==
-  _: 'http://localhost:4873/type-is/-/type-is-1.6.16.tgz'
+  '^1.6.16,~1.6.17,~1.6.18,~1.6.6': 1.6.18
+ 1.6.18:
+  $: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==
+  _: 'https://npme.walmart.com/type-is/-/type-is-1.6.18.tgz'
   dependencies:
    media-typer: 0.3.0
-   mime-types: ~2.1.18
+   mime-types: ~2.1.24
 typedarray:
+ _latest: 0.0.6
  _:
   ^0.0.6: 0.0.6
  0.0.6:
   $: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  _: 'http://localhost:4873/typedarray/-/typedarray-0.0.6.tgz'
+  _: 'https://npme.walmart.com/typedarray/-/typedarray-0.0.6.tgz'
 uglify-js:
+ _latest: 3.8.1
  _:
-  ^3.1.4: 3.4.9
- 3.4.9:
-  $: sha512-8CJsbKOtEbnJsTyv6LE6m6ZKniqMiFWmm9sRbopbkGs3gMPPfd3Fh8iIA4Ykv5MgaTbqHr4BaoGLJLZNhsrW1Q==
-  _: 'http://localhost:4873/uglify-js/-/uglify-js-3.4.9.tgz'
+  ^3.1.4: 3.8.1
+ 3.8.1:
+  $: sha512-W7KxyzeaQmZvUFbGj4+YFshhVrMBGSg2IbcYAjGWGvx8DHvJMclbTDMpffdxFUGPBHjIytk7KJUR/KUXstUGDw==
+  _: 'https://npme.walmart.com/uglify-js/-/uglify-js-3.8.1.tgz'
   dependencies:
-   commander: ~2.17.1
+   commander: ~2.20.3
    source-map: ~0.6.1
 unpipe:
+ _latest: 1.0.0
  _:
   '1.0.0,~1.0.0': 1.0.0
  1.0.0:
   $: sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
-  _: 'http://localhost:4873/unpipe/-/unpipe-1.0.0.tgz'
+  _: 'https://npme.walmart.com/unpipe/-/unpipe-1.0.0.tgz'
+unwrap-npm-cmd:
+ _latest: 1.1.1
+ _:
+  '^1.1.0,^1.1.1': 1.1.1
+ 1.1.1:
+  $: sha512-Y0PFhW+X6oahjV/e4yBxThgq0k9Ymh3RwUh6P/rMiGp55X5qa2mQghZAHKyJ9tDPinZntD0Z+5DHFzlx9/UNbg==
+  _: 'https://npme.walmart.com/unwrap-npm-cmd/-/unwrap-npm-cmd-1.1.1.tgz'
+  dependencies:
+   which: ^1.3.1
+uri-js:
+ _latest: 4.2.2
+ _:
+  ^4.2.2: 4.2.2
+ 4.2.2:
+  $: sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
+  _: 'https://npme.walmart.com/uri-js/-/uri-js-4.2.2.tgz'
+  dependencies:
+   punycode: ^2.1.0
 urijs:
+ _latest: 1.19.2
  _:
-  ^1.19.0: 1.19.1
- 1.19.1:
-  $: sha512-xVrGVi94ueCJNrBSTjWqjvtgvl3cyOTThp2zaMaFNGp3F542TR6sM3f2o8RqZl+AwteClSVmoCyt0ka4RjQOQg==
-  _: 'http://localhost:4873/urijs/-/urijs-1.19.1.tgz'
+  ^1.19.0: 1.19.2
+ 1.19.2:
+  $: sha512-s/UIq9ap4JPZ7H1EB5ULo/aOUbWqfDi7FKzMC2Nz+0Si8GiT1rIEaprt8hy3Vy2Ex2aJPpOQv4P4DuOZ+K1c6w==
+  _: 'https://npme.walmart.com/urijs/-/urijs-1.19.2.tgz'
 util-deprecate:
+ _latest: 1.0.2
  _:
-  ~1.0.1: 1.0.2
+  '^1.0.1,~1.0.1': 1.0.2
  1.0.2:
   $: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
-  _: 'http://localhost:4873/util-deprecate/-/util-deprecate-1.0.2.tgz'
+  _: 'https://npme.walmart.com/util-deprecate/-/util-deprecate-1.0.2.tgz'
 utils-merge:
+ _latest: 1.0.1
  _:
   1.0.1: 1.0.1
  1.0.1:
   $: sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
-  _: 'http://localhost:4873/utils-merge/-/utils-merge-1.0.1.tgz'
+  _: 'https://npme.walmart.com/utils-merge/-/utils-merge-1.0.1.tgz'
 uuid:
+ _latest: 7.0.3
  _:
-  ^3.2.1: 3.3.2
- 3.3.2:
+  ^3.2.1: 3.4.0
+ 3.4.0:
   top: 1
-  $: sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
-  _: 'http://localhost:4873/uuid/-/uuid-3.3.2.tgz'
+  $: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+  _: 'https://npme.walmart.com/uuid/-/uuid-3.4.0.tgz'
 vary:
+ _latest: 1.1.2
  _:
   '^1.1.2,~1.1.2': 1.1.2
  1.1.2:
   $: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-  _: 'http://localhost:4873/vary/-/vary-1.1.2.tgz'
+  _: 'https://npme.walmart.com/vary/-/vary-1.1.2.tgz'
 vise:
+ _latest: 3.0.2
  _:
   2.x.x: 2.0.2
-  3.x.x: 3.0.0
- 3.0.0:
-  $: sha512-kBFZLmiL1Vm3rHXphkhvvAcsjgeQXRrOFCbJb0I50YZZP4HGRNH+xGzK3matIMcpbsfr3I02u9odj4oCD0TWgA==
-  _: 'http://localhost:4873/vise/-/vise-3.0.0.tgz'
+  3.x.x: 3.0.1
+ 3.0.1:
+  $: sha512-7BJNjsv2o83+E6AHAFSnjQF324UTgypsR/Sw/iFmLvr7RgJrEXF1xNBvb5LJfi+1FvWQXjJK4X41WMuHMeunPQ==
+  _: 'https://npme.walmart.com/vise/-/vise-3.0.1.tgz'
   dependencies:
-   hoek: 5.x.x
+   hoek: 6.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
  2.0.2:
   $: sha1-awjo+0y3bjpQzW3Q7DczjoEaDTk=
-  _: 'http://localhost:4873/vise/-/vise-2.0.2.tgz'
+  _: 'https://npme.walmart.com/vise/-/vise-2.0.2.tgz'
   dependencies:
    hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 vision:
+ _latest: 5.4.4
  _:
   ^4.0.1: 4.1.1
-  ^5: 5.4.0
- 5.4.0:
-  $: sha512-f8kbjvo/dUbR4ZDF0pHPuOjQFg/6zOMlP1Tb9gK2ukCa7Ksd24174DCzubtov6AxIDhZhO5RYQeeDlF8ujlKWQ==
-  _: 'http://localhost:4873/vision/-/vision-5.4.0.tgz'
+  ^5: 5.4.4
+ 5.4.4:
+  $: sha512-jFeH7pU/ODYmTOpY5jutMKU/fDr+P621WYEnWgqwDikxutBWJ+koxlgGnkZQoKY6JlYdY4Awo+rPN3DNdTeDKg==
+  _: 'https://npme.walmart.com/vision/-/vision-5.4.4.tgz'
   dependencies:
    boom: 7.x.x
-   hoek: 5.x.x
+   hoek: 6.x.x
    items: 2.x.x
-   joi: 13.x.x
-  peerDependencies:
-   hapi: 17.x.x
+   joi: 14.x.x
+  deprecated: 'This module has moved and is now available at @hapi/vision. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
  4.1.1:
   top: 1
   $: sha1-4bYSstLi8gMQoDkpD9SdUSSPgto=
-  _: 'http://localhost:4873/vision/-/vision-4.1.1.tgz'
+  _: 'https://npme.walmart.com/vision/-/vision-4.1.1.tgz'
   dependencies:
    boom: 4.x.x
    hoek: 4.x.x
    items: 2.x.x
    joi: 10.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 whatwg-fetch:
+ _latest: 3.0.0
  _:
   '>=0.10.0': 3.0.0
  3.0.0:
   $: sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
-  _: 'http://localhost:4873/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz'
+  _: 'https://npme.walmart.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz'
 which:
+ _latest: 2.0.2
  _:
-  '^1.1.1,^1.2.9': 1.3.1
+  '^1.1.1,^1.2.9,^1.3.1': 1.3.1
  1.3.1:
   $: sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==
-  _: 'http://localhost:4873/which/-/which-1.3.1.tgz'
+  _: 'https://npme.walmart.com/which/-/which-1.3.1.tgz'
   dependencies:
    isexe: ^2.0.0
-wordwrap:
+word-wrap:
+ _latest: 1.2.3
  _:
-  '^1.0.0,~1.0.0': 1.0.0
-  ~0.0.2: 0.0.3
+  ~1.2.3: 1.2.3
+ 1.2.3:
+  $: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
+  _: 'https://npme.walmart.com/word-wrap/-/word-wrap-1.2.3.tgz'
+wordwrap:
+ _latest: 1.0.0
+ _:
+  ^1.0.0: 1.0.0
  1.0.0:
   $: sha1-J1hIEIkUVqQXHI0CJkQa3pDLyus=
-  _: 'http://localhost:4873/wordwrap/-/wordwrap-1.0.0.tgz'
- 0.0.3:
-  $: sha1-o9XabNXAvAAI03I0u68b7WMFkQc=
-  _: 'http://localhost:4873/wordwrap/-/wordwrap-0.0.3.tgz'
+  _: 'https://npme.walmart.com/wordwrap/-/wordwrap-1.0.0.tgz'
 wrappy:
+ _latest: 1.0.2
  _:
   '1': 1.0.2
  1.0.2:
   $: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  _: 'http://localhost:4873/wrappy/-/wrappy-1.0.2.tgz'
+  _: 'https://npme.walmart.com/wrappy/-/wrappy-1.0.2.tgz'
 wreck:
+ _latest: 14.2.0
  _:
   12.x.x: 12.5.1
-  14.x.x: 14.1.0
- 14.1.0:
-  $: sha512-y/iwFhwdGoM8Hk1t1I4LbuLhM3curVD8STd5NcFI0c/4b4cQAMLcnCRxXX9sLQAggDC8dXYSaQNsT64hga6lvA==
-  _: 'http://localhost:4873/wreck/-/wreck-14.1.0.tgz'
+  14.x.x: 14.1.3
+ 14.1.3:
+  $: sha512-hb/BUtjX3ObbwO3slCOLCenQ4EP8e+n8j6FmTne3VhEFp5XV1faSJojiyxVSvw34vgdeTG5baLTl4NmjwokLlw==
+  _: 'https://npme.walmart.com/wreck/-/wreck-14.1.3.tgz'
   dependencies:
    boom: 7.x.x
-   hoek: 5.x.x
+   hoek: 6.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
  12.5.1:
   $: sha512-l5DUGrc+yDyIflpty1x9XuMj1ehVjC/dTbF3/BasOO77xk0EdEa4M/DuOY8W88MQDAD0fEDqyjc8bkIMHd2E9A==
-  _: 'http://localhost:4873/wreck/-/wreck-12.5.1.tgz'
+  _: 'https://npme.walmart.com/wreck/-/wreck-12.5.1.tgz'
   dependencies:
    boom: 5.x.x
    hoek: 4.x.x
+  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 write:
+ _latest: 2.0.0
  _:
   ^0.2.1: 0.2.1
  0.2.1:
   $: sha1-X8A4KOJkzqP+kUVUdvejxWbLB1c=
-  _: 'http://localhost:4873/write/-/write-0.2.1.tgz'
+  _: 'https://npme.walmart.com/write/-/write-0.2.1.tgz'
   dependencies:
    mkdirp: ^0.5.1
 xclap:
+ _latest: 0.2.48
  _:
-  ^0.2.0: 0.2.24
- 0.2.24:
-  $: sha512-ZH3tg8BKpczKwr7GVQxtM1VcQvAmDmUMjLbkUFtM2Qto2mSwGe3sCru6xpEy3fr/bncnhKsL+ca/a2cJI5omgA==
-  _: 'http://localhost:4873/xclap/-/xclap-0.2.24.tgz'
+  ^0.2.34: 0.2.48
+ 0.2.48:
+  $: sha512-jc9/NjcaTDUszhNj0wOW83NNBx7wUcrzYzldotao6go7g/qMH+5QZYNiYyh98Y/8DhFQndDJihL39+oJIPNJFg==
+  _: 'https://npme.walmart.com/xclap/-/xclap-0.2.48.tgz'
   dependencies:
-   chalk: ^2.0.1
+   chalk: ^4.0.0
+   chalker: ^1.2.0
    insync: ^2.1.1
+   jaro-winkler: ^0.2.8
    lodash.foreach: ^4.5.0
-   nix-clap: ^1.0.8
+   nix-clap: ^1.3.10
    optional-require: ^1.0.0
    path-is-inside: ^1.0.2
    string-array: ^1.0.0
-   xsh: ^0.4.0
+   unwrap-npm-cmd: ^1.1.1
+   xsh: ^0.4.4
 xsh:
+ _latest: 0.4.4
  _:
   ^0.3.2: 0.3.7
-  ^0.4.0: 0.4.4
+  ^0.4.4: 0.4.4
  0.4.4:
   $: sha512-fwl0KsCubpCv/PMwwy6PiaLAak12aROkIgZMec8pzlgB8TvA7jckou7CBDta7SQouiG9KNqWNVOYBKnkEdx4gQ==
-  _: 'http://localhost:4873/xsh/-/xsh-0.4.4.tgz'
+  _: 'https://npme.walmart.com/xsh/-/xsh-0.4.4.tgz'
   dependencies:
    shcmd: ^0.7.9
  0.3.7:
   $: sha1-oTqdPPOM7Mer8QLLMKDXQ3fObbQ=
-  _: 'http://localhost:4873/xsh/-/xsh-0.3.7.tgz'
+  _: 'https://npme.walmart.com/xsh/-/xsh-0.3.7.tgz'
   dependencies:
    shcmd: ^0.7.9
 xstdout:
+ _latest: 0.1.1
  _:
   ^0.1.1: 0.1.1
  0.1.1:
   top: 1
   $: sha1-hhGufW4pjy0tc5NuoQ1wnpMOCVo=
-  _: 'http://localhost:4873/xstdout/-/xstdout-0.1.1.tgz'
+  _: 'https://npme.walmart.com/xstdout/-/xstdout-0.1.1.tgz'
 yallist:
+ _latest: 4.0.0
  _:
   ^2.1.2: 2.1.2
  2.1.2:
   $: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  _: 'http://localhost:4873/yallist/-/yallist-2.1.2.tgz'
+  _: 'https://npme.walmart.com/yallist/-/yallist-2.1.2.tgz'
 ylru:
+ _latest: 1.2.1
  _:
   ^1.2.0: 1.2.1
  1.2.1:
   $: sha512-faQrqNMzcPCHGVC2aaOINk13K+aaBDUPjGWl0teOXywElLjyVAB6Oe2jj62jHYtwsU49jXhScYbvPENK+6zAvQ==
-  _: 'http://localhost:4873/ylru/-/ylru-1.2.1.tgz'
+  _: 'https://npme.walmart.com/ylru/-/ylru-1.2.1.tgz'
