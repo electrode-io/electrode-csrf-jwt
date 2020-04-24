@@ -1,0 +1,18 @@
+{
+  "name": "fastify-demo",
+  "version": "1.0.0",
+  "description": "Fastify CSRF Sample",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.13.1",
+    "fastify-cookie": "^3.6.0",
+    "fastify-cors": "^3.0.3",
+    "fastify-static": "^2.6.0"
+  }
+}

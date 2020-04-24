@@ -80,10 +80,11 @@ You can reference a sample [demo](./demo/README.md) to use this for your webapp.
 
 This module includes a plugin for [Hapi] (v16 or lower) and middleware for [express] and [koa]. They can be used with the following:
 
-* [electrode-server](#electrode-server)
-* [Express](#express)
-* [Hapi](#hapi)
-* [Koa 2](#koa-2)
+- [electrode-server](#electrode-server)
+- [Express](#express)
+- [Hapi](#hapi)
+- [Koa 2](#koa-2)
+- [Fastify](#fastify)
 
 ### Options
 
@@ -91,17 +92,17 @@ First the options. Regardless of which server framework you use, the options rem
 
 #### Required Fields
 
-* `secret`: A string or buffer containing either the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
+- `secret`: A string or buffer containing either the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
 
 #### Optional Fields
 
-* `cookieName`: A string to use as name for setting the cookie token. Default: `x-csrf-jwt`
-* `headerName`: A string to use as name for setting the header token. Default: **cookieName**
-* `cookieConfig`: An object with extra configs for setting the JWT cookie token. Values set to `undefined` or `null` will delete the field from the default cookie config. See the respective server framework for info on what their cookie config should be.
-  * `path`: Cookie path
-  * `isSecure`: Whether cookie is pass secure of not
-  * `httpOnly`: HTTP only.
-* `tokenEngine`: **Experimental** A string that specifies the token engine. Either the default [`"jwt"`](./lib/jwt-token-engine.js) or [`"hash"`](./lib/hash-token-engine.js).
+- `cookieName`: A string to use as name for setting the cookie token. Default: `x-csrf-jwt`
+- `headerName`: A string to use as name for setting the header token. Default: **cookieName**
+- `cookieConfig`: An object with extra configs for setting the JWT cookie token. Values set to `undefined` or `null` will delete the field from the default cookie config. See the respective server framework for info on what their cookie config should be.
+  - `path`: Cookie path
+  - `isSecure`: Whether cookie is pass secure of not
+  - `httpOnly`: HTTP only.
+- `tokenEngine`: **Experimental** A string that specifies the token engine. Either the default [`"jwt"`](./lib/jwt-token-engine.js) or [`"hash"`](./lib/hash-token-engine.js).
 
 #### Optional `uuidGen` Field
 
@@ -109,33 +110,32 @@ This module by default uses the [uuid] module. However, it uses [crypto.randomBy
 
 If that's an issue, then you can set the `uuidGen` option as follows to select another UUID generator:
 
-* `"simple"` - select a [simple](./lib/simple-id-generator.js) one from this module
-* `"uuid"` - the default: uses [uuid]
-* **function** - your own function that returns the ID, which should be a URL safe string
+- `"simple"` - select a [simple](./lib/simple-id-generator.js) one from this module
+- `"uuid"` - the default: uses [uuid]
+- **function** - your own function that returns the ID, which should be a URL safe string
 
 #### Optional Skip Callbacks
 
 The following should be functions that take the `request` (or `context` for Koa) object and return `true` to skip their respective step for the given `request`:
 
-* `shouldSkip`: Completely skip the CSRF middleware/plugin
-* `skipCreate`: Skip creating the tokens for the response
-* `skipVerify`: Skip verifying the incoming tokens
+- `shouldSkip`: Completely skip the CSRF middleware/plugin
+- `skipCreate`: Skip creating the tokens for the response
+- `skipVerify`: Skip verifying the incoming tokens
 
 #### JWT specific optional fields
 
 Others are optional and follow the [same usage as jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/blob/master/README.md#usage) if the `tokenEngine` is `jwt`.
 
-* `algorithm`
-* `expiresIn`
-* `notBefore`
-* `audience`
-* `subject`
-* `issuer`
-* `jwtid`
-* `subject`
-* `noTimestamp`
-* `headers`
-
+- `algorithm`
+- `expiresIn`
+- `notBefore`
+- `audience`
+- `subject`
+- `issuer`
+- `jwtid`
+- `subject`
+- `noTimestamp`
+- `headers`
 
 ### Electrode Server
 
@@ -261,9 +261,48 @@ const options = {
 app.use(csrfMiddleware(options));
 ```
 
+### Fastify
+
+Please register `fastify-cookie` plugin before `electrode-csrf-jwt` to add cookie support with fastify.
+
+#### Example `server.js` configuration
+
+```js
+const csrfPlugin = require("electrode-csrf-jwt").fastify;
+const Fastify = require("fastify");
+const fastifyCookie = require("fastify-cookie");
+
+csrfPlugin[Symbol.for("skip-override")] = true;
+
+const server = Fastify();
+const options = {
+  secret: "shhhhh",
+  expiresIn: 60,
+  shouldSkip: request => {
+    // return true to skip CSRF JWT for given request
+    return false;
+  },
+  skipCreate: request => {
+    // return true to skip creating CSRF JWT Token for given request
+    return false;
+  },
+  skipVerify: request => {
+    // return true to skip verifying CSRF JWT Token for given request
+    return false;
+  }
+};
+
+server.register(fastifyCookie).register(csrfPlugin, options);
+server.listen(3000, err => {
+  if (err) throw err;
+  console.log(`Server listening at http://localhost:${fastify.server.address().port}`);
+});
+```
+
 ### HTTPS and cookies
 
-When running in HTTPS, you will need to specify the cookie with `secure=true`.  Use the `cookieConfig` option
+When running in HTTPS, you will need to specify the cookie with `secure=true`. Use the `cookieConfig` option
+
 ```js
 {
    "cookieConfig": {
