@@ -33,7 +33,7 @@
   "dependencies": {
     "@hapi/boom": "^7.4.3",
     "electrode-hapi-compat": "^1.2.0",
-    "jsonwebtoken": "^9.0.0",
+    "jsonwebtoken":  "^9.0.0",
     "ms": "^2.1.1",
     "on-headers": "^1.0.1",
     "uuid": "^3.2.1"
