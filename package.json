@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/electrode-io/electrode-csrf-jwt.git"
+    "url": "git+https://github.com/electrode-io/electrode-csrf-jwt.git"
   },
   "keywords": [
     "hapi",
